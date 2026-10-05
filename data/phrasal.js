@@ -1,21 +1,21 @@
-// Advanced C2 Phrasal Verbs Question Bank (130 Curated Items)
+// Advanced C2 Phrasal Question Bank (150 Curated Items)
 window.C2_DATA = window.C2_DATA || {};
 
 window.C2_DATA.phrasal = [
   {
     "id": "phr-001",
     "mode": "phrasal",
-    "level": 3,
+    "level": 2,
     "type": "choice",
     "topic": "Averting Crisis",
     "prompt": "The emergency loan from the consortium helped ________ off imminent bankruptcy until new equity could be raised.",
     "options": [
-      "stave",
       "ward",
+      "stave",
       "hold",
       "keep"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'To stave off' means to avert, delay, or ward off something undesirable or catastrophic (such as bankruptcy, hunger, or disaster) for a limited time.",
     "example": "Drinking plenty of fluids and resting can help stave off the worst symptoms of the virus."
   },
@@ -112,12 +112,12 @@ window.C2_DATA.phrasal = [
     "topic": "Diminishing Momentum",
     "prompt": "Initial enthusiasm for the crowdfunding campaign gradually ________ out after the first fortnight.",
     "options": [
-      "petered",
+      "thinned",
       "fizzled",
-      "dwindled",
-      "thinned"
+      "petered",
+      "dwindled"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'To peter out' means to diminish, dwindle, or fade away gradually until coming to an end. While 'fizzle out' is colloquial, 'peter out' is the standard idiomatic phrasal verb.",
     "example": "The torrential rainfall petered out towards dawn, leaving thick mist over the valley."
   },
@@ -129,29 +129,29 @@ window.C2_DATA.phrasal = [
     "topic": "Corporate & Institutional Spin-offs",
     "prompt": "The conglomerate announced plans to ________ off its renewable energy division into an independently listed company.",
     "options": [
+      "cast",
       "hive",
       "spin",
-      "cast",
       "peel"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'To hive off' means to separate, detach, or sell off a subsidiary company or portion of a business from a larger parent entity.",
     "example": "The airline decided to hive off its frequent-flyer rewards scheme into a standalone business."
   },
   {
     "id": "phr-009",
     "mode": "phrasal",
-    "level": 4,
+    "level": 2,
     "type": "choice",
     "topic": "Intense Scrutiny",
     "prompt": "For three days, the legal team ________ over ancient land deeds dating back to the eighteenth century.",
     "options": [
-      "pored",
+      "glanced",
       "poured",
-      "leafed",
-      "glanced"
+      "pored",
+      "leafed"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'To pore over (something)' (note the spelling: p-o-r-e, not pour) means to read, study, or scrutinize something with intense, absorbed attention.",
     "example": "Scholars continue to pore over the Dead Sea Scrolls in search of linguistic nuances."
   },
@@ -163,29 +163,29 @@ window.C2_DATA.phrasal = [
     "topic": "Generating Support",
     "prompt": "The campaign manager traveled across four northern constituencies to ________ up grassroots backing for the bill.",
     "options": [
-      "drum",
       "whip",
+      "drum",
       "stir",
       "beat"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'To drum up (support/business/interest)' means to work hard to elicit, gather, or stimulate interest or backing.",
     "example": "Sales reps organized roadshows across Europe to drum up prospective orders."
   },
   {
     "id": "phr-011",
     "mode": "phrasal",
-    "level": 5,
+    "level": 2,
     "type": "choice",
     "topic": "Extracting Secrets",
     "prompt": "It required three hours of gentle, tactful questioning to ________ the confession out of the frightened child.",
     "options": [
-      "winkle",
-      "pry",
       "wring",
+      "pry",
+      "winkle",
       "squeeze"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'To winkle out (or winkle something out of someone)' is an evocative British English phrasal verb meaning to extract or coax information or a person with great care and persistence.",
     "example": "The historian succeeded in winkling out long-forgotten letters from family archives."
   },
@@ -197,12 +197,12 @@ window.C2_DATA.phrasal = [
     "topic": "Illicit Diversion",
     "prompt": "The disgraced treasurer was convicted of ________ off millions into accounts registered under his relatives' names.",
     "options": [
-      "siphoning",
-      "funneling",
       "skimming",
+      "funneling",
+      "siphoning",
       "draining"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'To siphon off' specifically means to convey, draw off, or divert money, resources, or supplies, especially illicitly or surreptitiously.",
     "example": "Funds meant for public school repairs were systematically siphoned off by corrupt contractors."
   },
@@ -214,12 +214,12 @@ window.C2_DATA.phrasal = [
     "topic": "Elaboration & Detail",
     "prompt": "The outline is conceptually promising, but you need to ________ out the methodology section with empirical benchmarks.",
     "options": [
-      "flesh",
+      "fill",
       "beef",
-      "pad",
-      "fill"
+      "flesh",
+      "pad"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'To flesh out' means to add substance, detail, or fuller explanation to an initial idea, sketch, or skeleton outline.",
     "example": "The screenwriter spent a month in Paris to flesh out the backstories of the secondary characters."
   },
@@ -231,12 +231,12 @@ window.C2_DATA.phrasal = [
     "topic": "Protesting & Denunciation",
     "prompt": "The veteran commentator took to the airwaves to ________ against what he termed rampant historical revisionism.",
     "options": [
-      "rail",
+      "fulminate",
       "lash",
-      "declaim",
-      "fulminate"
+      "rail",
+      "declaim"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'To rail against (or at)' means to complain vehemently, angrily, or passionately against something perceived as unjust or objectionable.",
     "example": "He spent his twilight years railing against the commercialization of modern higher education."
   },
@@ -248,12 +248,12 @@ window.C2_DATA.phrasal = [
     "topic": "Attribution",
     "prompt": "Let us ________ this disappointing test result up to simple fatigue rather than any fundamental lack of capability.",
     "options": [
-      "chalk",
+      "mark",
       "write",
       "put",
-      "mark"
+      "chalk"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'To chalk (something) up to (something)' means to ascribe or attribute an error, experience, or outcome to a particular cause (e.g. chalk it up to inexperience).",
     "example": "The team chalked up their first-round elimination to bad weather and referee errors."
   },
@@ -265,29 +265,29 @@ window.C2_DATA.phrasal = [
     "topic": "Careful Deliberation",
     "prompt": "I need several quiet days over the weekend to ________ over the job offer before submitting my formal response.",
     "options": [
-      "mull",
-      "chew",
       "weigh",
+      "chew",
+      "mull",
       "cogitate"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'To mull over (something)' means to ponder, deliberate, or reflect deeply upon a decision or proposal over an extended period.",
     "example": "The Prime Minister spent the weekend at Chequers mulling over cabinet reshuffle candidates."
   },
   {
     "id": "phr-017",
     "mode": "phrasal",
-    "level": 5,
+    "level": 2,
     "type": "choice",
     "topic": "Deceitful Dismissal",
     "prompt": "Customer support tried to ________ me off with an automated refund voucher instead of honoring the manufacturer warranty.",
     "options": [
-      "fob",
       "palm",
+      "fob",
       "ward",
       "brush"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'To fob (someone) off with (something)' means to give someone something inferior or deceitful to satisfy them or get rid of them temporarily. 'Palm off on' is used differently.",
     "example": "Do not allow the dealership to fob you off with excuses about supply chain delays."
   },
@@ -316,12 +316,12 @@ window.C2_DATA.phrasal = [
     "topic": "Evading Commitments",
     "prompt": "Despite having signed the preliminary memorandum, the vendor attempted to ________ out of their contractual penalty obligations.",
     "options": [
-      "weasel",
       "wriggle",
+      "sneak",
       "worm",
-      "sneak"
+      "weasel"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'To weasel out of' (and 'to wriggle out of') means to evade a responsibility, duty, or promise in an evasive, dishonest, or cowardly manner.",
     "example": "You promised to chaperone the school excursion, so do not try to weasel out of it now!"
   },
@@ -345,17 +345,17 @@ window.C2_DATA.phrasal = [
   {
     "id": "phr-021",
     "mode": "phrasal",
-    "level": 4,
+    "level": 2,
     "type": "choice",
     "topic": "Negotiating an Accord",
     "prompt": "After forty-eight hours of grueling nonstop diplomacy, negotiators finally ________ out a ceasefire treaty.",
     "options": [
-      "hammered",
       "thrashed",
+      "ironed",
       "pounded",
-      "ironed"
+      "hammered"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'To hammer out' (and 'to thrash out') means to arrive at an agreement, resolution, or compromise through laborious, intensive discussion.",
     "example": "The two ministers spent the night hammering out the exact wording of the communique."
   },
@@ -367,12 +367,12 @@ window.C2_DATA.phrasal = [
     "topic": "Minimizing Significance",
     "prompt": "The communications officer attempted to ________ down the severity of the cybersecurity breach.",
     "options": [
-      "play",
+      "soften",
       "tone",
       "water",
-      "soften"
+      "play"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'To play down' means to minimize, downplay, or make something seem less significant, critical, or embarrassing than it actually is.",
     "example": "She played down her own contribution, generously insisting it had been a collective triumph."
   },
@@ -384,12 +384,12 @@ window.C2_DATA.phrasal = [
     "topic": "Incitement & Urging",
     "prompt": "The juvenile defendant claimed he would never have broken into the warehouse had his peers not ________ him on.",
     "options": [
-      "egged",
+      "goaded",
       "spurred",
       "prodded",
-      "goaded"
+      "egged"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'To egg (someone) on' means to encourage, incite, or urge someone to do something rash, foolish, or dangerous.",
     "example": "Egged on by the roaring crowd, the daredevil leaped between the two rooftops."
   },
@@ -401,29 +401,29 @@ window.C2_DATA.phrasal = [
     "topic": "Temporary Subsistence",
     "prompt": "A modest bridge loan from her aunt was sufficient to ________ her over until her first professional paycheck arrived.",
     "options": [
-      "tide",
       "see",
+      "tide",
       "pull",
       "carry"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'To tide (someone) over' means to help someone through a difficult, scarce, or financially constrained period.",
     "example": "A bowl of hot vegetable broth was enough to tide the climbers over until rescuers arrived."
   },
   {
     "id": "phr-025",
     "mode": "phrasal",
-    "level": 5,
+    "level": 2,
     "type": "choice",
     "topic": "Glossing Over Problems",
     "prompt": "The official biography conveniently ________ over the controversial years the general spent in mercenary service.",
     "options": [
-      "glossed",
+      "veiled",
       "brushed",
       "swept",
-      "veiled"
+      "glossed"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'To gloss over (something)' means to treat something unpleasant or embarrassing superficially or with deliberately deceitful brevity.",
     "example": "The prospectus glossed over the fact that patent litigation was still pending in federal court."
   },
@@ -452,12 +452,12 @@ window.C2_DATA.phrasal = [
     "topic": "Disapproval & Social Norms",
     "prompt": "In this conservative institution, working remotely without prior directorial authorization is strictly frowned ________.",
     "options": [
+      "against",
       "upon",
       "at",
-      "against",
       "over"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'To frown upon (or on)' means to disapprove of something morally or professionally.",
     "example": "Excessive ostentation in dress was heavily frowned upon in Quaker communities."
   },
@@ -486,12 +486,12 @@ window.C2_DATA.phrasal = [
     "topic": "Outcome & Development",
     "prompt": "We shall have to wait and observe how the diplomatic negotiations ________ out before committing our peacekeeping contingent.",
     "options": [
+      "turn",
       "pan",
       "play",
-      "turn",
       "work"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'To pan out' (originating from gold panning) means to develop, turn out, or result in a particular way (usually successful or noteworthy).",
     "example": "Their speculative gamble on lithium futures did not pan out as lucratively as forecasted."
   },
@@ -503,31 +503,31 @@ window.C2_DATA.phrasal = [
     "topic": "Falling Back on Contingencies",
     "prompt": "Should private donations dry up, the heritage trust has substantial endowments to fall ________ on.",
     "options": [
-      "back",
       "down",
+      "away",
       "out",
-      "away"
+      "back"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'To fall back on (something)' means to turn to something as an emergency reserve or source of help when other resources fail.",
     "example": "Having lost her passport and cards, she had no alternative emergency reserves to fall back on."
   },
   {
     "id": "phr-031",
     "mode": "phrasal",
-    "level": 3,
+    "level": 2,
     "type": "choice",
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "She spent the entire weekend ________ her doctoral dissertation.",
     "options": [
-      "beavering away at",
-      "rabbiting on about",
       "badgering into",
+      "rabbiting on about",
+      "beavering away at",
       "ferreting out of"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "The phrasal verb 'to beaver away at' means work hard and persistently at something over a long period.",
-    "example": "Context: She spent the entire weekend beavering away at her doctoral dissertation."
+    "example": "She spent the entire weekend beavering away at her doctoral dissertation."
   },
   {
     "id": "phr-032",
@@ -537,31 +537,31 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "Before the trade delegation arrived, the minister had to ________ maritime law.",
     "options": [
-      "bone up on",
-      "beef up on",
       "back out of",
+      "beef up on",
+      "bone up on",
       "break in on"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "The phrasal verb 'to bone up on' means study or review a subject intensively in a short time.",
-    "example": "Context: Before the trade delegation arrived, the minister had to bone up on maritime law."
+    "example": "Before the trade delegation arrived, the minister had to bone up on maritime law."
   },
   {
     "id": "phr-033",
     "mode": "phrasal",
-    "level": 5,
+    "level": 2,
     "type": "choice",
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "The constabulary launched an operation to ________ unlicensed street gaming.",
     "options": [
-      "clamp down on",
-      "crack out of",
       "pin down to",
+      "crack out of",
+      "clamp down on",
       "bear down upon"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "The phrasal verb 'to clamp down on' means suppress or take strict punitive measures against an illegal activity.",
-    "example": "Context: The constabulary launched an operation to clamp down on unlicensed street gaming."
+    "example": "The constabulary launched an operation to clamp down on unlicensed street gaming."
   },
   {
     "id": "phr-034",
@@ -571,14 +571,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "Cryptographers worked for eighteen months to ________ the rebel cipher.",
     "options": [
-      "fathom out",
-      "figure off",
       "riddle out",
-      "puzzle over"
+      "figure off",
+      "puzzle over",
+      "fathom out"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "The phrasal verb 'to fathom out' means understand a difficult problem or person after much thought.",
-    "example": "Context: Cryptographers worked for eighteen months to fathom out the rebel cipher."
+    "example": "Cryptographers worked for eighteen months to fathom out the rebel cipher."
   },
   {
     "id": "phr-035",
@@ -588,14 +588,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "The two delegations met privately to ________ the final clauses of the treaty.",
     "options": [
+      "flatten down",
       "iron out",
-      "smooth off",
       "press out",
-      "flatten down"
+      "smooth off"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "The phrasal verb 'to iron out' means resolve or settle minor difficulties or differences smoothly.",
-    "example": "Context: The two delegations met privately to iron out the final clauses of the treaty."
+    "example": "The two delegations met privately to iron out the final clauses of the treaty."
   },
   {
     "id": "phr-036",
@@ -612,7 +612,7 @@ window.C2_DATA.phrasal = [
     ],
     "answer": 0,
     "explain": "The phrasal verb 'to scrape through' means barely succeed in passing an exam or overcoming an obstacle.",
-    "example": "Context: He had neglected his studies and only managed to scrape through the entrance examination."
+    "example": "He had neglected his studies and only managed to scrape through the entrance examination."
   },
   {
     "id": "phr-037",
@@ -629,7 +629,7 @@ window.C2_DATA.phrasal = [
     ],
     "answer": 0,
     "explain": "The phrasal verb 'to shell out' means pay or spend a large or reluctant sum of money.",
-    "example": "Context: Taxpayers had to shell out millions to refurbish the municipal stadium."
+    "example": "Taxpayers had to shell out millions to refurbish the municipal stadium."
   },
   {
     "id": "phr-038",
@@ -639,14 +639,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "The chess grandmaster took ten minutes to ________ his teenage opponent's strategy.",
     "options": [
-      "size up",
-      "weigh down",
       "scope off",
+      "weigh down",
+      "size up",
       "check up"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "The phrasal verb 'to size up' means form an estimate, assessment, or judgment of someone or something.",
-    "example": "Context: The chess grandmaster took ten minutes to size up his teenage opponent's strategy."
+    "example": "The chess grandmaster took ten minutes to size up his teenage opponent's strategy."
   },
   {
     "id": "phr-039",
@@ -656,14 +656,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "Rigorous physical fitness assessments were used to ________ unsuitable recruits.",
     "options": [
-      "weed out",
+      "leaf out",
       "root off",
-      "prune down",
-      "leaf out"
+      "weed out",
+      "prune down"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "The phrasal verb 'to weed out' means remove, eliminate, or filter out unwanted, defective, or weak elements.",
-    "example": "Context: Rigorous physical fitness assessments were used to weed out unsuitable recruits."
+    "example": "Rigorous physical fitness assessments were used to weed out unsuitable recruits."
   },
   {
     "id": "phr-040",
@@ -673,19 +673,19 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "In a moment of sheer panic, the suspect ________ the location of the stolen bonds.",
     "options": [
-      "blurted out",
+      "gasped out",
       "chattered off",
       "spurted out",
-      "gasped out"
+      "blurted out"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "The phrasal verb 'to blurt out' means utter suddenly, indiscreetly, and impulsively without thinking.",
-    "example": "Context: In a moment of sheer panic, the suspect blurted out the location of the stolen bonds."
+    "example": "In a moment of sheer panic, the suspect blurted out the location of the stolen bonds."
   },
   {
     "id": "phr-041",
     "mode": "phrasal",
-    "level": 4,
+    "level": 2,
     "type": "choice",
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "With only six weeks before the bar exam, she decided to ________ and study twelve hours daily.",
@@ -697,7 +697,7 @@ window.C2_DATA.phrasal = [
     ],
     "answer": 0,
     "explain": "The phrasal verb 'to buckle down' means apply oneself vigorously and earnestly to a task.",
-    "example": "Context: With only six weeks before the bar exam, she decided to buckle down and study twelve hours daily."
+    "example": "With only six weeks before the bar exam, she decided to buckle down and study twelve hours daily."
   },
   {
     "id": "phr-042",
@@ -707,14 +707,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "Warm letters from her family served to ________ her spirits during her long hospital stay.",
     "options": [
-      "buoy up",
+      "shore down",
       "prop up",
-      "perk out",
-      "shore down"
+      "buoy up",
+      "perk out"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "The phrasal verb 'to buoy up' means keep someone cheerful, optimistic, or resilient during hardship.",
-    "example": "Context: Warm letters from her family served to buoy up her spirits during her long hospital stay."
+    "example": "Warm letters from her family served to buoy up her spirits during her long hospital stay."
   },
   {
     "id": "phr-043",
@@ -724,14 +724,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "Commercial studios continue to ________ formulaic superhero sequels every summer.",
     "options": [
+      "mill out",
       "churn out",
-      "grind off",
       "crank down",
-      "mill out"
+      "grind off"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "The phrasal verb 'to churn out' means produce large quantities of something mechanically and without high quality.",
-    "example": "Context: Commercial studios continue to churn out formulaic superhero sequels every summer."
+    "example": "Commercial studios continue to churn out formulaic superhero sequels every summer."
   },
   {
     "id": "phr-044",
@@ -741,14 +741,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "It slowly ________ the detectives that the witness had fabricated his alibi.",
     "options": [
-      "dawned on",
       "broke upon",
+      "flashed to",
       "lit on",
-      "flashed to"
+      "dawned on"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "The phrasal verb 'to dawn on' means become evident or understood by someone for the first time.",
-    "example": "Context: It slowly dawned on the detectives that the witness had fabricated his alibi."
+    "example": "It slowly dawned on the detectives that the witness had fabricated his alibi."
   },
   {
     "id": "phr-045",
@@ -758,14 +758,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "Critics accused the broadcaster of ________ its historical documentaries for ratings.",
     "options": [
-      "dumbing down",
+      "paring down",
       "toning off",
       "watering out",
-      "paring down"
+      "dumbing down"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "The phrasal verb 'to dumb down' means simplify or reduce the intellectual quality of something to appeal to masses.",
-    "example": "Context: Critics accused the broadcaster of dumbing down its historical documentaries for ratings."
+    "example": "Critics accused the broadcaster of dumbing down its historical documentaries for ratings."
   },
   {
     "id": "phr-046",
@@ -782,7 +782,7 @@ window.C2_DATA.phrasal = [
     ],
     "answer": 0,
     "explain": "The phrasal verb 'to factor in' means include a particular fact or circumstance when making an assessment.",
-    "example": "Context: When estimating the trans-Atlantic shipping schedule, you must factor in potential harbor strikes."
+    "example": "When estimating the trans-Atlantic shipping schedule, you must factor in potential harbor strikes."
   },
   {
     "id": "phr-047",
@@ -792,14 +792,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "Racial tensions ________ in the disputed province following the arrest of the activist.",
     "options": [
-      "flared up",
       "sparked over",
       "blazed off",
+      "flared up",
       "fired down"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "The phrasal verb 'to flare up' means recur or become suddenly violent or intense (of disease or conflict).",
-    "example": "Context: Racial tensions flared up in the disputed province following the arrest of the activist."
+    "example": "Racial tensions flared up in the disputed province following the arrest of the activist."
   },
   {
     "id": "phr-048",
@@ -816,12 +816,12 @@ window.C2_DATA.phrasal = [
     ],
     "answer": 0,
     "explain": "The phrasal verb 'to level with' means speak honestly, candidly, and openly with someone.",
-    "example": "Context: I need you to level with me: are we facing imminent corporate restructuring?"
+    "example": "I need you to level with me: are we facing imminent corporate restructuring?"
   },
   {
     "id": "phr-049",
     "mode": "phrasal",
-    "level": 3,
+    "level": 2,
     "type": "choice",
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "Rival syndicates attempted to ________ the lucrative contraband tobacco trade.",
@@ -833,7 +833,7 @@ window.C2_DATA.phrasal = [
     ],
     "answer": 0,
     "explain": "The phrasal verb 'to muscle in on' means force one's way into an activity, market, or situation to share its benefits.",
-    "example": "Context: Rival syndicates attempted to muscle in on the lucrative contraband tobacco trade."
+    "example": "Rival syndicates attempted to muscle in on the lucrative contraband tobacco trade."
   },
   {
     "id": "phr-050",
@@ -843,31 +843,31 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "The two estranged sisters attempted to ________ their differences before the wedding.",
     "options": [
+      "darn up",
       "patch up",
-      "mend over",
       "heal down",
-      "darn up"
+      "mend over"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "The phrasal verb 'to patch up' means repair a damaged relationship, dispute, or wound temporarily.",
-    "example": "Context: The two estranged sisters attempted to patch up their differences before the wedding."
+    "example": "The two estranged sisters attempted to patch up their differences before the wedding."
   },
   {
     "id": "phr-051",
     "mode": "phrasal",
-    "level": 5,
+    "level": 2,
     "type": "choice",
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "Let us ________ the preliminary board meeting for next Thursday morning.",
     "options": [
-      "pencil in",
-      "chalk down",
       "mark out",
+      "chalk down",
+      "pencil in",
       "pen in"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "The phrasal verb 'to pencil in' means arrange a tentative, provisional appointment or date.",
-    "example": "Context: Let us pencil in the preliminary board meeting for next Thursday morning."
+    "example": "Let us pencil in the preliminary board meeting for next Thursday morning."
   },
   {
     "id": "phr-052",
@@ -877,14 +877,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "The hungry climbers managed to ________ two large loaves of rye bread in ten minutes.",
     "options": [
-      "polish off",
-      "wipe out",
       "clean up",
-      "sweep down"
+      "wipe out",
+      "sweep down",
+      "polish off"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "The phrasal verb 'to polish off' means finish, consume, or dispose of something quickly and easily.",
-    "example": "Context: The hungry climbers managed to polish off two large loaves of rye bread in ten minutes."
+    "example": "The hungry climbers managed to polish off two large loaves of rye bread in ten minutes."
   },
   {
     "id": "phr-053",
@@ -894,14 +894,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "The shipping company managed to ________ the global financial crash without layoffs.",
     "options": [
-      "ride out",
-      "sail through",
       "weather off",
+      "sail through",
+      "ride out",
       "drift past"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "The phrasal verb 'to ride out' means survive or withstand a difficult, turbulent storm or crisis successfully.",
-    "example": "Context: The shipping company managed to ride out the global financial crash without layoffs."
+    "example": "The shipping company managed to ride out the global financial crash without layoffs."
   },
   {
     "id": "phr-054",
@@ -911,14 +911,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "They managed to ________ three junior associates to proofread the 600-page prospectus.",
     "options": [
-      "rope in",
+      "harness to",
       "lasso on",
       "corral down",
-      "harness to"
+      "rope in"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "The phrasal verb 'to rope in' means persuade or enlist someone into helping with a task, often reluctantly.",
-    "example": "Context: They managed to rope in three junior associates to proofread the 600-page prospectus."
+    "example": "They managed to rope in three junior associates to proofread the 600-page prospectus."
   },
   {
     "id": "phr-055",
@@ -928,14 +928,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "The camp cook managed to ________ a hearty stew using canned lentils and dried beef.",
     "options": [
-      "rustle up",
       "whip out",
+      "rustle up",
       "stir off",
       "roust up"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "The phrasal verb 'to rustle up' means prepare or produce something, especially food, quickly with limited resources.",
-    "example": "Context: The camp cook managed to rustle up a hearty stew using canned lentils and dried beef."
+    "example": "The camp cook managed to rustle up a hearty stew using canned lentils and dried beef."
   },
   {
     "id": "phr-056",
@@ -952,24 +952,24 @@ window.C2_DATA.phrasal = [
     ],
     "answer": 0,
     "explain": "The phrasal verb 'to spark off' means provoke, ignite, or trigger an explosion of violence or intense controversy.",
-    "example": "Context: A controversial editorial sparked off nationwide protests across university campuses."
+    "example": "A controversial editorial sparked off nationwide protests across university campuses."
   },
   {
     "id": "phr-057",
     "mode": "phrasal",
-    "level": 5,
+    "level": 2,
     "type": "choice",
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "The public health ministry launched a vaccination campaign to ________ measles in the region.",
     "options": [
-      "stamp out",
-      "tread down",
       "crush off",
+      "tread down",
+      "stamp out",
       "step over"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "The phrasal verb 'to stamp out' means extinguish or suppress something undesirable completely and forcefully.",
-    "example": "Context: The public health ministry launched a vaccination campaign to stamp out measles in the region."
+    "example": "The public health ministry launched a vaccination campaign to stamp out measles in the region."
   },
   {
     "id": "phr-058",
@@ -979,14 +979,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "Under intense pressure from party elders, the party leader agreed to ________ before the congress.",
     "options": [
-      "stand down",
-      "step off",
       "drop back",
-      "hold over"
+      "step off",
+      "hold over",
+      "stand down"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "The phrasal verb 'to stand down' means resign or withdraw formally from a high office, contest, or position.",
-    "example": "Context: Under intense pressure from party elders, the party leader agreed to stand down before the congress."
+    "example": "Under intense pressure from party elders, the party leader agreed to stand down before the congress."
   },
   {
     "id": "phr-059",
@@ -996,14 +996,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "She realized the venture firm was merely ________ her while developing their own product.",
     "options": [
-      "stringing along",
-      "trailing off",
       "leading on",
-      "winding up"
+      "trailing off",
+      "winding up",
+      "stringing along"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "The phrasal verb 'to string along' means mislead someone dishonestly over an extended period about one's intentions.",
-    "example": "Context: She realized the venture firm was merely stringing along her while developing their own product."
+    "example": "She realized the venture firm was merely stringing along her while developing their own product."
   },
   {
     "id": "phr-060",
@@ -1020,24 +1020,24 @@ window.C2_DATA.phrasal = [
     ],
     "answer": 0,
     "explain": "The phrasal verb 'to stumble across' means discover or encounter something unexpected by chance.",
-    "example": "Context: While researching in the municipal library, the historian stumbled across a forgotten manuscript."
+    "example": "While researching in the municipal library, the historian stumbled across a forgotten manuscript."
   },
   {
     "id": "phr-061",
     "mode": "phrasal",
-    "level": 3,
+    "level": 2,
     "type": "choice",
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "Urban sprawl threatened to ________ centuries-old farmland surrounding the capital.",
     "options": [
-      "swallow up",
       "gulp down",
+      "swallow up",
       "ingest over",
       "soak off"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "The phrasal verb 'to swallow up' means absorb, engulf, or overwhelm something completely.",
-    "example": "Context: Urban sprawl threatened to swallow up centuries-old farmland surrounding the capital."
+    "example": "Urban sprawl threatened to swallow up centuries-old farmland surrounding the capital."
   },
   {
     "id": "phr-062",
@@ -1047,14 +1047,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "Subordinates resented the manager because he constantly ________ them during meetings.",
     "options": [
-      "talked down to",
-      "spoke down on",
       "looked down to",
-      "chatted down"
+      "spoke down on",
+      "chatted down",
+      "talked down to"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "The phrasal verb 'to talk down to' means speak to someone in a patronizing, condescending manner.",
-    "example": "Context: Subordinates resented the manager because he constantly talked down to them during meetings."
+    "example": "Subordinates resented the manager because he constantly talked down to them during meetings."
   },
   {
     "id": "phr-063",
@@ -1064,14 +1064,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "The startup succeeded because it managed to ________ a growing demand for vegan cosmetics.",
     "options": [
-      "tap into",
       "pipe into",
+      "tap into",
       "mine on",
       "drain from"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "The phrasal verb 'to tap into' means exploit, harness, or access a resource, market, or sentiment.",
-    "example": "Context: The startup succeeded because it managed to tap into a growing demand for vegan cosmetics."
+    "example": "The startup succeeded because it managed to tap into a growing demand for vegan cosmetics."
   },
   {
     "id": "phr-064",
@@ -1081,31 +1081,31 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "The editorial ________ the proposed tax cuts, describing them as economically illiterate.",
     "options": [
-      "tore into",
+      "cut into",
       "ripped off",
       "slashed down",
-      "cut into"
+      "tore into"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "The phrasal verb 'to tear into' means attack someone or something physically, or criticize them ferociously.",
-    "example": "Context: The editorial tore into the proposed tax cuts, describing them as economically illiterate."
+    "example": "The editorial tore into the proposed tax cuts, describing them as economically illiterate."
   },
   {
     "id": "phr-065",
     "mode": "phrasal",
-    "level": 4,
+    "level": 2,
     "type": "choice",
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "The introductory lecture only had time to ________ the complex ethics of genetic editing.",
     "options": [
-      "touch upon",
+      "tap at",
       "brush on",
-      "glance over",
-      "tap at"
+      "touch upon",
+      "glance over"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "The phrasal verb 'to touch upon' means mention or deal with a subject briefly or in passing.",
-    "example": "Context: The introductory lecture only had time to touch upon the complex ethics of genetic editing."
+    "example": "The introductory lecture only had time to touch upon the complex ethics of genetic editing."
   },
   {
     "id": "phr-066",
@@ -1115,14 +1115,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "Entrance examinations are designed to ________ applicants lacking mathematical rigor.",
     "options": [
-      "weed out",
-      "root off",
       "sift down",
+      "root off",
+      "weed out",
       "cull over"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "The phrasal verb 'to weed out' means eliminate or remove unqualified, undesirable, or defective candidates.",
-    "example": "Context: Entrance examinations are designed to weed out applicants lacking mathematical rigor."
+    "example": "Entrance examinations are designed to weed out applicants lacking mathematical rigor."
   },
   {
     "id": "phr-067",
@@ -1132,14 +1132,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "The treasury was forced to ________ the mortgage lender with emergency loan guarantees.",
     "options": [
+      "salvage off",
       "bail out",
       "prop up",
-      "salvage off",
       "float out"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "The phrasal verb 'to bail out' means rescue a company, person, or bank from financial ruin.",
-    "example": "Context: The treasury was forced to bail out the mortgage lender with emergency loan guarantees."
+    "example": "The treasury was forced to bail out the mortgage lender with emergency loan guarantees."
   },
   {
     "id": "phr-068",
@@ -1149,14 +1149,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "Few seasoned diplomats were willing to ________ the dictator's promises of democratic reform.",
     "options": [
-      "buy into",
+      "take up on",
       "sell out to",
       "sign on for",
-      "take up on"
+      "buy into"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "The phrasal verb 'to buy into' means believe in, accept, or support an idea, philosophy, or premise.",
-    "example": "Context: Few seasoned diplomats were willing to buy into the dictator's promises of democratic reform."
+    "example": "Few seasoned diplomats were willing to buy into the dictator's promises of democratic reform."
   },
   {
     "id": "phr-069",
@@ -1166,14 +1166,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "The museum decided to ________ its surveillance network after the brazen jewel heist.",
     "options": [
-      "beef up",
-      "bulk out",
       "flesh on",
+      "bulk out",
+      "beef up",
       "fatten up"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "The phrasal verb 'to beef up' means strengthen, reinforce, or increase the substance or security of something.",
-    "example": "Context: The museum decided to beef up its surveillance network after the brazen jewel heist."
+    "example": "The museum decided to beef up its surveillance network after the brazen jewel heist."
   },
   {
     "id": "phr-070",
@@ -1183,31 +1183,31 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "Even seasoned mountaineers ________ the prospect of climbing the north face in winter.",
     "options": [
-      "blanched at",
       "paled to",
+      "cringed of",
       "flurried at",
-      "cringed of"
+      "blanched at"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "The phrasal verb 'to blanch at' means recoil, flinch, or show pale fear/hesitation at a prospect.",
-    "example": "Context: Even seasoned mountaineers blanched at the prospect of climbing the north face in winter."
+    "example": "Even seasoned mountaineers blanched at the prospect of climbing the north face in winter."
   },
   {
     "id": "phr-071",
     "mode": "phrasal",
-    "level": 4,
+    "level": 2,
     "type": "choice",
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "Plainclothes detectives made sure to ________ with the crowd outside the embassy.",
     "options": [
-      "blend in",
-      "mix up",
       "fuse out",
-      "shade down"
+      "mix up",
+      "shade down",
+      "blend in"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "The phrasal verb 'to blend in' means merge smoothly and inconspicuously into the surrounding environment.",
-    "example": "Context: Plainclothes detectives made sure to blend in with the crowd outside the embassy."
+    "example": "Plainclothes detectives made sure to blend in with the crowd outside the embassy."
   },
   {
     "id": "phr-072",
@@ -1217,31 +1217,31 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "Psychologists warn that ________ grief for years can lead to severe chronic depression.",
     "options": [
-      "bottling up",
+      "corking in",
       "capping down",
       "sealing off",
-      "corking in"
+      "bottling up"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "The phrasal verb 'to bottle up' means repress or restrain strong emotions or anxieties rather than expressing them.",
-    "example": "Context: Psychologists warn that bottling up grief for years can lead to severe chronic depression."
+    "example": "Psychologists warn that bottling up grief for years can lead to severe chronic depression."
   },
   {
     "id": "phr-073",
     "mode": "phrasal",
-    "level": 3,
+    "level": 2,
     "type": "choice",
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "The resilient economy managed to ________ rapidly after the supply chain crisis eased.",
     "options": [
-      "bounce back",
-      "spring up",
       "leap over",
-      "rebound down"
+      "spring up",
+      "rebound down",
+      "bounce back"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "The phrasal verb 'to bounce back' means recover quickly and resiliently from illness, financial crisis, or defeat.",
-    "example": "Context: The resilient economy managed to bounce back rapidly after the supply chain crisis eased."
+    "example": "The resilient economy managed to bounce back rapidly after the supply chain crisis eased."
   },
   {
     "id": "phr-074",
@@ -1258,7 +1258,7 @@ window.C2_DATA.phrasal = [
     ],
     "answer": 0,
     "explain": "The phrasal verb 'to breeze through' means pass, complete, or overcome an exam or task effortlessly.",
-    "example": "Context: Given his extensive preparation, he expected to breeze through the medical licensing exam."
+    "example": "Given his extensive preparation, he expected to breeze through the medical licensing exam."
   },
   {
     "id": "phr-075",
@@ -1268,14 +1268,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "Her eyes ________ with tears of relief when the jury returned an acquittal.",
     "options": [
-      "brimmed over",
       "spilled on",
+      "brimmed over",
       "poured off",
       "welled up"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "The phrasal verb 'to brim over' means overflow with intense emotion, tears, or enthusiastic energy.",
-    "example": "Context: Her eyes brimmed over with tears of relief when the jury returned an acquittal."
+    "example": "Her eyes brimmed over with tears of relief when the jury returned an acquittal."
   },
   {
     "id": "phr-076",
@@ -1285,14 +1285,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "If you want to achieve a C2 Cambridge certificate, you need to ________ and practice daily.",
     "options": [
-      "buckle down",
-      "knuckle off",
       "strap up",
+      "knuckle off",
+      "buckle down",
       "cinch down"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "The phrasal verb 'to buckle down' means commence working with serious, disciplined concentration.",
-    "example": "Context: If you want to achieve a C2 Cambridge certificate, you need to buckle down and practice daily."
+    "example": "If you want to achieve a C2 Cambridge certificate, you need to buckle down and practice daily."
   },
   {
     "id": "phr-077",
@@ -1309,7 +1309,7 @@ window.C2_DATA.phrasal = [
     ],
     "answer": 0,
     "explain": "The phrasal verb 'to chalk up' means record or achieve an important success, victory, or milestone.",
-    "example": "Context: The champion chalked up another Grand Slam victory with an ace on match point."
+    "example": "The champion chalked up another Grand Slam victory with an ace on match point."
   },
   {
     "id": "phr-078",
@@ -1319,14 +1319,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "Unchecked inflation continued to ________ the purchasing power of middle-class wages.",
     "options": [
-      "chip away at",
+      "carve into",
       "shave down on",
       "whittle off of",
-      "carve into"
+      "chip away at"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "The phrasal verb 'to chip away at' means gradually reduce, diminish, or weaken something over time.",
-    "example": "Context: Unchecked inflation continued to chip away at the purchasing power of middle-class wages."
+    "example": "Unchecked inflation continued to chip away at the purchasing power of middle-class wages."
   },
   {
     "id": "phr-079",
@@ -1336,14 +1336,14 @@ window.C2_DATA.phrasal = [
     "topic": "Nuanced Phrasal Verbs",
     "prompt": "The suspect ________ as soon as his attorney arrived at the interrogation cell.",
     "options": [
-      "clammed up",
+      "snapped closed",
       "oystered down",
-      "shut off",
-      "snapped closed"
+      "clammed up",
+      "shut off"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "The phrasal verb 'to clam up' means refuse to speak or give information suddenly, especially when questioned.",
-    "example": "Context: The suspect clammed up as soon as his attorney arrived at the interrogation cell."
+    "example": "The suspect clammed up as soon as his attorney arrived at the interrogation cell."
   },
   {
     "id": "phr-080",
@@ -1360,22 +1360,22 @@ window.C2_DATA.phrasal = [
     ],
     "answer": 0,
     "explain": "The phrasal verb 'to cotton on to' means begin to understand or become aware of something not previously recognized.",
-    "example": "Context: It took several minutes for the audience to cotton on to the subtle irony of the satire."
+    "example": "It took several minutes for the audience to cotton on to the subtle irony of the satire."
   },
   {
     "id": "phr-081",
     "mode": "phrasal",
-    "level": 4,
+    "level": 2,
     "type": "choice",
     "topic": "Advanced Phrasal Verbs",
     "prompt": "Subsequent geological core samples ________ the seismologist's tectonic hypothesis.",
     "options": [
-      "bore out",
       "carried through",
+      "bore out",
       "backed up",
       "held out"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'To bear out' means confirm, substantiate, or support the truth of something.",
     "example": "Subsequent geological core samples bore out the seismologist's tectonic hypothesis."
   },
@@ -1387,12 +1387,12 @@ window.C2_DATA.phrasal = [
     "topic": "Advanced Phrasal Verbs",
     "prompt": "The luxury watchmaker decided to ________ into high-end optical instruments.",
     "options": [
+      "shoot forth",
       "branch out",
-      "reach over",
       "fork off",
-      "shoot forth"
+      "reach over"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'To branch out' means extend one's business or activities into a new or different field.",
     "example": "The luxury watchmaker decided to branch out into high-end optical instruments."
   },
@@ -1404,12 +1404,12 @@ window.C2_DATA.phrasal = [
     "topic": "Advanced Phrasal Verbs",
     "prompt": "The municipal council decided to ________ waste collection services to reduce overhead.",
     "options": [
-      "contract out",
       "farm in",
       "pass off",
+      "contract out",
       "lease down"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'To contract out' means arrange for work to be done by an external firm or contractor.",
     "example": "The municipal council decided to contract out waste collection services to reduce overhead."
   },
@@ -1421,12 +1421,12 @@ window.C2_DATA.phrasal = [
     "topic": "Advanced Phrasal Verbs",
     "prompt": "The federal agency moved to ________ illicit offshore gambling operations.",
     "options": [
-      "crack down on",
+      "strike out at",
       "break into",
-      "slam down to",
-      "strike out at"
+      "crack down on",
+      "slam down to"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'To crack down on' means take severe, harsh disciplinary measures against criminal activity.",
     "example": "The federal agency moved to crack down on illicit offshore gambling operations."
   },
@@ -1438,12 +1438,12 @@ window.C2_DATA.phrasal = [
     "topic": "Advanced Phrasal Verbs",
     "prompt": "The minister outlined ambitious education pledges, but failed to ________ with funding.",
     "options": [
+      "see out",
       "follow through",
       "carry on",
-      "see out",
       "push past"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'To follow through' means continue an action or initiative to its final conclusion.",
     "example": "The minister outlined ambitious education pledges, but failed to follow through with funding."
   },
@@ -1455,12 +1455,12 @@ window.C2_DATA.phrasal = [
     "topic": "Advanced Phrasal Verbs",
     "prompt": "Despite stormy weather and icy roads, the relief convoy ________ toward the village.",
     "options": [
-      "forged ahead",
-      "pushed out",
       "plowed over",
-      "strode past"
+      "pushed out",
+      "strode past",
+      "forged ahead"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'To forge ahead' means move forward or make progress quickly and determinedly.",
     "example": "Despite stormy weather and icy roads, the relief convoy forged ahead toward the village."
   },
@@ -1472,12 +1472,12 @@ window.C2_DATA.phrasal = [
     "topic": "Advanced Phrasal Verbs",
     "prompt": "The swindler attempted to ________ cheap quartz crystals as valuable uncut diamonds.",
     "options": [
-      "pass off as",
       "fob over to",
+      "pass off as",
       "palm down as",
       "ring out as"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'To pass off as' means falsely represent something inferior or fraudulent as genuine.",
     "example": "The swindler attempted to pass off as cheap quartz crystals as valuable uncut diamonds."
   },
@@ -1489,19 +1489,19 @@ window.C2_DATA.phrasal = [
     "topic": "Advanced Phrasal Verbs",
     "prompt": "The European Union agreed to ________ single-use plastics by the end of the decade.",
     "options": [
-      "phase out",
+      "dwindle out",
       "wind down",
-      "stage off",
-      "dwindle out"
+      "phase out",
+      "stage off"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'To phase out' means gradually stop using, producing, or operating something over time.",
     "example": "The European Union agreed to phase out single-use plastics by the end of the decade."
   },
   {
     "id": "phr-089",
     "mode": "phrasal",
-    "level": 4,
+    "level": 2,
     "type": "choice",
     "topic": "Advanced Phrasal Verbs",
     "prompt": "Against all bookmakers' odds, the underdog club managed to ________ a 2-1 victory.",
@@ -1523,515 +1523,532 @@ window.C2_DATA.phrasal = [
     "topic": "Advanced Phrasal Verbs",
     "prompt": "The headmaster ________ Maria for her exceptional bravery during the river rescue.",
     "options": [
-      "singled out",
+      "marked off",
       "picked over",
       "pointed down",
-      "marked off"
+      "singled out"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'To single out' means choose or highlight one person or thing from a group for special treatment.",
     "example": "The headmaster singled out Maria for her exceptional bravery during the river rescue."
   },
   {
     "id": "phr-091",
     "mode": "phrasal",
-    "level": 4,
+    "level": 2,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "Subsequent geological core samples ________ the seismologist's tectonic hypothesis.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Subsequent archaeological excavations ________ the truth of the ancient chronicles.",
     "options": [
+      "stood out",
+      "carried out",
       "bore out",
-      "carried through",
-      "backed up",
       "held out"
     ],
-    "answer": 0,
-    "explain": "'To bear out' means confirm, substantiate, or support the truth of something.",
-    "example": "Subsequent geological core samples bore out the seismologist's tectonic hypothesis."
+    "answer": 2,
+    "explain": "'To bear out' means to confirm, substantiate, or verify the truth of an assertion.",
+    "example": "Statistical data bore out her prediction that inflation would taper off by winter."
   },
   {
     "id": "phr-092",
     "mode": "phrasal",
-    "level": 4,
+    "level": 3,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The luxury watchmaker decided to ________ into high-end optical instruments.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "The boutique coffee roaster decided to ________ into gourmet bakery goods.",
     "options": [
       "branch out",
-      "reach over",
-      "fork off",
-      "shoot forth"
+      "reach forth",
+      "shoot over",
+      "fork off"
     ],
     "answer": 0,
-    "explain": "'To branch out' means extend one's business or activities into a new or different field.",
-    "example": "The luxury watchmaker decided to branch out into high-end optical instruments."
+    "explain": "'To branch out' means to expand one's activities or business into a new field.",
+    "example": "After years in commercial litigation, she decided to branch out into human rights law."
   },
   {
     "id": "phr-093",
     "mode": "phrasal",
-    "level": 4,
+    "level": 2,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The municipal council decided to ________ waste collection services to reduce overhead.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Rapid advances in microprocessing ________ revolutionary changes in medical diagnostics.",
     "options": [
-      "contract out",
-      "farm in",
-      "pass off",
-      "lease down"
+      "brought about",
+      "took about",
+      "came about",
+      "put about"
     ],
     "answer": 0,
-    "explain": "'To contract out' means arrange for work to be done by an external firm or contractor.",
-    "example": "The municipal council decided to contract out waste collection services to reduce overhead."
+    "explain": "'To bring about' means to cause something to happen or bring to fruition.",
+    "example": "The new environmental treaty brought about a significant decline in sulfur emissions."
   },
   {
     "id": "phr-094",
     "mode": "phrasal",
     "level": 4,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The federal agency moved to ________ illicit offshore gambling operations.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Against all expert predictions, the inexperienced diplomat managed to ________ a historic ceasefire.",
     "options": [
-      "crack down on",
-      "break into",
-      "slam down to",
-      "strike out at"
+      "bring off",
+      "pull off",
+      "take off",
+      "carry off"
     ],
     "answer": 0,
-    "explain": "'To crack down on' means take severe, harsh disciplinary measures against criminal activity.",
-    "example": "The federal agency moved to crack down on illicit offshore gambling operations."
+    "explain": "'To bring off' means to achieve something difficult successfully.",
+    "example": "It was a difficult corporate acquisition, but senior management managed to bring it off."
   },
   {
     "id": "phr-095",
     "mode": "phrasal",
-    "level": 4,
+    "level": 3,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The minister outlined ambitious education pledges, but failed to ________ with funding.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Before relocating to the Geneva headquarters, she spent a month ________ her conversational French.",
     "options": [
-      "follow through",
-      "carry on",
-      "see out",
-      "push past"
+      "polishing up to",
+      "brushing up on",
+      "scrubbing over",
+      "rubbing down on"
     ],
-    "answer": 0,
-    "explain": "'To follow through' means continue an action or initiative to its final conclusion.",
-    "example": "The minister outlined ambitious education pledges, but failed to follow through with funding."
+    "answer": 1,
+    "explain": "'To brush up on' means to refresh one's knowledge or skill in a subject.",
+    "example": "I need to brush up on international tax regulations before meeting our foreign clients."
   },
   {
     "id": "phr-096",
     "mode": "phrasal",
     "level": 4,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "Despite stormy weather and icy roads, the relief convoy ________ toward the village.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "The local health authority decided to ________ laboratory testing to a private diagnostics firm.",
     "options": [
-      "forged ahead",
-      "pushed out",
-      "plowed over",
-      "strode past"
+      "hire out",
+      "contract out",
+      "farm in",
+      "lease off"
     ],
-    "answer": 0,
-    "explain": "'To forge ahead' means move forward or make progress quickly and determinedly.",
-    "example": "Despite stormy weather and icy roads, the relief convoy forged ahead toward the village."
+    "answer": 1,
+    "explain": "'To contract out' means to arrange for work to be done by an outside contractor.",
+    "example": "The city council contracted out street maintenance to reduce municipal overhead."
   },
   {
     "id": "phr-097",
     "mode": "phrasal",
-    "level": 4,
+    "level": 2,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The swindler attempted to ________ cheap quartz crystals as valuable uncut diamonds.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "The maritime agency announced stricter patrols to ________ illegal trawling in protected waters.",
     "options": [
-      "pass off as",
-      "fob over to",
-      "palm down as",
-      "ring out as"
+      "slam down on",
+      "crack down on",
+      "break into",
+      "press down to"
     ],
-    "answer": 0,
-    "explain": "'To pass off as' means falsely represent something inferior or fraudulent as genuine.",
-    "example": "The swindler attempted to pass off as cheap quartz crystals as valuable uncut diamonds."
+    "answer": 1,
+    "explain": "'To crack down on' means to take severe, forceful measures against lawbreaking.",
+    "example": "Border authorities cracked down on counterfeit luxury goods entering the country."
   },
   {
     "id": "phr-098",
     "mode": "phrasal",
-    "level": 4,
+    "level": 2,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The European Union agreed to ________ single-use plastics by the end of the decade.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "When private donations began to ________, the arts foundation turned to public endowments.",
     "options": [
-      "phase out",
-      "wind down",
-      "stage off",
-      "dwindle out"
+      "leak away",
+      "drain out",
+      "wither down",
+      "dry up"
     ],
-    "answer": 0,
-    "explain": "'To phase out' means gradually stop using, producing, or operating something over time.",
-    "example": "The European Union agreed to phase out single-use plastics by the end of the decade."
+    "answer": 3,
+    "explain": "'To dry up' means to decrease and stop existing or being available.",
+    "example": "Global credit dried up rapidly during the initial months of the banking crisis."
   },
   {
     "id": "phr-099",
     "mode": "phrasal",
-    "level": 4,
+    "level": 3,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "Against all bookmakers' odds, the underdog club managed to ________ a 2-1 victory.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Having completed his fellowship, the surgeon was eager to ________ an independent research career.",
     "options": [
-      "pull off",
-      "carry out",
-      "score through",
-      "strike up"
+      "set on",
+      "enter on",
+      "take on",
+      "embark on"
     ],
-    "answer": 0,
-    "explain": "'To pull off' means succeed in achieving something difficult, audacious, or unexpected.",
-    "example": "Against all bookmakers' odds, the underdog club managed to pull off a 2-1 victory."
+    "answer": 3,
+    "explain": "'To embark on' means to start a new project, journey, or significant course of action.",
+    "example": "She embarked on an ambitious three-year study of migratory seabirds."
   },
   {
     "id": "phr-100",
     "mode": "phrasal",
     "level": 4,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The headmaster ________ Maria for her exceptional bravery during the river rescue.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "The young creative director felt increasingly ________ by rigid corporate branding guidelines.",
     "options": [
-      "singled out",
-      "picked over",
-      "pointed down",
-      "marked off"
+      "fenced in",
+      "walled out",
+      "caged off",
+      "hedged over"
     ],
     "answer": 0,
-    "explain": "'To single out' means choose or highlight one person or thing from a group for special treatment.",
-    "example": "The headmaster singled out Maria for her exceptional bravery during the river rescue."
+    "explain": "'To fence in' means to restrict someone's freedom or choices severely.",
+    "example": "Artists often feel fenced in when working within strictly commercial genres."
   },
   {
     "id": "phr-101",
     "mode": "phrasal",
-    "level": 4,
+    "level": 2,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "Subsequent geological core samples ________ the seismologist's tectonic hypothesis.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "It took several days for news of the remote earthquake to ________ to international press bureaus.",
     "options": [
-      "bore out",
-      "carried through",
-      "backed up",
-      "held out"
+      "filter through",
+      "percolate over",
+      "strain down",
+      "sift in"
     ],
     "answer": 0,
-    "explain": "'To bear out' means confirm, substantiate, or support the truth of something.",
-    "example": "Subsequent geological core samples bore out the seismologist's tectonic hypothesis."
+    "explain": "'To filter through' means to become known or penetrate gradually and slowly.",
+    "example": "Whispers of an impending boardroom reorganization began to filter through the office."
   },
   {
     "id": "phr-102",
     "mode": "phrasal",
-    "level": 4,
+    "level": 3,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The luxury watchmaker decided to ________ into high-end optical instruments.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Her innovative design concepts did not readily ________ the conservative ethos of the firm.",
     "options": [
-      "branch out",
-      "reach over",
-      "fork off",
-      "shoot forth"
+      "fit in with",
+      "suit up to",
+      "match on with",
+      "blend out of"
     ],
     "answer": 0,
-    "explain": "'To branch out' means extend one's business or activities into a new or different field.",
-    "example": "The luxury watchmaker decided to branch out into high-end optical instruments."
+    "explain": "'To fit in with' means to be harmonious, compatible, or consistent with something.",
+    "example": "Does the proposed scheduling fit in with your current departmental commitments?"
   },
   {
     "id": "phr-103",
     "mode": "phrasal",
-    "level": 4,
+    "level": 3,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The municipal council decided to ________ waste collection services to reduce overhead.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Although the governor promised sweeping judicial reforms, he failed to ________ with funding.",
     "options": [
-      "contract out",
-      "farm in",
-      "pass off",
-      "lease down"
+      "go through",
+      "follow through",
+      "carry on",
+      "lead past"
     ],
-    "answer": 0,
-    "explain": "'To contract out' means arrange for work to be done by an external firm or contractor.",
-    "example": "The municipal council decided to contract out waste collection services to reduce overhead."
+    "answer": 1,
+    "explain": "'To follow through' means to complete an activity or fulfill an intention thoroughly.",
+    "example": "You must follow through with your training if you wish to pass the mountaineering qualification."
   },
   {
     "id": "phr-104",
     "mode": "phrasal",
     "level": 4,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The federal agency moved to ________ illicit offshore gambling operations.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Despite fierce union objections, the transport board voted to ________ with automation.",
     "options": [
-      "crack down on",
-      "break into",
-      "slam down to",
-      "strike out at"
+      "drive forward",
+      "forge ahead",
+      "plow over",
+      "stride out"
     ],
-    "answer": 0,
-    "explain": "'To crack down on' means take severe, harsh disciplinary measures against criminal activity.",
-    "example": "The federal agency moved to crack down on illicit offshore gambling operations."
+    "answer": 1,
+    "explain": "'To forge ahead' means to proceed determinedly and vigorously with an initiative.",
+    "example": "Engineers forged ahead with drilling operations despite inclement Arctic weather."
   },
   {
     "id": "phr-105",
     "mode": "phrasal",
-    "level": 4,
+    "level": 2,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The minister outlined ambitious education pledges, but failed to ________ with funding.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "The two trade envoys scheduled an extra session to ________ the final tariff exemptions.",
     "options": [
-      "follow through",
-      "carry on",
-      "see out",
-      "push past"
+      "iron out",
+      "smooth off",
+      "press down",
+      "flatten out"
     ],
     "answer": 0,
-    "explain": "'To follow through' means continue an action or initiative to its final conclusion.",
-    "example": "The minister outlined ambitious education pledges, but failed to follow through with funding."
+    "explain": "'To iron out' means to resolve or eliminate minor difficulties or disputes.",
+    "example": "We need to iron out a few lingering contractual ambiguities before signing."
   },
   {
     "id": "phr-106",
     "mode": "phrasal",
     "level": 4,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "Despite stormy weather and icy roads, the relief convoy ________ toward the village.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "When offered a guest professorship at Oxford, the young scholar ________ the opportunity.",
     "options": [
-      "forged ahead",
-      "pushed out",
-      "plowed over",
-      "strode past"
+      "bounded for",
+      "jumped on",
+      "leapt at",
+      "sprang to"
     ],
-    "answer": 0,
-    "explain": "'To forge ahead' means move forward or make progress quickly and determinedly.",
-    "example": "Despite stormy weather and icy roads, the relief convoy forged ahead toward the village."
+    "answer": 2,
+    "explain": "'To leap at (an opportunity)' means to accept a chance eagerly and without hesitation.",
+    "example": "He leapt at the chance to study marine biology on a dedicated research vessel."
   },
   {
     "id": "phr-107",
     "mode": "phrasal",
     "level": 4,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The swindler attempted to ________ cheap quartz crystals as valuable uncut diamonds.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "The sequel to the award-winning historical drama failed to ________ the high standards of the original.",
     "options": [
-      "pass off as",
-      "fob over to",
-      "palm down as",
-      "ring out as"
+      "size up to",
+      "count into",
+      "reach up on",
+      "measure up to"
     ],
-    "answer": 0,
-    "explain": "'To pass off as' means falsely represent something inferior or fraudulent as genuine.",
-    "example": "The swindler attempted to pass off as cheap quartz crystals as valuable uncut diamonds."
+    "answer": 3,
+    "explain": "'To measure up to' means to meet expectations, standards, or requirements.",
+    "example": "Her debut performance measured up to the highest standards of the Royal Ballet."
   },
   {
     "id": "phr-108",
     "mode": "phrasal",
-    "level": 4,
+    "level": 3,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The European Union agreed to ________ single-use plastics by the end of the decade.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Investigative reporters spent the afternoon ________ the municipal archives in search of land deeds.",
     "options": [
-      "phase out",
-      "wind down",
-      "stage off",
-      "dwindle out"
+      "nosing around",
+      "sniffing out",
+      "smelling into",
+      "poking off"
     ],
     "answer": 0,
-    "explain": "'To phase out' means gradually stop using, producing, or operating something over time.",
-    "example": "The European Union agreed to phase out single-use plastics by the end of the decade."
+    "explain": "'To nose around' means to pry, snoop, or search inquisitively for information.",
+    "example": "Security guards warned visitors not to nose around the private laboratory wings."
   },
   {
     "id": "phr-109",
     "mode": "phrasal",
     "level": 4,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "Against all bookmakers' odds, the underdog club managed to ________ a 2-1 victory.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "The dealer was convicted of attempting to ________ clever replicas as genuine Ming porcelain.",
     "options": [
-      "pull off",
-      "carry out",
-      "score through",
-      "strike up"
+      "fob off to",
+      "pass off as",
+      "palm down as",
+      "ring out for"
     ],
-    "answer": 0,
-    "explain": "'To pull off' means succeed in achieving something difficult, audacious, or unexpected.",
-    "example": "Against all bookmakers' odds, the underdog club managed to pull off a 2-1 victory."
+    "answer": 1,
+    "explain": "'To pass off as' means to falsely represent something fraudulent as authentic.",
+    "example": "He tried to pass off his amateur sketches as the work of an established modernist."
   },
   {
     "id": "phr-110",
     "mode": "phrasal",
-    "level": 4,
+    "level": 3,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The headmaster ________ Maria for her exceptional bravery during the river rescue.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "The manufacturing plant agreed to ________ coal-fired boilers over the next five years.",
     "options": [
-      "singled out",
-      "picked over",
-      "pointed down",
-      "marked off"
+      "phase out",
+      "wind down",
+      "stage off",
+      "dwindle out"
     ],
     "answer": 0,
-    "explain": "'To single out' means choose or highlight one person or thing from a group for special treatment.",
-    "example": "The headmaster singled out Maria for her exceptional bravery during the river rescue."
+    "explain": "'To phase out' means to discontinue or eliminate gradually in stages.",
+    "example": "Government subsidies for fossil fuel exploration will be phased out by 2030."
   },
   {
     "id": "phr-111",
     "mode": "phrasal",
-    "level": 4,
+    "level": 2,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "Subsequent geological core samples ________ the seismologist's tectonic hypothesis.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Against all bookmakers' predictions, the young chess master ________ an unexpected victory.",
     "options": [
-      "bore out",
-      "carried through",
-      "backed up",
-      "held out"
+      "struck out",
+      "carried on",
+      "pulled off",
+      "drew over"
     ],
-    "answer": 0,
-    "explain": "'To bear out' means confirm, substantiate, or support the truth of something.",
-    "example": "Subsequent geological core samples bore out the seismologist's tectonic hypothesis."
+    "answer": 2,
+    "explain": "'To pull off' means to achieve something difficult or audacious unexpectedly.",
+    "example": "It was an astonishing diplomatic triumph that few believed she could pull off."
   },
   {
     "id": "phr-112",
     "mode": "phrasal",
-    "level": 4,
+    "level": 3,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The luxury watchmaker decided to ________ into high-end optical instruments.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Environmental advocacy organizations continue to ________ stricter limits on chemical runoff.",
     "options": [
-      "branch out",
-      "reach over",
-      "fork off",
-      "shoot forth"
+      "press into",
+      "push for",
+      "urge on",
+      "thrust toward"
     ],
-    "answer": 0,
-    "explain": "'To branch out' means extend one's business or activities into a new or different field.",
-    "example": "The luxury watchmaker decided to branch out into high-end optical instruments."
+    "answer": 1,
+    "explain": "'To push for' means to advocate strongly, demand, or campaign vigorously for something.",
+    "example": "Local community groups are pushing for the construction of a new public sports center."
   },
   {
     "id": "phr-113",
     "mode": "phrasal",
-    "level": 4,
+    "level": 2,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The municipal council decided to ________ waste collection services to reduce overhead.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Without consulting her index cards, the historian ________ the names and reign dates of every Tudor monarch.",
     "options": [
-      "contract out",
-      "farm in",
-      "pass off",
-      "lease down"
+      "dashed down",
+      "rattled over",
+      "reeled off",
+      "spun off"
     ],
-    "answer": 0,
-    "explain": "'To contract out' means arrange for work to be done by an external firm or contractor.",
-    "example": "The municipal council decided to contract out waste collection services to reduce overhead."
+    "answer": 2,
+    "explain": "'To reel off' means to recite a long list of facts or numbers effortlessly from memory.",
+    "example": "The sommelier effortlessly reeled off tasting notes for thirty distinct vintage wines."
   },
   {
     "id": "phr-114",
     "mode": "phrasal",
     "level": 4,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The federal agency moved to ________ illicit offshore gambling operations.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "The finance committee moved quickly to ________ excessive executive travel expenditures.",
     "options": [
-      "crack down on",
-      "break into",
-      "slam down to",
-      "strike out at"
+      "strap down",
+      "curb off",
+      "rein in",
+      "bridle over"
     ],
-    "answer": 0,
-    "explain": "'To crack down on' means take severe, harsh disciplinary measures against criminal activity.",
-    "example": "The federal agency moved to crack down on illicit offshore gambling operations."
+    "answer": 2,
+    "explain": "'To rein in' means to restrict, limit, or control excessive behavior or spending.",
+    "example": "Central bankers took steps to rein in soaring residential mortgage borrowing."
   },
   {
     "id": "phr-115",
     "mode": "phrasal",
     "level": 4,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The minister outlined ambitious education pledges, but failed to ________ with funding.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Thanks to conservative capital reserves, the regional cooperative managed to ________ the economic downturn.",
     "options": [
-      "follow through",
-      "carry on",
-      "see out",
-      "push past"
+      "sail through",
+      "weather off",
+      "ride out",
+      "drift past"
     ],
-    "answer": 0,
-    "explain": "'To follow through' means continue an action or initiative to its final conclusion.",
-    "example": "The minister outlined ambitious education pledges, but failed to follow through with funding."
+    "answer": 2,
+    "explain": "'To ride out' means to survive or withstand a storm or crisis successfully.",
+    "example": "The fishing trawler rode out the gale in the shelter of a natural fjord."
   },
   {
     "id": "phr-116",
     "mode": "phrasal",
-    "level": 4,
+    "level": 3,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "Despite stormy weather and icy roads, the relief convoy ________ toward the village.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Having revised for only two days, he barely managed to ________ the advanced organic chemistry exam.",
     "options": [
-      "forged ahead",
-      "pushed out",
-      "plowed over",
-      "strode past"
+      "breeze through",
+      "skim over",
+      "brush past",
+      "scrape through"
     ],
-    "answer": 0,
-    "explain": "'To forge ahead' means move forward or make progress quickly and determinedly.",
-    "example": "Despite stormy weather and icy roads, the relief convoy forged ahead toward the village."
+    "answer": 3,
+    "explain": "'To scrape through' means to succeed or pass by the narrowest of margins.",
+    "example": "The minority coalition scraped through the confidence vote by a single ballot."
   },
   {
     "id": "phr-117",
     "mode": "phrasal",
-    "level": 4,
+    "level": 3,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The swindler attempted to ________ cheap quartz crystals as valuable uncut diamonds.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Before checking out of the ski chalet, we met in the lobby to ________ our shared dining expenses.",
     "options": [
-      "pass off as",
-      "fob over to",
-      "palm down as",
-      "ring out as"
+      "pay off",
+      "clear down",
+      "settle up",
+      "square off"
     ],
-    "answer": 0,
-    "explain": "'To pass off as' means falsely represent something inferior or fraudulent as genuine.",
-    "example": "The swindler attempted to pass off as cheap quartz crystals as valuable uncut diamonds."
+    "answer": 2,
+    "explain": "'To settle up' means to pay what is owed on an account or share expenses evenly.",
+    "example": "Let us settle up for the taxi fare before we enter the restaurant."
   },
   {
     "id": "phr-118",
     "mode": "phrasal",
     "level": 4,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The European Union agreed to ________ single-use plastics by the end of the decade.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Homeowners were forced to ________ thousands of pounds to replace compromised lead plumbing.",
     "options": [
-      "phase out",
-      "wind down",
-      "stage off",
-      "dwindle out"
+      "shell out",
+      "fork down",
+      "dish over",
+      "cough off"
     ],
     "answer": 0,
-    "explain": "'To phase out' means gradually stop using, producing, or operating something over time.",
-    "example": "The European Union agreed to phase out single-use plastics by the end of the decade."
+    "explain": "'To shell out' means to spend or pay a substantial, often unwelcome sum of money.",
+    "example": "The university shelled out millions to renovate the Victorian chemistry laboratories."
   },
   {
     "id": "phr-119",
     "mode": "phrasal",
-    "level": 4,
+    "level": 3,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "Against all bookmakers' odds, the underdog club managed to ________ a 2-1 victory.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "The editorial board was swift to ________ the intern's unverified conspiracy theories.",
     "options": [
-      "pull off",
-      "carry out",
-      "score through",
-      "strike up"
+      "gun down",
+      "strike off",
+      "blast over",
+      "shoot down"
     ],
-    "answer": 0,
-    "explain": "'To pull off' means succeed in achieving something difficult, audacious, or unexpected.",
-    "example": "Against all bookmakers' odds, the underdog club managed to pull off a 2-1 victory."
+    "answer": 3,
+    "explain": "'To shoot down' means to reject, dismiss, or demolish an idea or proposal forcefully.",
+    "example": "Senior architects shot down the cost-cutting proposal as aesthetically disastrous."
   },
   {
     "id": "phr-120",
     "mode": "phrasal",
-    "level": 4,
+    "level": 3,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The headmaster ________ Maria for her exceptional bravery during the river rescue.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Despite sustaining a bruised collarbone, the rugby captain ________ the injury and played on.",
+    "options": [
+      "waved past",
+      "brushed down",
+      "shrugged off",
+      "shook away"
+    ],
+    "answer": 2,
+    "explain": "'To shrug off' means to treat something painful or critical as unimportant or negligible.",
+    "example": "An experienced politician learns to shrug off partisan editorial attacks."
+  },
+  {
+    "id": "phr-121",
+    "mode": "phrasal",
+    "level": 2,
+    "type": "choice",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "The headmistress ________ Maria for her extraordinary courage during the river rescue.",
     "options": [
       "singled out",
       "picked over",
@@ -2039,177 +2056,500 @@ window.C2_DATA.phrasal = [
       "marked off"
     ],
     "answer": 0,
-    "explain": "'To single out' means choose or highlight one person or thing from a group for special treatment.",
-    "example": "The headmaster singled out Maria for her exceptional bravery during the river rescue."
-  },
-  {
-    "id": "phr-121",
-    "mode": "phrasal",
-    "level": 4,
-    "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "Subsequent geological core samples ________ the seismologist's tectonic hypothesis.",
-    "options": [
-      "bore out",
-      "carried through",
-      "backed up",
-      "held out"
-    ],
-    "answer": 0,
-    "explain": "'To bear out' means confirm, substantiate, or support the truth of something.",
-    "example": "Subsequent geological core samples bore out the seismologist's tectonic hypothesis."
+    "explain": "'To single out' means to select, highlight, or praise one person from a group.",
+    "example": "Reviewers singled out the costume designer for special commendation."
   },
   {
     "id": "phr-122",
     "mode": "phrasal",
-    "level": 4,
+    "level": 3,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The luxury watchmaker decided to ________ into high-end optical instruments.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "The boxing champion spent the initial two rounds carefully ________ his challenger's reach and footwork.",
     "options": [
-      "branch out",
-      "reach over",
-      "fork off",
-      "shoot forth"
+      "sizing up",
+      "weighing down",
+      "checking over",
+      "gauging into"
     ],
     "answer": 0,
-    "explain": "'To branch out' means extend one's business or activities into a new or different field.",
-    "example": "The luxury watchmaker decided to branch out into high-end optical instruments."
+    "explain": "'To size up' means to assess or evaluate someone or something carefully.",
+    "example": "Recruiters spent the interview sizing up the candidate's strategic problem-solving abilities."
   },
   {
     "id": "phr-123",
     "mode": "phrasal",
-    "level": 4,
+    "level": 2,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The municipal council decided to ________ waste collection services to reduce overhead.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Senior students were warned not to ________ during the final weeks preceding GCSE examinations.",
     "options": [
-      "contract out",
-      "farm in",
-      "pass off",
-      "lease down"
+      "slack off",
+      "drop out",
+      "ease away",
+      "drift over"
     ],
     "answer": 0,
-    "explain": "'To contract out' means arrange for work to be done by an external firm or contractor.",
-    "example": "The municipal council decided to contract out waste collection services to reduce overhead."
+    "explain": "'To slack off' means to decrease one's effort, diligence, or concentration.",
+    "example": "If you slack off in basic training, you will not qualify for the specialist airborne unit."
   },
   {
     "id": "phr-124",
     "mode": "phrasal",
     "level": 4,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The federal agency moved to ________ illicit offshore gambling operations.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "The controversial cartoons ________ nationwide demonstrations outside government ministries.",
     "options": [
-      "crack down on",
-      "break into",
-      "slam down to",
-      "strike out at"
+      "fired up",
+      "sparked off",
+      "struck over",
+      "flamed out"
     ],
-    "answer": 0,
-    "explain": "'To crack down on' means take severe, harsh disciplinary measures against criminal activity.",
-    "example": "The federal agency moved to crack down on illicit offshore gambling operations."
+    "answer": 1,
+    "explain": "'To spark off' means to ignite, trigger, or precipitate sudden unrest or debate.",
+    "example": "The introduction of fuel rationing sparked off mass transportation protests."
   },
   {
     "id": "phr-125",
     "mode": "phrasal",
-    "level": 4,
+    "level": 3,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The minister outlined ambitious education pledges, but failed to ________ with funding.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "The contract must ________ the exact penalties for late delivery of structural steel.",
     "options": [
-      "follow through",
-      "carry on",
-      "see out",
-      "push past"
+      "read down",
+      "write off",
+      "spell out",
+      "print forth"
     ],
-    "answer": 0,
-    "explain": "'To follow through' means continue an action or initiative to its final conclusion.",
-    "example": "The minister outlined ambitious education pledges, but failed to follow through with funding."
+    "answer": 2,
+    "explain": "'To spell out' means to explain or define something in full, unambiguous, explicit detail.",
+    "example": "The safety manual spells out the precise emergency evacuation procedures."
   },
   {
     "id": "phr-126",
     "mode": "phrasal",
-    "level": 4,
+    "level": 5,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "Despite stormy weather and icy roads, the relief convoy ________ toward the village.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "It is time for the municipal authorities to ________ the chronic reality of youth unemployment.",
     "options": [
-      "forged ahead",
-      "pushed out",
-      "plowed over",
-      "strode past"
+      "level into",
+      "face down on",
+      "square up to",
+      "head up to"
     ],
-    "answer": 0,
-    "explain": "'To forge ahead' means move forward or make progress quickly and determinedly.",
-    "example": "Despite stormy weather and icy roads, the relief convoy forged ahead toward the village."
+    "answer": 2,
+    "explain": "'To square up to' means to face, confront, or tackle a difficult situation courageously.",
+    "example": "The medical establishment must square up to systemic disparities in public healthcare access."
   },
   {
     "id": "phr-127",
     "mode": "phrasal",
-    "level": 4,
+    "level": 3,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The swindler attempted to ________ cheap quartz crystals as valuable uncut diamonds.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Public health officials worked round the clock to ________ the outbreak of cholera in the delta.",
     "options": [
-      "pass off as",
-      "fob over to",
-      "palm down as",
-      "ring out as"
+      "stamp out",
+      "tread down",
+      "crush off",
+      "step over"
     ],
     "answer": 0,
-    "explain": "'To pass off as' means falsely represent something inferior or fraudulent as genuine.",
-    "example": "The swindler attempted to pass off as cheap quartz crystals as valuable uncut diamonds."
+    "explain": "'To stamp out' means to extinguish, eradicate, or suppress something completely.",
+    "example": "Strict disciplinary policies were implemented to stamp out bullying in secondary schools."
   },
   {
     "id": "phr-128",
     "mode": "phrasal",
     "level": 4,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The European Union agreed to ________ single-use plastics by the end of the decade.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Following the parliamentary scandal, the minister agreed to ________ before the inquiry convened.",
     "options": [
-      "phase out",
-      "wind down",
-      "stage off",
-      "dwindle out"
+      "step off",
+      "stand down",
+      "drop over",
+      "hold back"
     ],
-    "answer": 0,
-    "explain": "'To phase out' means gradually stop using, producing, or operating something over time.",
-    "example": "The European Union agreed to phase out single-use plastics by the end of the decade."
+    "answer": 1,
+    "explain": "'To stand down' means to resign or withdraw formally from a post or election.",
+    "example": "The veteran board chairman decided to stand down after twenty-five years of leadership."
   },
   {
     "id": "phr-129",
     "mode": "phrasal",
-    "level": 4,
+    "level": 2,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "Against all bookmakers' odds, the underdog club managed to ________ a 2-1 victory.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "She realized that the venture capitalist was merely ________ her while negotiating with a rival.",
     "options": [
-      "pull off",
-      "carry out",
-      "score through",
-      "strike up"
+      "trailing off",
+      "stringing along",
+      "leading on",
+      "winding up"
     ],
-    "answer": 0,
-    "explain": "'To pull off' means succeed in achieving something difficult, audacious, or unexpected.",
-    "example": "Against all bookmakers' odds, the underdog club managed to pull off a 2-1 victory."
+    "answer": 1,
+    "explain": "'To string along' means to deceive or lead someone on dishonestly over time.",
+    "example": "Do not string prospective buyers along if you have already accepted an offer."
   },
   {
     "id": "phr-130",
     "mode": "phrasal",
     "level": 4,
     "type": "choice",
-    "topic": "Advanced Phrasal Verbs",
-    "prompt": "The headmaster ________ Maria for her exceptional bravery during the river rescue.",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Runaway legal fees threatened to ________ the modest estate left to the orphans.",
     "options": [
-      "singled out",
-      "picked over",
-      "pointed down",
-      "marked off"
+      "gulp down",
+      "swallow up",
+      "ingest over",
+      "soak off"
+    ],
+    "answer": 1,
+    "explain": "'To swallow up' means to absorb, engulf, or consume something completely.",
+    "example": "The vast multinational corporation swallowed up several dozen regional family enterprises."
+  },
+  {
+    "id": "phr-131",
+    "mode": "phrasal",
+    "level": 2,
+    "type": "choice",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Patients appreciated the physician because he never ________ them, explaining diagnoses clearly.",
+    "options": [
+      "looked down on",
+      "talked down to",
+      "spoke down on",
+      "chatted to"
+    ],
+    "answer": 1,
+    "explain": "'To talk down to' means to speak to someone in a patronizing, condescending way.",
+    "example": "A good instructor never talks down to students, but inspires independent critical inquiry."
+  },
+  {
+    "id": "phr-132",
+    "mode": "phrasal",
+    "level": 4,
+    "type": "choice",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "The innovative marketing campaign managed to ________ widespread public nostalgia for the 1980s.",
+    "options": [
+      "tap into",
+      "pipe into",
+      "mine on",
+      "drain from"
     ],
     "answer": 0,
-    "explain": "'To single out' means choose or highlight one person or thing from a group for special treatment.",
-    "example": "The headmaster singled out Maria for her exceptional bravery during the river rescue."
+    "explain": "'To tap into' means to exploit, access, or utilize a resource, sentiment, or energy.",
+    "example": "Renewable energy companies are learning to tap into geothermal springs in volcanic basins."
+  },
+  {
+    "id": "phr-133",
+    "mode": "phrasal",
+    "level": 4,
+    "type": "choice",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "The defense attorney proceeded to ________ the credibility of the prosecution's witness during cross-examination.",
+    "options": [
+      "slash down",
+      "tear into",
+      "rip off",
+      "cut into"
+    ],
+    "answer": 1,
+    "explain": "'To tear into' means to criticize or attack someone or something ferociously.",
+    "example": "Literary critics tore into the bestselling thriller, mocking its wooden characterization."
+  },
+  {
+    "id": "phr-134",
+    "mode": "phrasal",
+    "level": 3,
+    "type": "choice",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Investigative journalists often ________ the adrenaline and pressure of breaking breaking investigative scandals.",
+    "options": [
+      "prosper in",
+      "grow on",
+      "thrive on",
+      "feed upon"
+    ],
+    "answer": 2,
+    "explain": "'To thrive on' means to flourish, prosper, or enjoy something challenging or stressful.",
+    "example": "She thrives on high-stakes courtroom litigation and twelve-hour trial sessions."
+  },
+  {
+    "id": "phr-135",
+    "mode": "phrasal",
+    "level": 3,
+    "type": "choice",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "While waiting for her dental appointment, she ________ several glossy lifestyle magazines.",
+    "options": [
+      "leafed into",
+      "fingered over",
+      "thumbed through",
+      "glanced down"
+    ],
+    "answer": 2,
+    "explain": "'To thumb through' means to turn the pages of a book, document, or magazine quickly.",
+    "example": "He thumbed through the antique atlas, admiring the hand-tinted cartography."
+  },
+  {
+    "id": "phr-136",
+    "mode": "phrasal",
+    "level": 4,
+    "type": "choice",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "The introductory chapter only managed to ________ the complex macroeconomic causes of the recession.",
+    "options": [
+      "touch upon",
+      "brush on",
+      "glance over",
+      "tap at"
+    ],
+    "answer": 0,
+    "explain": "'To touch upon' means to mention or treat a subject briefly in passing.",
+    "example": "The symposium touched upon ethical quandaries surrounding artificial generative intelligence."
+  },
+  {
+    "id": "phr-137",
+    "mode": "phrasal",
+    "level": 2,
+    "type": "choice",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "After searching through diocesan archives for six months, the genealogist ________ the baptismal certificate.",
+    "options": [
+      "trailed out",
+      "tracked down",
+      "hunted over",
+      "spotted up"
+    ],
+    "answer": 1,
+    "explain": "'To track down' means to find or locate someone or something after a diligent search.",
+    "example": "Detectives tracked down the stolen delivery truck in an abandoned industrial park."
+  },
+  {
+    "id": "phr-138",
+    "mode": "phrasal",
+    "level": 4,
+    "type": "choice",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Under overwhelming pressure from international credit agencies, the government was forced to ________ demands for fiscal austerity.",
+    "options": [
+      "bow on",
+      "bend to",
+      "yield to",
+      "give up to"
+    ],
+    "answer": 2,
+    "explain": "'To yield to' means to surrender, submit, or give way to pressure or temptation.",
+    "example": "He refused to yield to despair, continuing his medical research in a modest garage laboratory."
+  },
+  {
+    "id": "phr-139",
+    "mode": "phrasal",
+    "level": 2,
+    "type": "choice",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Let us ________ the conference call so that our Tokyo colleagues can retire for the evening.",
+    "options": [
+      "close out",
+      "fold up",
+      "pack down",
+      "wrap up"
+    ],
+    "answer": 3,
+    "explain": "'To wrap up' means to conclude, finish, or bring an event or meeting to an end.",
+    "example": "We hope to wrap up negotiations by Friday afternoon before the markets close."
+  },
+  {
+    "id": "phr-140",
+    "mode": "phrasal",
+    "level": 3,
+    "type": "choice",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "The devastating tsunami ________ several coastal fishing hamlets within fifteen terrifying minutes.",
+    "options": [
+      "brushed off",
+      "swept over",
+      "wiped out",
+      "cleared down"
+    ],
+    "answer": 2,
+    "explain": "'To wipe out' means to destroy, eliminate, or erase completely.",
+    "example": "Catastrophic flash floods wiped out three agricultural irrigation canals in the valley."
+  },
+  {
+    "id": "phr-141",
+    "mode": "phrasal",
+    "level": 4,
+    "type": "choice",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "The central bank raised interest rates aggressively to ________ off catastrophic inflation.",
+    "options": [
+      "hold",
+      "ward",
+      "fend",
+      "stave"
+    ],
+    "answer": 3,
+    "explain": "'To stave off' means to avert, delay, or ward off something undesirable or catastrophic.",
+    "example": "She drank herbal infusion and rested to stave off the onset of flu symptoms."
+  },
+  {
+    "id": "phr-142",
+    "mode": "phrasal",
+    "level": 4,
+    "type": "choice",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "The draft proposal was promising, but the consultant needed to ________ out the financial specifics.",
+    "options": [
+      "flesh",
+      "beef",
+      "pad",
+      "fill"
+    ],
+    "answer": 0,
+    "explain": "'To flesh out' means to add more details, depth, or substance to a skeleton plan or design.",
+    "example": "The novelist spent six months fleshing out the backstories of the minor characters."
+  },
+  {
+    "id": "phr-143",
+    "mode": "phrasal",
+    "level": 4,
+    "type": "choice",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Legal delegates held an all-night summit to ________ out discrepancies in the bilateral accord.",
+    "options": [
+      "straighten",
+      "smooth",
+      "hammer",
+      "iron"
+    ],
+    "answer": 3,
+    "explain": "'To iron out' means to resolve minor difficulties, misunderstandings, or inconsistencies.",
+    "example": "We met over lunch to iron out the remaining contractual details."
+  },
+  {
+    "id": "phr-144",
+    "mode": "phrasal",
+    "level": 4,
+    "type": "choice",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "The finance ministry injected billions into the treasury to ________ up public confidence.",
+    "options": [
+      "brace",
+      "shore",
+      "prop",
+      "buttress"
+    ],
+    "answer": 1,
+    "explain": "'To shore up' means to support, strengthen, or reinforce a weak or failing position.",
+    "example": "Emergency tariffs were instituted to shore up the struggling domestic steel sector."
+  },
+  {
+    "id": "phr-145",
+    "mode": "phrasal",
+    "level": 2,
+    "type": "choice",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "The fledgling director ________ up the lukewarm reviews to audience misunderstanding.",
+    "options": [
+      "pinned",
+      "put",
+      "chalked",
+      "ascribed"
+    ],
+    "answer": 2,
+    "explain": "'To chalk up to' means to explain something by stating that it was caused by a specific factor.",
+    "example": "We chalked the technical glitch up to teething troubles in the new software."
+  },
+  {
+    "id": "phr-146",
+    "mode": "phrasal",
+    "level": 4,
+    "type": "choice",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "Spokespersons sought to ________ down the severity of the structural pipeline fissure.",
+    "options": [
+      "tone",
+      "soften",
+      "damp",
+      "play"
+    ],
+    "answer": 3,
+    "explain": "'To play down' means to make something appear less serious, important, or alarming than it actually is.",
+    "example": "The foreign office tried to play down the rift between the two prime ministers."
+  },
+  {
+    "id": "phr-147",
+    "mode": "phrasal",
+    "level": 4,
+    "type": "choice",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "During cross-examination, the attorney managed to ________ in on the defendant's flawed timeline.",
+    "options": [
+      "focus",
+      "home",
+      "zero",
+      "target"
+    ],
+    "answer": 2,
+    "explain": "'To zero in on' means to direct all attention or effort specifically towards an exact point.",
+    "example": "Radar technicians zeroed in on the faint distress signal originating from the valley."
+  },
+  {
+    "id": "phr-148",
+    "mode": "phrasal",
+    "level": 4,
+    "type": "choice",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "The annual report attempted to ________ over significant losses incurred by the retail branch.",
+    "options": [
+      "brush",
+      "smooth",
+      "gloss",
+      "paper"
+    ],
+    "answer": 2,
+    "explain": "'To gloss over' means to treat an unpleasant or embarrassing fact lightly, concealing flaws.",
+    "example": "He tended to gloss over his previous business failures when pitching to venture capitalists."
+  },
+  {
+    "id": "phr-149",
+    "mode": "phrasal",
+    "level": 4,
+    "type": "choice",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "After twenty-four hours of round-the-clock talks, the unions ________ out a wage settlement.",
+    "options": [
+      "forged",
+      "thrashed",
+      "pounded",
+      "hammered"
+    ],
+    "answer": 3,
+    "explain": "'To hammer out' means to arrive at an agreement or solution through vigorous negotiation.",
+    "example": "Diplomats finally hammered out the language of the cease-fire agreement."
+  },
+  {
+    "id": "phr-150",
+    "mode": "phrasal",
+    "level": 4,
+    "type": "choice",
+    "topic": "Nuanced Phrasal Verbs",
+    "prompt": "She asked for forty-eight hours to ________ over the prestigious offer from Oxford.",
+    "options": [
+      "mull",
+      "chew",
+      "pore",
+      "ponder"
+    ],
+    "answer": 0,
+    "explain": "'To mull over' means to think deeply and carefully about a proposal or decision over time.",
+    "example": "The magistrate took his time to mull over the defense attorney's constitutional objection."
   }
 ];

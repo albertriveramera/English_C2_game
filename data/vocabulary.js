@@ -1,21 +1,21 @@
-// Advanced C2 Vocabulary Question Bank (200 Curated Items)
+// Advanced C2 Vocabulary Question Bank (203 Curated Items)
 window.C2_DATA = window.C2_DATA || {};
 
 window.C2_DATA.vocabulary = [
   {
     "id": "voc-001",
     "mode": "vocabulary",
-    "level": 3,
+    "level": 2,
     "type": "choice",
     "topic": "Evocative Adjectives",
     "prompt": "Her argument was so ________ that even the harshest critics in the symposium were forced to concede her point.",
     "options": [
-      "cogent",
-      "turgid",
       "tepid",
+      "turgid",
+      "cogent",
       "fickle"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Cogent' means clear, logical, and convincingly persuasive. In contrast, 'turgid' means bombastic or swollen, 'tepid' means lukewarm/unenthusiastic, and 'fickle' means changeful.",
     "example": "The defense attorney presented a cogent summary that left no room for reasonable doubt."
   },
@@ -27,12 +27,12 @@ window.C2_DATA.vocabulary = [
     "topic": "High-register Verbs",
     "prompt": "The minister was accused of attempting to ________ the gravity of the fiscal deficit by burying the figures in an appendix.",
     "options": [
-      "obfuscate",
       "promulgate",
+      "obfuscate",
       "excoriate",
       "venerate"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Obfuscate' means to deliberately make something obscure, unclear, or bewildering. 'Promulgate' means to announce or declare officially, 'excoriate' means to censure severely, and 'venerate' means to revere.",
     "example": "Legal draftsmen should strive for clarity rather than obfuscate the intent of the statute."
   },
@@ -44,12 +44,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Literary Adjectives",
     "prompt": "Far from being a permanent arrangement, their cordiality was merely a(n) ________ truce prompted by shared commercial necessity.",
     "options": [
-      "ephemeral",
-      "inexorable",
       "perennial",
+      "inexorable",
+      "ephemeral",
       "inveterate"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Ephemeral' means lasting for only a very short time; transient. 'Inexorable' means unstoppable, 'perennial' means enduring year after year, and 'inveterate' means habitual/long-established.",
     "example": "Fame achieved through viral phenomena is notoriously ephemeral."
   },
@@ -61,12 +61,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Formal Epithets",
     "prompt": "He was an ________ collector of antiquities, dedicating every weekend and surplus penny to scouring remote flea markets.",
     "options": [
-      "inveterate",
+      "invidious",
       "inchoate",
       "insipid",
-      "invidious"
+      "inveterate"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Inveterate' describes a long-established and ingrained habit, activity, or attitude that is unlikely to change. 'Inchoate' means just begun and not fully formed, 'insipid' means lacking flavor or interest, and 'invidious' means likely to arouse resentment.",
     "example": "As an inveterate traveler, she felt restless whenever she remained in one city for over a month."
   },
@@ -78,12 +78,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Nuanced Descriptors",
     "prompt": "The philosopher’s prose was notoriously ________, dense with idiosyncratic neologisms and elliptical tangents that confounded even his disciples.",
     "options": [
-      "recondite",
-      "trenchant",
       "pellucid",
+      "trenchant",
+      "recondite",
       "sycophantic"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Recondite' means dealing with very abstruse, profound, or difficult subject matter beyond ordinary knowledge. 'Pellucid' is the exact antonym (translucently clear), 'trenchant' means incisive/sharp, and 'sycophantic' means obsequious.",
     "example": "The monograph delves into the recondite metaphysics of early medieval scholasticism."
   },
@@ -95,12 +95,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Psychological Traits",
     "prompt": "Despite the tempestuous uproar during the press conference, the prime minister maintained an admirable ________.",
     "options": [
-      "equanimity",
-      "parsimony",
       "pugnacity",
+      "parsimony",
+      "equanimity",
       "cupidity"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Equanimity' means mental calmness, composure, and evenness of temper, especially in a difficult situation. 'Parsimony' is stinginess, 'pugnacity' is combativeness, and 'cupidity' is greed.",
     "example": "She accepted both extravagant praise and scathing criticism with unchanging equanimity."
   },
@@ -112,12 +112,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Critical Stances",
     "prompt": "The editor delivered a(n) ________ critique of the proposed tax overhaul, dissecting each clause with ruthless precision.",
     "options": [
-      "trenchant",
+      "halcyon",
       "anodyne",
       "vacuous",
-      "halcyon"
+      "trenchant"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Trenchant' means vigorous, incisive, keen, and keenly effective in expression. 'Anodyne' means innocuous or unlikely to offend, 'vacuous' means devoid of thought, and 'halcyon' means idyllically peaceful.",
     "example": "Her trenchant analysis of the energy sector exposed decades of regulatory capture."
   },
@@ -129,29 +129,29 @@ window.C2_DATA.vocabulary = [
     "topic": "Stylistic Nuances",
     "prompt": "The candidate's speeches were entirely ________, packed with sentimental platitudes but utterly barren of concrete policy proposals.",
     "options": [
-      "vacuous",
       "profound",
+      "vacuous",
       "perspicacious",
       "laconic"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Vacuous' means having or showing a lack of thought or intelligence; empty and mindless. 'Perspicacious' means acutely perceptive, 'laconic' means concise/using very few words.",
     "example": "The debate devolved into vacuous soundbites tailored strictly for television headlines."
   },
   {
     "id": "voc-009",
     "mode": "vocabulary",
-    "level": 5,
+    "level": 2,
     "type": "choice",
     "topic": "High-level Verbs",
     "prompt": "Before embarking on the cross-examination, the barrister sought to ________ any lingering doubts in the jury’s mind regarding the witness’s credibility.",
     "options": [
-      "dispel",
-      "engender",
       "foster",
+      "engender",
+      "dispel",
       "exacerbate"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Dispel' means to drive off, cause to vanish, or alleviate doubts, fears, or false beliefs. 'Engender' and 'foster' both mean to bring about or nurture, while 'exacerbate' means to make worse.",
     "example": "The newly released forensic findings dispelled any speculation regarding the time of death."
   },
@@ -175,17 +175,17 @@ window.C2_DATA.vocabulary = [
   {
     "id": "voc-011",
     "mode": "vocabulary",
-    "level": 4,
+    "level": 2,
     "type": "choice",
     "topic": "Intellectual Acumen",
     "prompt": "Thanks to her ________ reading of international maritime law, she identified a precedent that saved the shipping company millions.",
     "options": [
-      "perspicacious",
+      "credulous",
       "cursory",
       "perfunctory",
-      "credulous"
+      "perspicacious"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Perspicacious' means having a ready insight into and deep understanding of complex things. 'Cursory' and 'perfunctory' denote superficial and hasty work, while 'credulous' means gullible.",
     "example": "His perspicacious assessment of market volatility foresaw the collapse months ahead."
   },
@@ -197,12 +197,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Harmful Influences",
     "prompt": "The committee warned that unvetted algorithms could have a ________ effect on equitable recruitment practices.",
     "options": [
-      "deleterious",
+      "benign",
       "salubrious",
       "propitious",
-      "benign"
+      "deleterious"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Deleterious' means causing harm or damage in a subtle or unexpected way. 'Salubrious' means health-giving, 'propitious' means favorably disposed or auspicious, and 'benign' means harmless.",
     "example": "Prolonged exposure to chronic stress exercises a deleterious impact upon cognitive function."
   },
@@ -231,12 +231,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Linguistic Precision",
     "prompt": "Rather than addressing the substance of the petition, the spokesperson resorted to ________ sophistry that sidestepped the core issue.",
     "options": [
-      "specious",
-      "scrupulous",
       "unimpeachable",
+      "scrupulous",
+      "specious",
       "veracious"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Specious' describes an argument that appears superficially plausible or attractive, but is actually fallacious and deceitful. 'Scrupulous' means conscientious, 'unimpeachable' means beyond reproach, and 'veracious' means truthful.",
     "example": "The company’s defense rested on a specious interpretation of environmental regulations."
   },
@@ -248,12 +248,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Academic Register",
     "prompt": "The author sought to ________ the entrenched dogma that economic globalization inevitably reduces cultural diversity.",
     "options": [
-      "gainsay",
+      "champion",
       "corroborate",
       "substantiate",
-      "champion"
+      "gainsay"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Gainsay' (formal/literary) means to deny, contradict, or dispute a fact or assertion. 'Corroborate' and 'substantiate' mean to support with evidence; 'champion' means to advocate.",
     "example": "No one could gainsay her contribution to pediatric neurology."
   },
@@ -265,29 +265,29 @@ window.C2_DATA.vocabulary = [
     "topic": "Sensory & Aesthetic Nuance",
     "prompt": "The late afternoon sun cast an almost ________ glow over the Venetian canals, as though frozen in an 18th-century painting.",
     "options": [
-      "pellucid",
+      "squalid",
       "turbid",
       "fetid",
-      "squalid"
+      "pellucid"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Pellucid' means clear, limpid, allowing light through; easily understood or luminous. 'Turbid' means cloudy or muddy, 'fetid' means foul-smelling, and 'squalid' means sordid/wretched.",
     "example": "The mountain spring was so pellucid that one could count the pebbles ten feet below."
   },
   {
     "id": "voc-017",
     "mode": "vocabulary",
-    "level": 3,
+    "level": 2,
     "type": "choice",
     "topic": "Emotional Expression",
     "prompt": "Far from expressing remorse, the defendant remained ________ throughout the sentencing hearing.",
     "options": [
-      "impenitent",
-      "contrite",
       "remorseful",
+      "contrite",
+      "impenitent",
       "penitent"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Impenitent' means not feeling or showing regret or sorrow for having done something wrong. The other three options all mean feeling deep regret and seeking repentance.",
     "example": "Despite the overwhelming proof of embezzlement, he remained stubbornly impenitent."
   },
@@ -316,12 +316,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Formal Abnegation",
     "prompt": "In a dramatic gesture of humility, the monarch decided to ________ the throne in favor of his younger sister.",
     "options": [
-      "abdicate",
-      "usurp",
       "arrogate",
+      "usurp",
+      "abdicate",
       "commandeer"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Abdicate' means to renounce or relinquish one's throne, high office, or responsibility formally. 'Usurp' and 'arrogate' both mean to seize power unlawfully or without right; 'commandeer' means to seize arbitrarily.",
     "example": "King Edward VIII chose to abdicate the throne in December 1936."
   },
@@ -345,17 +345,17 @@ window.C2_DATA.vocabulary = [
   {
     "id": "voc-021",
     "mode": "vocabulary",
-    "level": 4,
+    "level": 2,
     "type": "choice",
     "topic": "Literary Descriptions",
     "prompt": "The castle stood atop a ________ crag, commanding an unobstructed vista of the windswept moorlands.",
     "options": [
-      "precipitous",
+      "mundane",
       "placid",
       "planar",
-      "mundane"
+      "precipitous"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Precipitous' means dangerously high or steep. 'Placid' means calm/peaceful, 'planar' means flat in a two-dimensional sense, and 'mundane' means ordinary/dull.",
     "example": "A precipitous drop of several hundred feet deterred all but the most seasoned climbers."
   },
@@ -367,12 +367,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Intellectual Nuance",
     "prompt": "The treatise provides a(n) ________ refutation of neoclassical market equilibrium theory.",
     "options": [
-      "incisive",
       "amorphous",
+      "incisive",
       "superficial",
       "unwieldy"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Incisive' means intelligently analytical, sharp, and clear-thinking. 'Amorphous' means formless, 'superficial' means lacking depth, and 'unwieldy' means cumbersome.",
     "example": "The reviewer commended the scholar’s incisive grasp of statistical modeling."
   },
@@ -384,12 +384,12 @@ window.C2_DATA.vocabulary = [
     "topic": "High-register Verbs",
     "prompt": "Historical revisions have served to ________ the myth that the empire fell purely due to external invasions.",
     "options": [
-      "debunk",
       "canonize",
+      "debunk",
       "corroborate",
       "consecrate"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Debunk' means to expose the falseness or hollowness of a myth, idea, or belief. 'Canonize' and 'consecrate' mean to elevate to revered or holy status, and 'corroborate' means to confirm.",
     "example": "Archaeological excavations have decisively debunked that long-held local legend."
   },
@@ -401,29 +401,29 @@ window.C2_DATA.vocabulary = [
     "topic": "Descriptive Nuance",
     "prompt": "Despite the team's relentless effort, their victory proved ________, as two key strikers sustained season-ending fractures.",
     "options": [
-      "pyrrhic",
-      "resplendent",
       "unalloyed",
+      "resplendent",
+      "pyrrhic",
       "triumphal"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "A 'pyrrhic' victory is one won at such a devastating cost that it is tantamount to defeat. 'Unalloyed' means pure/complete, 'resplendent' means brilliant/shining.",
     "example": "Winning the litigation was a pyrrhic victory; legal fees bankrupted the firm regardless."
   },
   {
     "id": "voc-025",
     "mode": "vocabulary",
-    "level": 4,
+    "level": 2,
     "type": "choice",
     "topic": "Moral & Ethical Vocabulary",
     "prompt": "The disgraced official’s conduct was branded as sheer ________, completely devoid of public integrity.",
     "options": [
-      "venality",
+      "rectitude",
       "probity",
       "veracity",
-      "rectitude"
+      "venality"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Venality' is the state of being open to bribery or corruption. 'Probity', 'veracity', and 'rectitude' all denote exemplary moral uprightness and honesty.",
     "example": "Investigative journalists exposed rampant venality among the procurement commissioners."
   },
@@ -435,12 +435,12 @@ window.C2_DATA.vocabulary = [
     "topic": "High Literary Vocabulary",
     "prompt": "The treaty was perceived as a mere ________ to buy time while military reserves were mobilized.",
     "options": [
-      "subterfuge",
-      "panacea",
       "paragon",
+      "panacea",
+      "subterfuge",
       "milestone"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Subterfuge' means deceit used in order to achieve one's goal; a deceptive stratagem. 'Panacea' is a cure-all, and 'paragon' is a model of excellence.",
     "example": "Her alleged research trip was revealed as a subterfuge for negotiating with rival firms."
   },
@@ -452,12 +452,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Stylistic Qualities",
     "prompt": "The keynote speaker was praised for her ________ delivery, managing to summarize a 400-page dossier in twenty cogent minutes.",
     "options": [
-      "laconic",
       "diffuse",
+      "laconic",
       "prolix",
       "pleonastic"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Laconic' means using very few words to express a great deal; terse and concise. 'Diffuse', 'prolix', and 'pleonastic' all denote wordiness and excessive verbosity.",
     "example": "His laconic reply—a single nod—signaled that negotiations were terminated."
   },
@@ -515,17 +515,17 @@ window.C2_DATA.vocabulary = [
   {
     "id": "voc-031",
     "mode": "vocabulary",
-    "level": 4,
+    "level": 2,
     "type": "choice",
     "topic": "Aesthetic Nuance",
     "prompt": "The critic lauded the poet's ________ verses, which evoked the fleeting brilliance of autumnal twilight.",
     "options": [
-      "luminous",
+      "moribund",
       "turgid",
       "vapid",
-      "moribund"
+      "luminous"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Luminous' conveys glowing, clear, and inspiring beauty. 'Turgid' means swollen or bombastic, 'vapid' means flat or dull, and 'moribund' means dying.",
     "example": "Her luminous performance in the third act captivated the entire auditorium."
   },
@@ -549,7 +549,7 @@ window.C2_DATA.vocabulary = [
   {
     "id": "voc-033",
     "mode": "vocabulary",
-    "level": 4,
+    "level": 2,
     "type": "choice",
     "topic": "Literary Verbs",
     "prompt": "The totalitarian regime sought to ________ all historical archives that contradicted official state propaganda.",
@@ -571,12 +571,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Erudite Adjectives",
     "prompt": "His ________ disquisitions on 12th-century liturgical music alienated listeners who preferred accessible melodies.",
     "options": [
-      "arcane",
       "banal",
+      "arcane",
       "pedestrian",
       "prosaic"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Arcane' refers to knowledge understood by very few; mysterious or obscure. 'Banal', 'pedestrian', and 'prosaic' all denote the dull and commonplace.",
     "example": "The treaty contained arcane maritime clauses that baffled international trade lawyers."
   },
@@ -588,12 +588,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Nuanced Descriptors",
     "prompt": "She offered a ________ smile that betrayed neither approval nor annoyance at the unexpected intrusion.",
     "options": [
-      "noncommittal",
       "demonstrative",
+      "noncommittal",
       "florid",
       "histrionic"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Noncommittal' means not expressing or revealing a definite opinion or decision. 'Histrionic' and 'demonstrative' denote overt emotion.",
     "example": "The ambassador gave a noncommittal response regarding potential troop deployments."
   },
@@ -622,12 +622,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Rhetorical Descriptors",
     "prompt": "The speech degenerated into an angry ________ against the foreign press corps.",
     "options": [
-      "diatribe",
-      "panegyric",
       "encomium",
+      "panegyric",
+      "diatribe",
       "eulogy"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "A 'diatribe' is a forceful, bitter verbal attack or denunciation. 'Panegyric', 'encomium', and 'eulogy' are elaborate speeches of high praise.",
     "example": "He launched into a bitter diatribe against modernization and urban development."
   },
@@ -639,12 +639,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Intellectual Character",
     "prompt": "An exceptionally ________ scholar, she could synthesize findings across paleontology, linguistics, and archaeology.",
     "options": [
-      "polymathic",
       "parochial",
+      "polymathic",
       "myopic",
       "monolithic"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Polymathic' describes someone with encyclopedic, wide-ranging knowledge across diverse subjects. 'Parochial' and 'myopic' mean narrow-minded.",
     "example": "Leonardo da Vinci remains the quintessential archetype of the polymathic Renaissance mind."
   },
@@ -656,12 +656,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Tone & Temperament",
     "prompt": "The executive's ________ manner during negotiations unsettled counterparts accustomed to diplomatic flattery.",
     "options": [
-      "brusque",
+      "diffident",
       "effusive",
       "servile",
-      "diffident"
+      "brusque"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Brusque' means abrupt, blunt, or curt in speech or manner. 'Effusive' means overly emotional, while 'servile' means submissive.",
     "example": "His brusque rejection of the preliminary compromise brought talks to an abrupt halt."
   },
@@ -673,19 +673,19 @@ window.C2_DATA.vocabulary = [
     "topic": "Aesthetic Criticism",
     "prompt": "The architectural committee rejected the monument design as excessively ________ and gaudy for a solemn memorial.",
     "options": [
-      "meretricious",
-      "austere",
       "sublime",
+      "austere",
+      "meretricious",
       "understated"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Meretricious' means apparently attractive but having no real value or integrity; gaudily cheap. 'Austere' and 'understated' mean minimalist and sober.",
     "example": "Her essay condemned the meretricious glitter of modern reality television."
   },
   {
     "id": "voc-041",
     "mode": "vocabulary",
-    "level": 5,
+    "level": 2,
     "type": "choice",
     "topic": "Nuanced Verbs",
     "prompt": "Years of intense meditation enabled the ascetic monk to ________ physical discomfort and hunger.",
@@ -707,12 +707,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Psychological Qualities",
     "prompt": "He possessed a ________ wit, capable of puncturing pretension with a single devastating quip.",
     "options": [
-      "mordant",
-      "saccharine",
       "dulcet",
+      "saccharine",
+      "mordant",
       "complaisant"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Mordant' means sharply sarcastic, biting, or caustic. 'Saccharine' means sickeningly sweet, and 'dulcet' means soothing/pleasing.",
     "example": "Her mordant observations regarding parliamentary decorum kept readers thoroughly entertained."
   },
@@ -724,12 +724,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Sensory Adjectives",
     "prompt": "The subterranean wine cellar was dark, cool, and distinctly ________, smelling of damp limestone and aged oak.",
     "options": [
-      "musty",
+      "putrid",
       "fetid",
       "rancid",
-      "putrid"
+      "musty"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Musty' denotes a stale, damp, or moldy smell typical of old cellars. 'Fetid' and 'putrid' imply offensive, rotting decay.",
     "example": "The abandoned library was filled with musty folio volumes untouched for decades."
   },
@@ -741,12 +741,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Emotional Dispositions",
     "prompt": "After the death of his lifelong collaborator, he fell into a state of ________ melancholy that lasted years.",
     "options": [
-      "profound",
       "facetious",
+      "profound",
       "flippant",
       "glib"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Profound' indicates deep, intense, and far-reaching sorrow or insight. 'Facetious' and 'flippant' mean inappropriately frivolous.",
     "example": "The discovery of universal gravitation exerted a profound influence on modern physics."
   },
@@ -775,12 +775,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Descriptive Precision",
     "prompt": "The director was exasperated by the actor’s ________ gestures, which belonged more to 19th-century melodrama than subtle cinema.",
     "options": [
-      "histrionic",
-      "reticent",
       "demure",
+      "reticent",
+      "histrionic",
       "unassuming"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Histrionic' means overly theatrical, dramatic, or melodramatic in character or style. 'Reticent' means reserved.",
     "example": "We were exhausted by his histrionic complaints over minor domestic inconveniences."
   },
@@ -792,12 +792,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Academic Precision",
     "prompt": "The treatise was praised for its ________ documentation, leaving not a single assertion unsupported by primary sources.",
     "options": [
-      "scrupulous",
       "slipshod",
+      "scrupulous",
       "cursory",
       "negligent"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Scrupulous' means diligent, thorough, and attentive to fine details; morally upright. 'Slipshod' means careless.",
     "example": "The archivist conducted a scrupulous verification of the treaty's signatures."
   },
@@ -809,29 +809,29 @@ window.C2_DATA.vocabulary = [
     "topic": "Behavioral Tendencies",
     "prompt": "His ________ nature made him prone to picking quarrels over minor administrative technicalities.",
     "options": [
-      "fractious",
       "conciliatory",
+      "fractious",
       "affable",
       "pliable"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Fractious' means irritable, quarrelsome, and difficult to control. 'Conciliatory' and 'affable' mean friendly and peace-seeking.",
     "example": "The debate turned fractious when delegates began questioning each other's credentials."
   },
   {
     "id": "voc-049",
     "mode": "vocabulary",
-    "level": 5,
+    "level": 2,
     "type": "choice",
     "topic": "Literary Tropes",
     "prompt": "The poet utilized ________ imagery, where the natural landscape seemed to mourn the tragic hero's downfall.",
     "options": [
-      "anthropomorphic",
       "tautological",
+      "anthropomorphic",
       "anachronistic",
       "pejorative"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Anthropomorphic' refers to attributing human emotions, characteristics, or behaviors to nature, animals, or objects.",
     "example": "Ancient mythologies abound in anthropomorphic deities endowed with human flaws."
   },
@@ -855,17 +855,17 @@ window.C2_DATA.vocabulary = [
   {
     "id": "voc-051",
     "mode": "vocabulary",
-    "level": 4,
+    "level": 2,
     "type": "choice",
     "topic": "Evaluative Adjectives",
     "prompt": "The general made a ________ retreat, saving thousands of infantrymen from an encircled perimeter.",
     "options": [
-      "judicious",
+      "headlong",
       "rash",
       "reckless",
-      "headlong"
+      "judicious"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Judicious' means having, showing, or done with good sense or sound judgment.",
     "example": "Through a judicious deployment of resources, the foundation balanced its endowment."
   },
@@ -877,12 +877,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Literary Register",
     "prompt": "The king’s favorite lived in ________ luxury while the rural peasantry suffered devastating famine.",
     "options": [
-      "sybaritic",
+      "spartan",
       "ascetic",
       "monastic",
-      "spartan"
+      "sybaritic"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Sybaritic' means fond of sensuous luxury or self-indulgence (derived from ancient Sybaris). 'Ascetic' and 'spartan' mean severely disciplined.",
     "example": "The tycoon retreated to his sybaritic Mediterranean villa for the summer season."
   },
@@ -911,12 +911,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Formal Verbs",
     "prompt": "The university decided to ________ the honorary doctorate following revelations of academic plagiarism.",
     "options": [
-      "rescind",
+      "ratify",
       "confer",
       "bestow",
-      "ratify"
+      "rescind"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'To rescind' means to revoke, cancel, or repeal a law, decree, or award formally. 'Confer' and 'bestow' mean to grant.",
     "example": "The government moved to rescind the trade sanctions following democratic elections."
   },
@@ -928,12 +928,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Social Nuances",
     "prompt": "Her ________ manner put nervous interviewees immediately at ease.",
     "options": [
-      "affable",
-      "haughty",
       "supercilious",
+      "haughty",
+      "affable",
       "imperious"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Affable' means friendly, good-natured, or easy to talk to. 'Haughty' and 'supercilious' mean arrogant and disdainful.",
     "example": "An affable host, he personally greeted every guest entering the salon."
   },
@@ -945,29 +945,29 @@ window.C2_DATA.vocabulary = [
     "topic": "Rhetorical Style",
     "prompt": "The manifesto was written in an intensely ________ style, designed to incite fury rather than encourage calm deliberation.",
     "options": [
-      "polemical",
-      "irenic",
       "conciliatory",
+      "irenic",
+      "polemical",
       "anodyne"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Polemical' means relating to or involving strongly critical, controversial, or disputatious writing. 'Irenic' means peace-promoting.",
     "example": "His polemical essays against industrial automation provoked fierce parliamentary debate."
   },
   {
     "id": "voc-057",
     "mode": "vocabulary",
-    "level": 4,
+    "level": 2,
     "type": "choice",
     "topic": "Aesthetic Terminology",
     "prompt": "The painter captured the ________ play of light on the morning dew with remarkable delicacy.",
     "options": [
-      "scintillating",
-      "somber",
       "leaden",
+      "somber",
+      "scintillating",
       "tenebrous"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Scintillating' means sparkling, shining brightly, or brilliantly clever. 'Tenebrous' and 'somber' mean dark and gloomy.",
     "example": "The symposium concluded with a scintillating lecture on astrophysics."
   },
@@ -996,12 +996,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Descriptive Precision",
     "prompt": "The old town was a ________ of narrow alleyways where tourists routinely lost their bearings.",
     "options": [
-      "labyrinth",
       "monolith",
+      "labyrinth",
       "conduit",
       "chasm"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "A 'labyrinth' is a complicated, irregular network of passages or paths in which it is difficult to find one's way; a maze.",
     "example": "Navigating the labyrinth of corporate tax exemptions requires expert accountants."
   },
@@ -1025,17 +1025,17 @@ window.C2_DATA.vocabulary = [
   {
     "id": "voc-061",
     "mode": "vocabulary",
-    "level": 3,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
     "prompt": "The senator's ________ posture alienated moderate voters who sought consensus.",
     "options": [
-      "pugnacious",
       "pacific",
+      "pugnacious",
       "pliant",
       "placid"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Pugnacious' means combative, belligerent, eager to argue or fight.",
     "example": "His pugnacious demeanor during the debate caused several interruptions."
   },
@@ -1047,12 +1047,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The funeral organist played a ________ dirge that deepened the mourning assembly's sorrow.",
     "options": [
-      "lugubrious",
-      "festive",
       "jaunty",
+      "festive",
+      "lugubrious",
       "blithe"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Lugubrious' means looking or sounding sad, gloomy, or dismal.",
     "example": "She gave a lugubrious sigh before recounting the tale of her ruined investments."
   },
@@ -1081,29 +1081,29 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "Working under such a ________ editor meant praise one morning and dismissal the next.",
     "options": [
-      "mercurial",
       "constant",
+      "mercurial",
       "steadfast",
       "staunch"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Mercurial' means subject to sudden or unpredictable changes of mood or mind.",
     "example": "His mercurial temperament made long-term financial planning hazardous."
   },
   {
     "id": "voc-065",
     "mode": "vocabulary",
-    "level": 4,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
     "prompt": "The administration was forced to ________ allegations of covert domestic surveillance.",
     "options": [
-      "repudiate",
+      "ratify",
       "endorse",
       "espouse",
-      "ratify"
+      "repudiate"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Repudiate' means refuse to accept or be associated with; deny the truth or validity of.",
     "example": "She chose to repudiate her former political alliances upon publishing her memoir."
   },
@@ -1115,12 +1115,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "Forensic accountants uncovered systemic corporate ________ designed to conceal liabilities.",
     "options": [
-      "chicanery",
-      "candor",
       "probity",
+      "candor",
+      "chicanery",
       "forthrightness"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Chicanery' means the use of trickery or subterfuge to achieve a political, financial, or legal purpose.",
     "example": "He secured the municipal concession through legal chicanery and backroom bribes."
   },
@@ -1149,12 +1149,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "Her ________ cadence mesmerized radio audiences during the nighttime broadcasts.",
     "options": [
-      "mellifluous",
       "strident",
+      "mellifluous",
       "cacophonous",
       "grating"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Mellifluous' means sweet or musical; pleasant to hear (of a voice or words).",
     "example": "The tenor possessed a mellifluous voice that carried across the auditorium effortlessly."
   },
@@ -1166,12 +1166,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The protest was marked by ________ denunciations of the government's austerity budget.",
     "options": [
-      "strident",
+      "hushed",
       "dulcet",
       "muted",
-      "hushed"
+      "strident"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Strident' means loud and harsh; grating; presenting a point of view in an excessively forceful manner.",
     "example": "Critics rejected his strident assertions regarding the inevitable collapse of democratic institutions."
   },
@@ -1183,19 +1183,19 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The busy marketplace was a ________ blend of shouting vendors, squawking fowl, and idling engines.",
     "options": [
-      "cacophonous",
-      "harmonious",
       "symphonic",
+      "harmonious",
+      "cacophonous",
       "melodious"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Cacophonous' means involving or producing a harsh, discordant mixture of sounds.",
     "example": "A cacophonous alarm roused the sleeping guests at two in the morning."
   },
   {
     "id": "voc-071",
     "mode": "vocabulary",
-    "level": 4,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
     "prompt": "The ballroom was ________ with crystal chandeliers and gilded rococo mirrors.",
@@ -1217,29 +1217,29 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The economist demonstrated that the prediction rested upon completely ________ assumptions.",
     "options": [
-      "fallacious",
+      "cogent",
       "sound",
       "valid",
-      "cogent"
+      "fallacious"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Fallacious' means based on a mistaken belief or unsound reasoning.",
     "example": "It is fallacious to assume that high technological adoption always correlates with subjective happiness."
   },
   {
     "id": "voc-073",
     "mode": "vocabulary",
-    "level": 3,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
     "prompt": "The lawyer's ________ arguments distracted the jury from the indisputable ballistics report.",
     "options": [
-      "sophistic",
-      "scrupulous",
       "unassailable",
+      "scrupulous",
+      "sophistic",
       "candid"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Sophistic' means plausible but fallacious; subtly misleading in argument.",
     "example": "He countered their sophistic rhetoric with hard empirical data."
   },
@@ -1251,12 +1251,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "Expressions like 'free gift' or 'added bonus' are famously ________ pleonasms.",
     "options": [
-      "tautological",
       "concise",
+      "tautological",
       "elliptical",
       "laconic"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Tautological' means needlessly repetitive; saying the same thing twice in different words.",
     "example": "The witness's deposition was tautological, repeating identical assertions across three pages."
   },
@@ -1285,12 +1285,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The ________ professor threw chalk at undergraduates who arrived late to his lectures.",
     "options": [
-      "irascible",
+      "genial",
       "equable",
       "placid",
-      "genial"
+      "irascible"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Irascible' means having or showing a tendency to be easily angered; irritable.",
     "example": "An irascible personality made him notoriously difficult to collaborate with on group projects."
   },
@@ -1302,12 +1302,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "Despite three consecutive quarterly losses, the founder remained remarkably ________ about profitability.",
     "options": [
-      "sanguine",
-      "pessimistic",
       "morose",
+      "pessimistic",
+      "sanguine",
       "despondent"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Sanguine' means optimistic or positive, especially in an apparently bad or difficult situation.",
     "example": "Medical researchers are cautiously sanguine regarding the efficacy of the new vaccine."
   },
@@ -1319,12 +1319,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "When the committee rejected his amendment, the delegate responded with ________ obstinacy.",
     "options": [
-      "petulant",
+      "forbearing",
       "urbane",
       "gracious",
-      "forbearing"
+      "petulant"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Petulant' means childishly sulky or bad-tempered.",
     "example": "A petulant display of temper will hardly persuade senior board members to reconsider."
   },
@@ -1353,29 +1353,29 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The prisoner cast a ________ glare at the judge as the verdict of guilty was read.",
     "options": [
-      "baleful",
       "benevolent",
+      "baleful",
       "genial",
       "tender"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Baleful' means threatening harm; menacing; having a destructive influence.",
     "example": "A baleful mist rolled over the cemetery as midnight approached."
   },
   {
     "id": "voc-081",
     "mode": "vocabulary",
-    "level": 5,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
     "prompt": "Glaucoma is an ________ condition that robs patients of peripheral vision without causing acute pain.",
     "options": [
-      "insidious",
-      "overt",
       "blatant",
+      "overt",
+      "insidious",
       "benign"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Insidious' means proceeding in a gradual, subtle way, but with very harmful effects.",
     "example": "The insidious spread of cynicism threatens civic engagement across western democracies."
   },
@@ -1387,12 +1387,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "What seemed like an ________ query during the interview revealed an undisclosed conflict of interest.",
     "options": [
-      "innocuous",
-      "lethal",
       "toxic",
+      "lethal",
+      "innocuous",
       "virulent"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Innocuous' means not harmful or offensive; innocuous remarks.",
     "example": "He offered an innocuous observation about the weather to break the tense silence."
   },
@@ -1404,12 +1404,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The haughty maitre d' gave us a ________ once-over before seating us near the pantry.",
     "options": [
-      "supercilious",
       "humble",
+      "supercilious",
       "modest",
       "self-effacing"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Supercilious' means behaving or looking as though one thinks one is superior to others.",
     "example": "Her supercilious condescension made her universally disliked among junior associates."
   },
@@ -1421,12 +1421,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The young barrister adopted a respectfully ________ tone when addressing the Lord Chief Justice.",
     "options": [
-      "deferential",
       "insolent",
+      "deferential",
       "impertinent",
       "brash"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Deferential' means showing respect and deference towards an elder or authority figure.",
     "example": "In traditional diplomatic circles, juniors maintain a strictly deferential posture toward ambassadors."
   },
@@ -1438,12 +1438,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The clerk was dismissed for delivering an ________ retort to a member of the diplomatic corps.",
     "options": [
-      "insolent",
       "courteous",
+      "insolent",
       "deferential",
       "polite"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Insolent' means showing a rude and arrogant lack of respect.",
     "example": "Insolent behavior towards exam proctors will result in immediate disqualification."
   },
@@ -1455,12 +1455,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The interns accepted the challenging assignment with unexpected ________ and diligence.",
     "options": [
-      "alacrity",
+      "reluctance",
       "lethargy",
       "torpor",
-      "reluctance"
+      "alacrity"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Alacrity' means brisk and cheerful readiness; promptness in response.",
     "example": "She responded to the emergency summons with commendable alacrity."
   },
@@ -1472,12 +1472,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "A wristwatch visible on a gladiator in an epic film is a glaring historical ________.",
     "options": [
-      "anachronism",
+      "allusion",
       "archetype",
       "apotheosis",
-      "allusion"
+      "anachronism"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Anachronism' means a thing belonging or appropriate to a period other than that in which it exists.",
     "example": "Hansom cabs in a novel set in 2050 represent an intentional stylistic anachronism."
   },
@@ -1489,29 +1489,29 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "Winning the Nobel Prize in Literature was the undisputed ________ of her literary career.",
     "options": [
-      "apotheosis",
+      "abyss",
       "nadir",
       "debacle",
-      "abyss"
+      "apotheosis"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Apotheosis' means the highest point in the development of something; a culmination or deification.",
     "example": "The baroque palace was hailed as the architectural apotheosis of divine-right monarchy."
   },
   {
     "id": "voc-089",
     "mode": "vocabulary",
-    "level": 4,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
     "prompt": "The dictator's ________ speech prompted international sanctions and border troop buildups.",
     "options": [
-      "bellicose",
-      "conciliatory",
       "irenic",
+      "conciliatory",
+      "bellicose",
       "dovish"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Bellicose' means demonstrating aggression and willingness to fight; warlike.",
     "example": "Diplomats worked frantically to dampen bellicose rhetoric across state television."
   },
@@ -1523,29 +1523,29 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "We appreciated her ________ appraisal of the structural risks facing the joint venture.",
     "options": [
-      "candid",
       "disingenuous",
+      "candid",
       "evasive",
       "circuitous"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Candid' means truthful, straightforward, frank, and impartial.",
     "example": "In a candid interview, the former prime minister admitted miscalculating inflation."
   },
   {
     "id": "voc-091",
     "mode": "vocabulary",
-    "level": 3,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
     "prompt": "Diplomats are trained in the art of polite ________ when dealing with sensitive territorial claims.",
     "options": [
-      "circumlocution",
       "brevity",
+      "circumlocution",
       "terseness",
       "succinctness"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Circumlocution' means the use of many words where fewer would do, especially in a deliberate attempt to be vague.",
     "example": "His explanation was a masterpiece of circumlocution that avoided addressing the deficit."
   },
@@ -1557,12 +1557,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The governor granted executive ________ to the prisoner in light of newly uncovered DNA evidence.",
     "options": [
-      "clemency",
-      "ruthlessness",
       "severity",
+      "ruthlessness",
+      "clemency",
       "harshness"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Clemency' means mercy; lenience, especially when meting out punishment.",
     "example": "The tribunal demonstrated unexpected clemency toward first-time offenders."
   },
@@ -1574,12 +1574,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "There is a severe ________ of experienced data engineers in the regional manufacturing hub.",
     "options": [
-      "dearth",
+      "abundance",
       "surfeit",
       "glut",
-      "abundance"
+      "dearth"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Dearth' means a scarcity or lack of something.",
     "example": "A dearth of rainfall across the summer months depleted the municipal reservoirs."
   },
@@ -1591,12 +1591,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The constitutional court acted as a bulwark against the rise of an unscrupulous ________.",
     "options": [
-      "demagogue",
       "statesman",
+      "demagogue",
       "pedagogue",
       "diplomat"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Demagogue' means a political leader who seeks support by appealing to popular desires rather than rational argument.",
     "example": "Demagogues historically weaponize economic anxiety to divide democratic communities."
   },
@@ -1608,12 +1608,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The ________ fans poured into the streets following their national team's championship victory.",
     "options": [
-      "ebullient",
+      "doleful",
       "morose",
       "crestfallen",
-      "doleful"
+      "ebullient"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Ebullient' means cheerful and full of energy; exuberant.",
     "example": "Her ebullient laughter resonated throughout the studio during the rehearsal."
   },
@@ -1625,29 +1625,29 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "He had the sheer ________ to request a pay rise a week after crashing the company van.",
     "options": [
-      "effrontery",
       "modesty",
+      "effrontery",
       "decorum",
       "deference"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Effrontery' means insolent or impertinent behavior; shameless audacity.",
     "example": "I was astonished by her effrontery in claiming credit for my research."
   },
   {
     "id": "voc-097",
     "mode": "vocabulary",
-    "level": 3,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
     "prompt": "The stifling humidity of the equatorial jungle served to ________ the expedition within days.",
     "options": [
-      "enervate",
+      "fortify",
       "invigorate",
       "galvanize",
-      "fortify"
+      "enervate"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Enervate' means to cause someone to feel drained of energy or vitality; weaken.",
     "example": "Prolonged illness enervated his constitution, requiring six months of convalescence."
   },
@@ -1659,12 +1659,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "When pressed about tax increases, the politician continued to ________ unconvincingly.",
     "options": [
-      "equivocate",
-      "clarify",
       "elucidate",
+      "clarify",
+      "equivocate",
       "avow"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Equivocate' means use ambiguous language so as to conceal the truth or avoid committing oneself.",
     "example": "Do not equivocate; a simple 'yes' or 'no' is required by the court."
   },
@@ -1705,17 +1705,17 @@ window.C2_DATA.vocabulary = [
   {
     "id": "voc-101",
     "mode": "vocabulary",
-    "level": 4,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
     "prompt": "The curator was ________ about maintaining precise humidity controls inside the gallery.",
     "options": [
-      "fastidious",
       "slipshod",
+      "fastidious",
       "lax",
       "negligent"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Fastidious' means very attentive to and concerned about accuracy and detail; very hard to please.",
     "example": "He was fastidious in his dress, never appearing without a pressed linen handkerchief."
   },
@@ -1727,12 +1727,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "A ________ taxi driver regaled us with sixty minutes of unsolicited opinions on local zoning laws.",
     "options": [
-      "garrulous",
+      "reticent",
       "laconic",
       "taciturn",
-      "reticent"
+      "garrulous"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Garrulous' means excessively talkative, especially on trivial matters.",
     "example": "She regretted sharing a compartment with such a garrulous traveling companion."
   },
@@ -1744,12 +1744,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "Dolphins are famously ________ mammals that hunt cooperatively in sophisticated pods.",
     "options": [
-      "gregarious",
-      "solitary",
       "hermitic",
+      "solitary",
+      "gregarious",
       "unsociable"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Gregarious' means fond of company; sociable; living in flocks or colonies.",
     "example": "Unlike his reclusive sister, Julian was gregarious and thrived at crowded galas."
   },
@@ -1761,29 +1761,29 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The film's plot relied on ________ tropes that discerning critics shredded in reviews.",
     "options": [
-      "hackneyed",
-      "novel",
       "groundbreaking",
+      "novel",
+      "hackneyed",
       "original"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Hackneyed' means lacking significance through having been overused; unoriginal and trite.",
     "example": "His speech was replete with hackneyed expressions about teamwork and synergies."
   },
   {
     "id": "voc-105",
     "mode": "vocabulary",
-    "level": 5,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
     "prompt": "The sergeant delivered a ferocious ________ to the recruits following their dismal inspection.",
     "options": [
-      "harangue",
+      "tribute",
       "panegyric",
       "homily",
-      "tribute"
+      "harangue"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Harangue' means a lengthy and aggressive speech or lecture.",
     "example": "Customers were subjected to a political harangue by the disgruntled store owner."
   },
@@ -1795,12 +1795,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "In Greek tragedy, the protagonist's tragic flaw is almost invariably fatal ________.",
     "options": [
-      "hubris",
-      "humility",
       "modesty",
+      "humility",
+      "hubris",
       "timidity"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Hubris' means excessive pride or self-confidence leading to a downfall.",
     "example": "Blind hubris prevented the investment bankers from acknowledging the housing bubble."
   },
@@ -1812,12 +1812,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "One endearing ________ of the professor was wearing mismatched socks to formal colloquia.",
     "options": [
-      "idiosyncrasy",
       "orthodoxy",
+      "idiosyncrasy",
       "conformity",
       "standard"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Idiosyncrasy' means a mode of behavior or way of thought peculiar to an individual.",
     "example": "Every vintage sports car has mechanical idiosyncrasies that only its owner understands."
   },
@@ -1829,12 +1829,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "As an ________ art student in Vienna, he subsisted on stale rolls and black tea.",
     "options": [
-      "impecunious",
-      "opulent",
       "affluent",
+      "opulent",
+      "impecunious",
       "flush"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Impecunious' means having little or no money; penniless; poor.",
     "example": "The trust provides financial stipends to impecunious scholars pursuing doctoral studies."
   },
@@ -1846,12 +1846,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "At this early stage, our plans for the commercial launch remain entirely ________.",
     "options": [
-      "inchoate",
+      "refined",
       "mature",
       "consummate",
-      "refined"
+      "inchoate"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Inchoate' means just begun and so not fully formed or developed; rudimentary.",
     "example": "He struggled to articulate an inchoate feeling of unease regarding the merger."
   },
@@ -1863,29 +1863,29 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The tropical heat produced an ________ afternoon where no one felt inclined to work.",
     "options": [
-      "indolent",
+      "strenuous",
       "industrious",
       "diligent",
-      "strenuous"
+      "indolent"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Indolent' means wanting to avoid activity or exertion; lazy; idle.",
     "example": "He was an indolent youth who squandered his inheritance on idle amusements."
   },
   {
     "id": "voc-111",
     "mode": "vocabulary",
-    "level": 5,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
     "prompt": "Standing atop the Himalayan summit, she experienced a moment of ________ awe.",
     "options": [
-      "ineffable",
+      "pedestrian",
       "mundane",
       "prosaic",
-      "pedestrian"
+      "ineffable"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Ineffable' means too great or extreme to be expressed or described in words.",
     "example": "The ineffable beauty of the choral requiem moved listeners to tears."
   },
@@ -1897,29 +1897,29 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The ambitious intern sought to ________ herself with senior partners through obsequious flattery.",
     "options": [
-      "ingratiate",
       "alienate",
+      "ingratiate",
       "estrange",
       "antagonize"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Ingratiate' means bring oneself into favor with someone by flattering or trying to please them.",
     "example": "He brought imported cigars in a clumsy attempt to ingratiate himself with the manager."
   },
   {
     "id": "voc-113",
     "mode": "vocabulary",
-    "level": 4,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
     "prompt": "High interest rates and steep import tariffs are profoundly ________ to small business growth.",
     "options": [
-      "inimical",
-      "propitious",
       "beneficial",
+      "propitious",
+      "inimical",
       "conducive"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Inimical' means tending to obstruct or harm; hostile; unfriendly.",
     "example": "Censorship is fundamentally inimical to creative and scholarly inquiry."
   },
@@ -1931,12 +1931,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "Both trade union leaders and company directors adopted an ________ stance throughout the strike.",
     "options": [
-      "intransigent",
       "pliable",
+      "intransigent",
       "tractable",
       "amenable"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Intransigent' means unwilling or refusing to change one's views or to agree about something.",
     "example": "His intransigent refusal to negotiate cost the party control of the municipality."
   },
@@ -1948,12 +1948,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The headmaster refused to make ________ comparisons between the academic merits of the two twins.",
     "options": [
-      "invidious",
+      "praiseworthy",
       "laudable",
       "admirable",
-      "praiseworthy"
+      "invidious"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Invidious' means likely to arouse or incur resentment or anger in others; unfairly discriminating.",
     "example": "Putting workers in competition for a single bonus created an invidious office atmosphere."
   },
@@ -1982,12 +1982,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "Despite his advanced years, the emeritus professor offered a remarkably ________ exposition of astrophysics.",
     "options": [
-      "lucid",
+      "muddled",
       "turbid",
       "obscure",
-      "muddled"
+      "lucid"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Lucid' means expressed clearly; easy to understand; showing ability to think clearly.",
     "example": "Write in a lucid and concise style so that general readers can grasp the legal points."
   },
@@ -2016,12 +2016,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The advertisement made ________ claims regarding the herbal supplement's cure-all properties.",
     "options": [
-      "mendacious",
-      "veracious",
       "scrupulous",
+      "veracious",
+      "mendacious",
       "candid"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Mendacious' means not telling the truth; lying; untruthful.",
     "example": "Investigative journalists exposed the politician's mendacious denials of financial malfeasance."
   },
@@ -2045,17 +2045,17 @@ window.C2_DATA.vocabulary = [
   {
     "id": "voc-121",
     "mode": "vocabulary",
-    "level": 3,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
     "prompt": "The swamp emitted a ________ stench of rotting vegetation and stagnant mud.",
     "options": [
-      "noisome",
-      "fragrant",
       "aromatic",
+      "fragrant",
+      "noisome",
       "balmy"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Noisome' means having an extremely offensive smell; highly obnoxious or objectionable.",
     "example": "The industrial tannery was shut down by public health inspectors for its noisome emissions."
   },
@@ -2067,12 +2067,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "Despite pleading from his closest advisors, the autocrat remained entirely ________.",
     "options": [
-      "obdurate",
+      "yielding",
       "malleable",
       "pliant",
-      "yielding"
+      "obdurate"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Obdurate' means stubbornly refusing to change one's opinion or course of action.",
     "example": "The company met customer boycotts with obdurate defiance, refusing all compromises."
   },
@@ -2084,12 +2084,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "His ________ gold-plated limousine drew mocking snickers rather than admiration outside the theater.",
     "options": [
-      "ostentatious",
+      "modest",
       "understated",
       "austere",
-      "modest"
+      "ostentatious"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Ostentatious' means characterized by vulgar or pretentious display; designed to impress or attract notice.",
     "example": "She avoided ostentatious jewelry, preferring understated pearls of heirloom quality."
   },
@@ -2101,12 +2101,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The analgesic was prescribed to ________ chronic neuropathic pain following spinal surgery.",
     "options": [
-      "palliate",
       "exacerbate",
+      "palliate",
       "aggravate",
       "intensify"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Palliate' means make (a disease or its symptoms) less severe or unpleasant without removing the cause; alleviate.",
     "example": "Diplomatic summits did little to resolve the border dispute, serving only to palliate tensions."
   },
@@ -2135,12 +2135,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The prosecution's case collapsed due to a crippling ________ of corroborating physical evidence.",
     "options": [
-      "paucity",
+      "glut",
       "plethora",
       "surfeit",
-      "glut"
+      "paucity"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Paucity' means the presence of something only in small or insufficient quantities or amounts; scarcity.",
     "example": "A paucity of affordable housing drove young professionals away from the metropolitan center."
   },
@@ -2152,12 +2152,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The term was originally an insult, but over time lost its ________ connotation.",
     "options": [
-      "pejorative",
       "commendatory",
+      "pejorative",
       "laudatory",
       "eulogistic"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Pejorative' means expressing contempt or disapproval; derogatory.",
     "example": "Reviewers should criticize the substance of the book without resorting to pejorative personal slurs."
   },
@@ -2169,19 +2169,19 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The once-wealthy aristocrat died in squalid ________ in a boarding house near the docks.",
     "options": [
-      "penury",
+      "affluence",
       "opulence",
       "prosperity",
-      "affluence"
+      "penury"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Penury' means extreme poverty; destitution.",
     "example": "Welfare programs were instituted to rescue elderly widows from extreme penury."
   },
   {
     "id": "voc-129",
     "mode": "vocabulary",
-    "level": 5,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
     "prompt": "The customs official gave our luggage a ________ inspection before stamping our entry visas.",
@@ -2203,29 +2203,29 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The court condemned the ________ dissemination of hate speech via anonymous accounts.",
     "options": [
-      "pernicious",
       "salubrious",
+      "pernicious",
       "innocuous",
       "propitious"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Pernicious' means having a harmful effect, especially in a gradual or subtle way.",
     "example": "Carbon monoxide poisoning is particularly pernicious because the gas is completely odorless."
   },
   {
     "id": "voc-131",
     "mode": "vocabulary",
-    "level": 4,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
     "prompt": "Her acute political ________ enabled her to anticipate the collapse of the governing coalition.",
     "options": [
-      "perspicacity",
-      "obtuse ness",
       "vacuity",
+      "obtuse ness",
+      "perspicacity",
       "gullibility"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Perspicacity' means the quality of having a ready insight into things; shrewdness.",
     "example": "He was renowned for his forensic perspicacity in interrogating hostile witnesses."
   },
@@ -2254,12 +2254,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The prime minister adopted a ________ approach, compromising on tariffs to secure peace.",
     "options": [
-      "pragmatic",
+      "visionary",
       "dogmatic",
       "quixotic",
-      "visionary"
+      "pragmatic"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Pragmatic' means dealing with things sensibly and realistically in a way that is based on practical considerations.",
     "example": "A pragmatic engineer focuses on workable solutions rather than theoretical elegance."
   },
@@ -2271,12 +2271,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The ________ prodigy mastered multivariable calculus before completing primary school.",
     "options": [
-      "precocious",
       "backward",
+      "precocious",
       "retarded",
       "delayed"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Precocious' means having developed certain abilities or proclivities at an earlier age than usual.",
     "example": "Her precocious musical talent earned her a scholarship to the Royal Academy at age ten."
   },
@@ -2288,12 +2288,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "He had an unshakeable ________ for 19th-century Russian literature, reading Tolstoy annually.",
     "options": [
-      "predilection",
-      "aversion",
       "antipathy",
+      "aversion",
+      "predilection",
       "loathing"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Predilection' means a preference or special liking for something; a bias in favor of something.",
     "example": "Her predilection for spicy Szechuan cuisine surprised her European hosts."
   },
@@ -2305,29 +2305,29 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The bankrupt monarch was despised by taxpayers for his ________ court expenditures.",
     "options": [
-      "profligate",
-      "frugal",
       "parsimonious",
+      "frugal",
+      "profligate",
       "thrifty"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Profligate' means recklessly extravagant or wasteful in the use of resources.",
     "example": "Profligate use of fresh water during droughts resulted in hefty municipal fines."
   },
   {
     "id": "voc-137",
     "mode": "vocabulary",
-    "level": 4,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
     "prompt": "As a ________ author, he published over sixty novels and hundreds of critical essays.",
     "options": [
-      "prolific",
-      "unproductive",
       "barren",
+      "unproductive",
+      "prolific",
       "sterile"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Prolific' means producing much fruit or foliage or many works; highly productive.",
     "example": "Picasso was exceptionally prolific, creating thousands of ceramic, painted, and sculpted works."
   },
@@ -2356,12 +2356,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "His ________ campaign to abolish paper money worldwide gained few mainstream adherents.",
     "options": [
-      "quixotic",
       "pragmatic",
+      "quixotic",
       "calculating",
       "utilitarian"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Quixotic' means exceedingly idealistic; unrealistic and impractical.",
     "example": "Charging into modern courtrooms without counsel is a quixotic and perilous gamble."
   },
@@ -2385,17 +2385,17 @@ window.C2_DATA.vocabulary = [
   {
     "id": "voc-141",
     "mode": "vocabulary",
-    "level": 5,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
     "prompt": "The warden struggled to manage a cohort of ________ inmates who refused all labor details.",
     "options": [
-      "recalcitrant",
+      "amenable",
       "docile",
       "compliant",
-      "amenable"
+      "recalcitrant"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Recalcitrant' means having an obstinately uncooperative attitude towards authority or discipline.",
     "example": "Recalcitrant member states were threatened with suspension of European Union subsidies."
   },
@@ -2407,12 +2407,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The attic was ________ of dried lavender, old leather, and cedar shavings.",
     "options": [
-      "redolent",
-      "barren",
       "bereft",
+      "barren",
+      "redolent",
       "destitute"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Redolent' means strongly reminiscent or suggestive of something; fragrant.",
     "example": "His poetry is deeply redolent of Keats and the English Romantic tradition."
   },
@@ -2441,29 +2441,29 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The executive summary highlights the most ________ financial metrics for prospective buyers.",
     "options": [
-      "salient",
       "inconsequential",
+      "salient",
       "trivial",
       "minor"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Salient' means most notable or important; prominent.",
     "example": "The most salient feature of Gothic architecture is the pointed rib vault."
   },
   {
     "id": "voc-145",
     "mode": "vocabulary",
-    "level": 3,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
     "prompt": "We were irritated by his ________ lectures on dietary virtue while he ate imported delicacies.",
     "options": [
-      "sanctimonious",
       "unassuming",
+      "sanctimonious",
       "modest",
       "sincere"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Sanctimonious' means making a show of being morally superior to other people.",
     "example": "Her sanctimonious demeanor hid a long history of cutthroat corporate maneuvering."
   },
@@ -2475,12 +2475,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The professor's monotonous delivery had an unmistakably ________ effect on the lecture hall.",
     "options": [
-      "soporific",
+      "galvanizing",
       "stimulating",
       "exhilarating",
-      "galvanizing"
+      "soporific"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Soporific' means tending to induce drowsiness or sleep; tediously boring.",
     "example": "Warm chamomile tea has mild soporific qualities beneficial before bedtime."
   },
@@ -2509,12 +2509,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "She remained a ________ defender of civil liberties throughout decades of political turmoil.",
     "options": [
-      "stalwart",
+      "irresolute",
       "fickle",
       "capricious",
-      "irresolute"
+      "stalwart"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Stalwart' means loyal, reliable, and hard-working; strongly built and sturdy.",
     "example": "The veteran was a stalwart pillar of the village community for over fifty years."
   },
@@ -2526,12 +2526,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "Throughout her grueling medical treatments, she maintained an admirable, ________ serenity.",
     "options": [
-      "stoic",
+      "effusive",
       "histrionic",
       "demonstrative",
-      "effusive"
+      "stoic"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Stoic' means a person who can endure pain or hardship without showing their feelings or complaining.",
     "example": "A stoic endurance in the face of inevitable tragedy is central to Marcus Aurelius's thought."
   },
@@ -2555,17 +2555,17 @@ window.C2_DATA.vocabulary = [
   {
     "id": "voc-151",
     "mode": "vocabulary",
-    "level": 3,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
     "prompt": "Imperial armies sought to ________ the mountain clans through decades of siege warfare.",
     "options": [
-      "subjugate",
       "emancipate",
+      "subjugate",
       "liberate",
       "enfranchise"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Subjugate' means bring under domination or control, especially by conquest.",
     "example": "Authoritarian regimes attempt to subjugate independent journalism through arbitrary arrests."
   },
@@ -2577,29 +2577,29 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "She cast a ________ glance at her rival's test paper while the examiner was distracted.",
     "options": [
-      "surreptitious",
       "overt",
+      "surreptitious",
       "brazen",
       "conspicuous"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Surreptitious' means kept secret, especially because it would not be approved of; stealthy.",
     "example": "The spies held surreptitious rendezvous inside crowded subway stations."
   },
   {
     "id": "voc-153",
     "mode": "vocabulary",
-    "level": 5,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
     "prompt": "Surrounded by ________ who never disputed his decisions, the CEO lost touch with reality.",
     "options": [
-      "sycophants",
       "critics",
+      "sycophants",
       "detractors",
       "adversaries"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Sycophant' means a person who acts obsequiously towards someone important in order to gain advantage.",
     "example": "The tyrant rewarded sycophants while imprisoning scholars who spoke the truth."
   },
@@ -2611,12 +2611,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "No one possessed the ________ to interrupt the general during his furious debriefing.",
     "options": [
-      "temerity",
       "timidity",
+      "temerity",
       "diffidence",
       "circumspection"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Temerity' means excessive confidence or boldness; audacity.",
     "example": "She had the temerity to demand a personal apology from the prime minister."
   },
@@ -2628,12 +2628,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The link between the two financial scandals proved ________ and supported only by hearsay.",
     "options": [
-      "tenuous",
       "robust",
+      "tenuous",
       "unshakeable",
       "substantial"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Tenuous' means very weak or slight; insubstantial; flimsy.",
     "example": "The coalition maintained a tenuous one-seat majority in the lower parliament."
   },
@@ -2662,12 +2662,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The young thoroughbred horse proved remarkably ________ under an experienced trainer's hands.",
     "options": [
-      "tractable",
+      "unruly",
       "intractable",
       "refractory",
-      "unruly"
+      "tractable"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Tractable' means easy to control or influence; malleable.",
     "example": "Diplomats hoped that economic sanctions would make the hostile regime more tractable."
   },
@@ -2679,12 +2679,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The economic boom proved ________, giving way to a severe liquidity crisis within two years.",
     "options": [
-      "transient",
+      "permanent",
       "perennial",
       "everlasting",
-      "permanent"
+      "transient"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Transient' means lasting only for a short time; impermanent; fleeting.",
     "example": "In a transient world of fleeting digital fads, classical literature endures."
   },
@@ -2696,12 +2696,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "Due to time constraints, the keynote speaker was forced to ________ her concluding remarks.",
     "options": [
-      "truncate",
+      "extend",
       "elongate",
       "protract",
-      "extend"
+      "truncate"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Truncate' means shorten (something) by cutting off the top or the end.",
     "example": "The editor truncated the sprawling 800-page manuscript into a punchy volume."
   },
@@ -2713,29 +2713,29 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "Smartphones have become an ________ fixture of contemporary urban existence.",
     "options": [
-      "ubiquitous",
-      "rare",
       "scarce",
+      "rare",
+      "ubiquitous",
       "uncommon"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Ubiquitous' means present, appearing, or found everywhere.",
     "example": "Coffee houses were ubiquitous throughout 18th-century London."
   },
   {
     "id": "voc-161",
     "mode": "vocabulary",
-    "level": 4,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
     "prompt": "The ambassador took ________ at the insinuation that his government had falsified customs logs.",
     "options": [
-      "umbrage",
-      "delight",
       "satisfaction",
+      "delight",
+      "umbrage",
       "contentment"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Umbrage' means offense or annoyance; resentment.",
     "example": "Please do not take umbrage; my critique was intended solely to refine your manuscript."
   },
@@ -2764,12 +2764,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The headmaster proceeded to ________ the senior students for their vandalism of the chapel.",
     "options": [
-      "upbraid",
+      "applaud",
       "laud",
       "extol",
-      "applaud"
+      "upbraid"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Upbraid' means find fault with someone; scold; reprimand.",
     "example": "She felt no compulsion to upbraid subordinates in public, preferring private counsel."
   },
@@ -2781,12 +2781,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "Faced with competing advice from his generals, the king continued to ________ for days.",
     "options": [
-      "vacillate",
-      "resolve",
       "decide",
+      "resolve",
+      "vacillate",
       "persevere"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Vacillate' means waver between different opinions or actions; be indecisive.",
     "example": "Do not vacillate between strategies; commit fully to your chosen market niche."
   },
@@ -2815,12 +2815,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "In many cultures, communities deeply ________ village elders for their accumulated wisdom.",
     "options": [
-      "venerate",
       "despise",
+      "venerate",
       "scorn",
       "disdain"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Venerate' means regard with great respect; revere.",
     "example": "Scholars continue to venerate Shakespeare as the supreme dramatist of the English tongue."
   },
@@ -2861,17 +2861,17 @@ window.C2_DATA.vocabulary = [
   {
     "id": "voc-169",
     "mode": "vocabulary",
-    "level": 3,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
     "prompt": "To her profound ________, the connecting train departed five minutes ahead of schedule.",
     "options": [
-      "vexation",
-      "delight",
       "euphoria",
+      "delight",
+      "vexation",
       "repose"
     ],
-    "answer": 0,
+    "answer": 2,
     "explain": "'Vexation' means the state of being annoyed, frustrated, or worried; a cause of annoyance.",
     "example": "Tax filing is a perennial source of vexation for freelance professionals."
   },
@@ -2883,29 +2883,29 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "Partisan tabloids sought to ________ the whistleblower before the committee convened.",
     "options": [
-      "vilify",
       "extol",
+      "vilify",
       "lionize",
       "exalt"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Vilify' means speak ill of; write or speak about in an abusively disparaging manner.",
     "example": "It is improper to vilify an entire ethnic community for the crimes of a few."
   },
   {
     "id": "voc-171",
     "mode": "vocabulary",
-    "level": 5,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
     "prompt": "The dismissed executive embarked on a ________ campaign of leaks to damage the company.",
     "options": [
-      "vindictive",
       "forgiving",
+      "vindictive",
       "magnanimous",
       "charitable"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Vindictive' means having or showing a strong or unreasoning desire for revenge.",
     "example": "Avoid vindictive reprisals; focus your energy on building your new enterprise."
   },
@@ -2917,12 +2917,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The editorial was greeted by a ________ barrage of condemnation from civil rights groups.",
     "options": [
-      "virulent",
       "anodyne",
+      "virulent",
       "mild",
       "benign"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Virulent' means extremely severe or harmful in its effects; bitterly hostile.",
     "example": "A virulent strain of avian influenza prompted the culling of poultry across three counties."
   },
@@ -2968,12 +2968,12 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The ________ tour guide kept up a non-stop commentary on Roman architecture for four hours.",
     "options": [
-      "voluble",
       "laconic",
+      "voluble",
       "uncommunicative",
       "hesitant"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Voluble' means speaking or spoken incessantly and fluently; talkative.",
     "example": "She became animated and voluble whenever the discussion touched upon equine genetics."
   },
@@ -2985,29 +2985,29 @@ window.C2_DATA.vocabulary = [
     "topic": "Lexical Nuance & Precision",
     "prompt": "The vandalism of the ancient stone circle was condemned as an act of ________ savagery.",
     "options": [
-      "wanton",
+      "defensive",
       "justified",
       "provoked",
-      "defensive"
+      "wanton"
     ],
-    "answer": 0,
+    "answer": 3,
     "explain": "'Wanton' means deliberate and unprovoked (of a cruel or violent action); promiscuous.",
     "example": "Profligate monarchs squandered public funds with wanton disregard for the consequences."
   },
   {
     "id": "voc-177",
     "mode": "vocabulary",
-    "level": 5,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
     "prompt": "A ________ reformer, she campaigned tirelessly for women's suffrage across the nation.",
     "options": [
-      "zealous",
       "apathetic",
+      "zealous",
       "lukewarm",
       "indifferent"
     ],
-    "answer": 0,
+    "answer": 1,
     "explain": "'Zealous' means having or showing zeal; passionate and fiercely committed.",
     "example": "The young detective was zealous in pursuing every lead, no matter how obscure."
   },
@@ -3017,169 +3017,169 @@ window.C2_DATA.vocabulary = [
     "level": 3,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
-    "prompt": "The senator's ________ posture alienated moderate voters who sought consensus.",
+    "prompt": "After months of negotiations, the minority shareholders reluctantly decided to ________ to the takeover terms.",
     "options": [
-      "pugnacious",
-      "pacific",
-      "pliant",
-      "placid"
+      "acquiesce",
+      "repudiate",
+      "dissent",
+      "abnegate"
     ],
     "answer": 0,
-    "explain": "'Pugnacious' means combative, belligerent, eager to argue or fight.",
-    "example": "His pugnacious demeanor during the debate caused several interruptions."
+    "explain": "'Acquiesce' means to accept something reluctantly but without protest.",
+    "example": "The board had no choice but to acquiesce in the demands of the regulatory committee."
   },
   {
     "id": "voc-179",
     "mode": "vocabulary",
-    "level": 4,
+    "level": 3,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
-    "prompt": "The funeral organist played a ________ dirge that deepened the mourning assembly's sorrow.",
+    "prompt": "Diplomatic envoys must remain ________ when discussing sensitive cross-border territorial concessions.",
     "options": [
-      "lugubrious",
-      "festive",
-      "jaunty",
-      "blithe"
+      "audacious",
+      "reckless",
+      "rash",
+      "circumspect"
     ],
-    "answer": 0,
-    "explain": "'Lugubrious' means looking or sounding sad, gloomy, or dismal.",
-    "example": "She gave a lugubrious sigh before recounting the tale of her ruined investments."
+    "answer": 3,
+    "explain": "'Circumspect' means wary, unwilling to take risks, and prudent in conduct.",
+    "example": "A circumspect approach is advisable when entering unfamiliar foreign markets."
   },
   {
     "id": "voc-180",
     "mode": "vocabulary",
-    "level": 5,
+    "level": 4,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
-    "prompt": "The diplomat was ________ in observing every nuance of royal protocol.",
+    "prompt": "An experienced poker player learns to ________ their true emotions behind an inscrutable expression.",
     "options": [
-      "punctilious",
-      "slipshod",
-      "remiss",
-      "heedless"
+      "reveal",
+      "dissemble",
+      "manifest",
+      "proclaim"
     ],
-    "answer": 0,
-    "explain": "'Punctilious' means showing great attention to detail or correct behavior.",
-    "example": "He was punctilious about replying to letters within twenty-four hours."
+    "answer": 1,
+    "explain": "'Dissemble' means to conceal one's true motives, feelings, or beliefs.",
+    "example": "He was accused of dissembling when questioned about his private business dealings."
   },
   {
     "id": "voc-181",
     "mode": "vocabulary",
-    "level": 3,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
-    "prompt": "Working under such a ________ editor meant praise one morning and dismissal the next.",
+    "prompt": "The auditor's report was frustratingly ________, offering no definitive verdict on the firm's solvency.",
     "options": [
-      "mercurial",
-      "constant",
-      "steadfast",
-      "staunch"
+      "explicit",
+      "lucid",
+      "unambiguous",
+      "equivocal"
     ],
-    "answer": 0,
-    "explain": "'Mercurial' means subject to sudden or unpredictable changes of mood or mind.",
-    "example": "His mercurial temperament made long-term financial planning hazardous."
+    "answer": 3,
+    "explain": "'Equivocal' means open to more than one interpretation; ambiguous or uncertain.",
+    "example": "The minister gave an equivocal response regarding potential tax increases."
   },
   {
     "id": "voc-182",
     "mode": "vocabulary",
-    "level": 4,
+    "level": 3,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
-    "prompt": "The administration was forced to ________ allegations of covert domestic surveillance.",
+    "prompt": "Voters were weary of ________ promises delivered by politicians who had never visited their rural townships.",
     "options": [
-      "repudiate",
-      "endorse",
-      "espouse",
-      "ratify"
+      "cogent",
+      "profound",
+      "glib",
+      "heartfelt"
     ],
-    "answer": 0,
-    "explain": "'Repudiate' means refuse to accept or be associated with; deny the truth or validity of.",
-    "example": "She chose to repudiate her former political alliances upon publishing her memoir."
+    "answer": 2,
+    "explain": "'Glib' describes words or speakers that are fluent and voluble but insincere and shallow.",
+    "example": "She saw through his glib compliments and demanded concrete fiscal commitments."
   },
   {
     "id": "voc-183",
     "mode": "vocabulary",
-    "level": 5,
+    "level": 4,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
-    "prompt": "Forensic accountants uncovered systemic corporate ________ designed to conceal liabilities.",
+    "prompt": "Living in the Arctic had ________ the expedition members to sub-zero blizzards and perpetual darkness.",
     "options": [
-      "chicanery",
-      "candor",
-      "probity",
-      "forthrightness"
+      "averse",
+      "sensitized",
+      "vulnerable",
+      "inured"
     ],
-    "answer": 0,
-    "explain": "'Chicanery' means the use of trickery or subterfuge to achieve a political, financial, or legal purpose.",
-    "example": "He secured the municipal concession through legal chicanery and backroom bribes."
+    "answer": 3,
+    "explain": "'Inured' means accustomed to something undesirable, especially through prolonged exposure.",
+    "example": "Emergency room surgeons gradually become inured to traumatic visual distress."
   },
   {
     "id": "voc-184",
     "mode": "vocabulary",
-    "level": 3,
+    "level": 5,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
-    "prompt": "In a rare display of ________, the victor offered cabinet posts to defeated opposition leaders.",
+    "prompt": "The brook's ________ waters allowed hikers to admire smooth quartz pebbles resting on the stream bed.",
     "options": [
-      "magnanimity",
-      "spite",
-      "petulance",
-      "vindictiveness"
+      "viscous",
+      "turbid",
+      "murky",
+      "limpid"
     ],
-    "answer": 0,
-    "explain": "'Magnanimity' means generosity of spirit, especially towards a rival or defeated opponent.",
-    "example": "She accepted her rival's apology with effortless magnanimity."
+    "answer": 3,
+    "explain": "'Limpid' means completely clear, pellucid, and transparent.",
+    "example": "His prose was admired for its limpid lucidity and absence of jargon."
   },
   {
     "id": "voc-185",
     "mode": "vocabulary",
-    "level": 4,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
-    "prompt": "Her ________ cadence mesmerized radio audiences during the nighttime broadcasts.",
+    "prompt": "The collapse of the municipal bank marked the absolute ________ of the province's post-war economic depression.",
     "options": [
-      "mellifluous",
-      "strident",
-      "cacophonous",
-      "grating"
+      "zenith",
+      "nadir",
+      "apotheosis",
+      "apex"
     ],
-    "answer": 0,
-    "explain": "'Mellifluous' means sweet or musical; pleasant to hear (of a voice or words).",
-    "example": "The tenor possessed a mellifluous voice that carried across the auditorium effortlessly."
+    "answer": 1,
+    "explain": "'Nadir' denotes the lowest point in the fortunes of a person or organization (opposite of zenith).",
+    "example": "Her career reached its nadir after the disastrous failure of her second novel."
   },
   {
     "id": "voc-186",
     "mode": "vocabulary",
-    "level": 5,
+    "level": 4,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
-    "prompt": "The protest was marked by ________ denunciations of the government's austerity budget.",
+    "prompt": "The ________ reason for the minister's voyage was cultural exchange, but trade negotiations dominated the agenda.",
     "options": [
-      "strident",
-      "dulcet",
-      "muted",
-      "hushed"
+      "ostensible",
+      "genuine",
+      "authentic",
+      "substantive"
     ],
     "answer": 0,
-    "explain": "'Strident' means loud and harsh; grating; presenting a point of view in an excessively forceful manner.",
-    "example": "Critics rejected his strident assertions regarding the inevitable collapse of democratic institutions."
+    "explain": "'Ostensible' means stated or appearing to be true, but not necessarily so.",
+    "example": "Their ostensible friendliness masked intense corporate rivalry."
   },
   {
     "id": "voc-187",
     "mode": "vocabulary",
-    "level": 3,
+    "level": 5,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
-    "prompt": "The busy marketplace was a ________ blend of shouting vendors, squawking fowl, and idling engines.",
+    "prompt": "The state banquet showcased an impressive ________ of traditional tapestries, gold plate, and ceremonial heraldry.",
     "options": [
-      "cacophonous",
-      "harmonious",
-      "symphonic",
-      "melodious"
+      "panoply",
+      "dearth",
+      "paucity",
+      "modesty"
     ],
     "answer": 0,
-    "explain": "'Cacophonous' means involving or producing a harsh, discordant mixture of sounds.",
-    "example": "A cacophonous alarm roused the sleeping guests at two in the morning."
+    "explain": "A 'panoply' is an extensive, splendid, or impressive collection or display.",
+    "example": "The exhibition displayed a dazzling panoply of Renaissance armor."
   },
   {
     "id": "voc-188",
@@ -3187,152 +3187,152 @@ window.C2_DATA.vocabulary = [
     "level": 4,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
-    "prompt": "The ballroom was ________ with crystal chandeliers and gilded rococo mirrors.",
+    "prompt": "The volcano had remained ________ for over three centuries before roaring back to life with a violent eruption.",
     "options": [
-      "resplendent",
-      "drab",
-      "dingy",
-      "somber"
+      "quiescent",
+      "eruptive",
+      "volatile",
+      "turbulent"
     ],
     "answer": 0,
-    "explain": "'Resplendent' means attractive and impressive through being richly colorful or sumptuous.",
-    "example": "The royal guard appeared in resplendent ceremonial tunics for the coronation."
+    "explain": "'Quiescent' means in a state or period of dormancy, inactivity, or rest.",
+    "example": "Tensions between the two factions remained quiescent until the election campaign began."
   },
   {
     "id": "voc-189",
     "mode": "vocabulary",
-    "level": 5,
+    "level": 3,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
-    "prompt": "The economist demonstrated that the prediction rested upon completely ________ assumptions.",
+    "prompt": "Philosophers have gathered for millennia to ________ upon the ethical implications of human mortality.",
     "options": [
-      "fallacious",
-      "sound",
-      "valid",
-      "cogent"
+      "disregard",
+      "ruminate",
+      "skim",
+      "glance"
     ],
-    "answer": 0,
-    "explain": "'Fallacious' means based on a mistaken belief or unsound reasoning.",
-    "example": "It is fallacious to assume that high technological adoption always correlates with subjective happiness."
+    "answer": 1,
+    "explain": "'To ruminate' means to think deeply or meditate at length about something.",
+    "example": "He spent days ruminating on the career dilemma before tendering his resignation."
   },
   {
     "id": "voc-190",
     "mode": "vocabulary",
-    "level": 3,
+    "level": 4,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
-    "prompt": "The lawyer's ________ arguments distracted the jury from the indisputable ballistics report.",
+    "prompt": "The monarch surrounded himself with fawning courtiers whose unceasing ________ distorted his political judgment.",
     "options": [
-      "sophistic",
-      "scrupulous",
-      "unassailable",
-      "candid"
+      "candor",
+      "insolence",
+      "sycophancy",
+      "impertinence"
     ],
-    "answer": 0,
-    "explain": "'Sophistic' means plausible but fallacious; subtly misleading in argument.",
-    "example": "He countered their sophistic rhetoric with hard empirical data."
+    "answer": 2,
+    "explain": "'Sycophancy' is servile, fawning behavior toward someone important in order to gain advantage.",
+    "example": "Integrity requires telling difficult truths rather than resorting to convenient sycophancy."
   },
   {
     "id": "voc-191",
     "mode": "vocabulary",
-    "level": 4,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
-    "prompt": "Expressions like 'free gift' or 'added bonus' are famously ________ pleonasms.",
+    "prompt": "In light of newly discovered archaeological evidence, the traditional chronology is no longer ________.",
     "options": [
-      "tautological",
-      "concise",
-      "elliptical",
-      "laconic"
+      "specious",
+      "flawed",
+      "tenable",
+      "spurious"
     ],
-    "answer": 0,
-    "explain": "'Tautological' means needlessly repetitive; saying the same thing twice in different words.",
-    "example": "The witness's deposition was tautological, repeating identical assertions across three pages."
+    "answer": 2,
+    "explain": "'Tenable' means able to be maintained or defended against attack or objection.",
+    "example": "His defensive legal position proved scarcely tenable under vigorous cross-examination."
   },
   {
     "id": "voc-192",
     "mode": "vocabulary",
-    "level": 5,
+    "level": 4,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
-    "prompt": "The medical claim requires rigorous ________ verification across multi-center clinical trials.",
+    "prompt": "The ambassador was renowned for his ________ manners, charm, and effortless wit at diplomatic functions.",
     "options": [
-      "empirical",
-      "hypothetical",
-      "speculative",
-      "abstract"
+      "uncouth",
+      "boorish",
+      "churlish",
+      "urbane"
     ],
-    "answer": 0,
-    "explain": "'Empirical' means based on, concerned with, or verifiable by observation or experience rather than theory.",
-    "example": "Her theory was grounded in exhaustive empirical research across fifteen archives."
+    "answer": 3,
+    "explain": "'Urbane' describes a person who is courteous, refined, and sophisticated in manner.",
+    "example": "An urbane host, he ensured every overseas visitor was welcomed cordially."
   },
   {
     "id": "voc-193",
     "mode": "vocabulary",
-    "level": 3,
+    "level": 2,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
-    "prompt": "The ________ professor threw chalk at undergraduates who arrived late to his lectures.",
+    "prompt": "His desire to write a historical monograph remained a mere ________, never translating into dedicated research.",
     "options": [
-      "irascible",
-      "equable",
-      "placid",
-      "genial"
+      "velleity",
+      "obsession",
+      "compulsion",
+      "resolve"
     ],
     "answer": 0,
-    "explain": "'Irascible' means having or showing a tendency to be easily angered; irritable.",
-    "example": "An irascible personality made him notoriously difficult to collaborate with on group projects."
+    "explain": "'Velleity' is a wish or inclination so slight that it does not lead to the slightest action.",
+    "example": "She had a velleity toward foreign travel, but rarely ventured beyond her home county."
   },
   {
     "id": "voc-194",
     "mode": "vocabulary",
-    "level": 4,
+    "level": 5,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
-    "prompt": "Despite three consecutive quarterly losses, the founder remained remarkably ________ about profitability.",
+    "prompt": "His ________ critiques of post-war architectural brutalism reshaped urban design standards.",
     "options": [
-      "sanguine",
-      "pessimistic",
-      "morose",
-      "despondent"
+      "trenchant",
+      "bland",
+      "equivocal",
+      "feeble"
     ],
     "answer": 0,
-    "explain": "'Sanguine' means optimistic or positive, especially in an apparently bad or difficult situation.",
-    "example": "Medical researchers are cautiously sanguine regarding the efficacy of the new vaccine."
+    "explain": "'Trenchant' means incisive, vigorous, and keenly articulate in expression or style.",
+    "example": "The editorial delivered a trenchant indictment of parliamentary sleaze."
   },
   {
     "id": "voc-195",
     "mode": "vocabulary",
-    "level": 5,
+    "level": 4,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
-    "prompt": "When the committee rejected his amendment, the delegate responded with ________ obstinacy.",
+    "prompt": "She faced the terrifying cross-examination with an air of breezy ________.",
     "options": [
-      "petulant",
-      "urbane",
-      "gracious",
-      "forbearing"
+      "trepidation",
+      "insouciance",
+      "dismay",
+      "anxiety"
     ],
-    "answer": 0,
-    "explain": "'Petulant' means childishly sulky or bad-tempered.",
-    "example": "A petulant display of temper will hardly persuade senior board members to reconsider."
+    "answer": 1,
+    "explain": "'Insouciance' is a state of casual lack of concern or carefree nonchalance.",
+    "example": "His aristocratic insouciance irritated the solemn bank auditors."
   },
   {
     "id": "voc-196",
     "mode": "vocabulary",
-    "level": 3,
+    "level": 5,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
-    "prompt": "The editorial highlighted the ________ influence of unverified disinformation on public health.",
+    "prompt": "The professor was famed for his treatises on ________ aspects of medieval canon law.",
     "options": [
-      "pernicious",
-      "salutary",
-      "benign",
-      "harmless"
+      "recondite",
+      "pedestrian",
+      "accessible",
+      "lucid"
     ],
     "answer": 0,
-    "explain": "'Pernicious' means having a harmful effect, especially in a gradual or subtle way.",
-    "example": "Unchecked inflation exercises a pernicious toll upon working-class pensions."
+    "explain": "'Recondite' describes knowledge that is abstruse, little known, and obscure.",
+    "example": "The seminar focused on recondite Byzantine legal disputes that few scholars comprehended."
   },
   {
     "id": "voc-197",
@@ -3340,66 +3340,117 @@ window.C2_DATA.vocabulary = [
     "level": 4,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
-    "prompt": "The prisoner cast a ________ glare at the judge as the verdict of guilty was read.",
+    "prompt": "The clerk dismissed the applicant's inquiries with a ________ curl of his lip.",
     "options": [
-      "baleful",
-      "benevolent",
-      "genial",
-      "tender"
+      "supercilious",
+      "deferential",
+      "modest",
+      "ingratiating"
     ],
     "answer": 0,
-    "explain": "'Baleful' means threatening harm; menacing; having a destructive influence.",
-    "example": "A baleful mist rolled over the cemetery as midnight approached."
+    "explain": "'Supercilious' means behaving as though one thinks one is superior to others; arrogant.",
+    "example": "Her supercilious condescension alienated her junior colleagues on the editorial desk."
   },
   {
     "id": "voc-198",
     "mode": "vocabulary",
-    "level": 5,
+    "level": 4,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
-    "prompt": "Glaucoma is an ________ condition that robs patients of peripheral vision without causing acute pain.",
+    "prompt": "The court was populated by ________ sycophants competing for the monarch's favor.",
     "options": [
-      "insidious",
-      "overt",
-      "blatant",
-      "benign"
+      "pugnacious",
+      "insolent",
+      "defiant",
+      "obsequious"
     ],
-    "answer": 0,
-    "explain": "'Insidious' means proceeding in a gradual, subtle way, but with very harmful effects.",
-    "example": "The insidious spread of cynicism threatens civic engagement across western democracies."
+    "answer": 3,
+    "explain": "'Obsequious' means obedient or attentive to an excessive or servile degree.",
+    "example": "The head waiter offered an obsequious bow as the foreign dignitaries entered."
   },
   {
     "id": "voc-199",
     "mode": "vocabulary",
-    "level": 3,
+    "level": 5,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
-    "prompt": "What seemed like an ________ query during the interview revealed an undisclosed conflict of interest.",
+    "prompt": "The suspect adopted an openly ________ attitude when questioned about his financial assets.",
     "options": [
-      "innocuous",
-      "lethal",
-      "toxic",
-      "virulent"
+      "docile",
+      "conciliatory",
+      "truculent",
+      "genial"
     ],
-    "answer": 0,
-    "explain": "'Innocuous' means not harmful or offensive; innocuous remarks.",
-    "example": "He offered an innocuous observation about the weather to break the tense silence."
+    "answer": 2,
+    "explain": "'Truculent' means eager or quick to argue or fight; aggressively defiant.",
+    "example": "The truculent demeanor of the striker provoked the opposing defender into a red card."
   },
   {
     "id": "voc-200",
     "mode": "vocabulary",
+    "level": 5,
+    "type": "choice",
+    "topic": "Lexical Nuance & Precision",
+    "prompt": "The play was criticized as a ________ melodrama designed to extract cheap tears.",
+    "options": [
+      "jubilant",
+      "hilarious",
+      "lachrymose",
+      "ebullient"
+    ],
+    "answer": 2,
+    "explain": "'Lachrymose' means tearful, prone to weeping, or mournful in tone.",
+    "example": "Her lachrymose speeches at the memorial failed to conceal her past hostility."
+  },
+  {
+    "id": "voc-201",
+    "mode": "vocabulary",
+    "level": 2,
+    "type": "choice",
+    "topic": "Lexical Nuance & Precision",
+    "prompt": "The cabinet was lambasted for its ________ surrender to corporate lobbyist demands.",
+    "options": [
+      "valiant",
+      "pusillanimous",
+      "intrepid",
+      "audacious"
+    ],
+    "answer": 1,
+    "explain": "'Pusillanimous' means showing a lack of courage or determination; timid.",
+    "example": "The military leadership criticized the government's pusillanimous retreat from the frontier."
+  },
+  {
+    "id": "voc-202",
+    "mode": "vocabulary",
     "level": 4,
     "type": "choice",
     "topic": "Lexical Nuance & Precision",
-    "prompt": "The haughty maitre d' gave us a ________ once-over before seating us near the pantry.",
+    "prompt": "From an early age, the young polymath demonstrated a natural ________ for mathematics.",
     "options": [
-      "supercilious",
-      "humble",
-      "modest",
-      "self-effacing"
+      "proclivity",
+      "aversion",
+      "disinclination",
+      "reluctance"
     ],
     "answer": 0,
-    "explain": "'Supercilious' means behaving or looking as though one thinks one is superior to others.",
-    "example": "Her supercilious condescension made her universally disliked among junior associates."
+    "explain": "'Proclivity' means a tendency to choose or do something regularly; an inclination or predisposition.",
+    "example": "His well-documented proclivity for luxury cars eventually led to his insolvency."
+  },
+  {
+    "id": "voc-203",
+    "mode": "vocabulary",
+    "level": 4,
+    "type": "choice",
+    "topic": "Lexical Nuance & Precision",
+    "prompt": "The director was in an ________ mood following the glowing opening-night reviews.",
+    "options": [
+      "despondent",
+      "morose",
+      "crestfallen",
+      "ebullient"
+    ],
+    "answer": 3,
+    "explain": "'Ebullient' means cheerful and full of energy; exuberant.",
+    "example": "An ebullient crowd greeted the victorious Olympic gymnasts at the municipal airport."
   }
 ];

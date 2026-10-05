@@ -1,0 +1,285 @@
+# scripts/data_definitions_expansion3.py
+# Additions for Cloze / Key Word Transformations and Grammar
+
+NEW_CLOZE = [
+    # Key Word Transformations
+    ("transformation", "KWT: Inversion with 'Seldom'", 4,
+     "I have rarely listened to such an insightful political speech.", "SELDOM",
+     "Seldom ", " such an insightful political speech.",
+     ["have I listened to", "have I ever listened to", "did I listen to"],
+     "Use negative inversion with 'Seldom have I...'",
+     "Negative restrictive adverbials like 'Seldom' fronted for emphasis demand auxiliary-subject inversion.",
+     "Seldom have I witnessed such dedication to public service."),
+
+    ("transformation", "KWT: Preference with 'Rather'", 3,
+     "I would prefer you not to mention our conversation to the director.", "RATHER",
+     "I would ", " mention our conversation to the director.",
+     ["rather you did not", "rather you didn't"],
+     "Use 'would rather + subject + past tense' for unfulfilled present preference.",
+     "'Would rather someone did not do something' is standard for expressing preference about another person's actions.",
+     "I would rather you remained here until the storm subsides."),
+
+    ("transformation", "KWT: Conditionals with 'Provided'", 3,
+     "You can borrow my reference textbook as long as you return it before Friday.", "PROVIDED",
+     "You can borrow my reference textbook ", " it before Friday.",
+     ["provided that you return", "provided you return"],
+     "Use 'provided that' as an alternative conditional conjunction.",
+     "'Provided that' introduces an explicit condition under which permission or agreement is granted.",
+     "You may enter the laboratory provided that you wear protective goggles."),
+
+    ("transformation", "KWT: Idiomatic Inability", 4,
+     "He found it completely impossible to understand why she had resigned so abruptly.", "LOSS",
+     "He was at a ", " why she had resigned so abruptly.",
+     ["loss to understand", "total loss to understand", "complete loss to understand"],
+     "Use the idiom 'at a loss to understand'.",
+     "'To be at a loss to do something' means to be completely unable to comprehend or decide.",
+     "Detectives were at a loss to explain how the burglar had bypassed the laser sensors."),
+
+    ("transformation", "KWT: Prepositional Concession", 4,
+     "Although she felt terribly nauseous, she managed to finish the recital.", "SPITE",
+     "In ", " feeling terribly nauseous, she managed to finish the recital.",
+     ["spite of", "spite of her"],
+     "Use 'In spite of + gerund/noun'.",
+     "'In spite of' is a prepositional phrase expressing concession followed by a noun phrase or gerund.",
+     "In spite of torrential rain, the open-air opera proceeded to its conclusion."),
+
+    ("transformation", "KWT: Passive Obligation", 4,
+     "Students are strictly required to hand in their essays by five o'clock.", "NO",
+     "Under ", " hand in their essays after five o'clock.",
+     ["no circumstances may students", "no circumstances are students to", "no circumstances can students"],
+     "Start with negative inversion 'Under no circumstances...'.",
+     "Fronted restrictive prepositional phrases demand subject-auxiliary inversion in the main clause.",
+     "Under no circumstances should security passes be shared with external visitors."),
+
+    ("transformation", "KWT: Causative with 'Made'", 3,
+     "The headmaster forced the delinquent boys to clean the graffiti off the gymnasium wall.", "MADE",
+     "The delinquent boys were ", " the graffiti off the gymnasium wall.",
+     ["made to clean", "made to clean off"],
+     "Use passive form: 'were made to clean'.",
+     "While active 'make' takes a bare infinitive ('made them clean'), the passive requires 'to' ('were made to clean').",
+     "Recruits were made to run ten miles in full field pack."),
+
+    ("transformation", "KWT: Degree with 'Too'", 3,
+     "The sea was so turbulent that the lifeboats could not be launched safely.", "TOO",
+     "The sea was ", " the lifeboats to be launched safely.",
+     ["too turbulent for"],
+     "Use 'too + adjective + for + object + to-infinitive'.",
+     "'Too... to' structures express excessive degree preventing an outcome.",
+     "The mountain trail was too icy for hikers to traverse without crampons."),
+
+    ("transformation", "KWT: Result with 'Prevented'", 4,
+     "Heavy snowfall prevented the supply trucks from reaching the remote outpost.", "IMPOSSIBLE",
+     "Heavy snowfall made ", " the supply trucks to reach the remote outpost.",
+     ["it impossible for"],
+     "Use 'made it impossible for + object + to infinitive'.",
+     "Preparatory 'it' is required after verbs like 'make', 'find', or 'consider' when followed by an infinitive clause.",
+     "A sudden blackout made it impossible for the surgeons to proceed without backup generators."),
+
+    ("transformation", "KWT: Immediate Succession", 5,
+     "The moment the diplomat entered the auditorium, the protesters began chanting slogans.", "SOONER",
+     "No ", " the diplomat entered the auditorium than the protesters began chanting slogans.",
+     ["sooner had"],
+     "Use 'No sooner had + subject + past participle ... than ...'.",
+     "'No sooner had' is a formal correlative inverted structure expressing immediate succession.",
+     "No sooner had the ambassador departed than the prime minister convened an emergency briefing."),
+
+    ("transformation", "KWT: Phrasal Substitution", 4,
+     "The committee agreed to postpone the election until the following autumn.", "PUT",
+     "The committee decided to ", " until the following autumn.",
+     ["put off the election", "put the election off"],
+     "Use the phrasal verb 'put off'.",
+     "'To put off' is the standard idiomatic equivalent of 'to postpone' or 'defer'.",
+     "We cannot put off this difficult discussion any longer."),
+
+    ("transformation", "KWT: Concessive 'However'", 4,
+     "No matter how difficult the exam was, she remained composed throughout.", "HOWEVER",
+     "She remained composed throughout, ", " the exam was.",
+     ["however difficult", "however arduous"],
+     "Use 'however + adjective' for concessive qualification.",
+     "'However difficult' is a subordinating concessive phrase meaning 'no matter how difficult'.",
+     "However wealthy a person may be, integrity cannot be purchased."),
+
+    ("transformation", "KWT: Passive Reporting", 5,
+     "People say that the elusive poet lives in an isolated lighthouse in the Hebrides.", "SAID",
+     "The elusive poet is ", " in an isolated lighthouse in the Hebrides.",
+     ["said to live", "said to be living"],
+     "Use the personal passive reporting structure: 'is said to live'.",
+     "Personal passive constructions elevate the formal register of reported speech.",
+     "The reclusive billionaire is said to reside on a private Aegean atoll."),
+
+    ("transformation", "KWT: Conditional with 'Were'", 4,
+     "If the dam collapsed, the entire downstream valley would be inundated.", "WERE",
+     "________ the dam to collapse, the entire downstream valley would be inundated.", "",
+     ["Were the dam to collapse", "Were the dam to give way"],
+     "Use inverted hypothetical conditional starting with 'Were'.",
+     "'Were + subject + to-infinitive' replaces second conditional 'If + subject + past tense'.",
+     "Were foreign aid to cease, millions would face acute famine."),
+
+    ("transformation", "KWT: Idioms with 'Account'", 4,
+     "His poor eyesight was not considered when he was dismissed from the flying academy.", "TAKEN",
+     "His poor eyesight was not ", " when he was dismissed from the flying academy.",
+     ["taken into account", "taken account of"],
+     "Use the passive idiom 'taken into account'.",
+     "'To take into account' means to consider or factor in a circumstance.",
+     "Travel expenses must be taken into account when drafting the project budget."),
+
+    # Multiple Choice Cloze Items
+    ("choice", "Contextual Cloze: Adverbial Choice", 3,
+     "The novel was ________ praised by literary critics for its innovative narrative structure.",
+     ["universally", "wholly", "entirely", "fully"],
+     "'Universally praised' is the canonical collocation meaning commended by all reviewers without exception.",
+     "Her debut symphony was universally praised by musical critics."),
+
+    ("choice", "Contextual Cloze: Academic Discourse", 4,
+     "The researcher conducted an ________ investigation into the historical archives of the abbey.",
+     ["exhaustive", "exhausting", "exhausted", "exhaustible"],
+     "'Exhaustive' means comprehensive, thorough, and considering all possibilities. 'Exhausting' means tiring.",
+     "An exhaustive search of municipal records failed to unearth the missing deed."),
+
+    ("choice", "Contextual Cloze: Formal Connectives", 4,
+     "The proposal has merit; ________, there are significant budgetary hurdles that must be resolved.",
+     ["nonetheless", "furthermore", "moreover", "inasmuch"],
+     "'Nonetheless' functions as an adversative transitional adverb meaning 'in spite of that'.",
+     "The journey was arduous; nonetheless, all explorers returned safely."),
+
+    ("choice", "Contextual Cloze: Evaluative Register", 4,
+     "The judge condemned the corporation for its ________ disregard of workplace safety regulations.",
+     ["flagrant", "fragile", "fleeting", "fickle"],
+     "'Flagrant disregard' is an emphatic formal collocation denoting an open, shameless violation.",
+     "Dumping chemical waste into the river showed flagrant disregard for public health."),
+
+    ("choice", "Contextual Cloze: Sensory Description", 5,
+     "A ________ aroma of freshly roasted Arabica beans greeted customers stepping into the roastery.",
+     ["heady", "heavyset", "heavyhanded", "headlong"],
+     "'A heady aroma' describes a rich, potent, and exhilarating fragrance.",
+     "The mountain air was filled with the heady scent of blooming wild pine."),
+
+    ("choice", "Contextual Cloze: Precision Verbs", 4,
+     "Archaeologists managed to ________ the age of the pottery shards using thermoluminescence testing.",
+     ["ascertain", "divine", "speculate", "presume"],
+     "'To ascertain' means to find out or learn with certainty through examination.",
+     "We must ascertain the exact cause of the pipeline fracture before resuming pumping."),
+
+    ("choice", "Contextual Cloze: Legal Context", 5,
+     "The international treaty contained a secret ________ guaranteeing mutual defense in case of invasion.",
+     ["clause", "term", "word", "item"],
+     "In legal drafting, a specific distinct provision in a treaty or contract is a 'clause'.",
+     "The arbitration clause stipulates that commercial disputes must be settled in Geneva."),
+
+    ("choice", "Contextual Cloze: Tone & Register", 4,
+     "The editorial adopted an unapologetically ________ tone, lambasting political compromise.",
+     ["strident", "subdued", "dulcet", "mellifluous"],
+     "'Strident' describes language that is loud, harsh, uncompromising, and commanding attention.",
+     "Her strident critiques of monetary policy polarized the economic faculty."),
+
+    ("choice", "Contextual Cloze: Collocational Nuance", 3,
+     "The company made a ________ profit during its very first fiscal year of operation.",
+     ["handsome", "pretty", "charming", "lovely"],
+     "'A handsome profit' is the established high-register collocation meaning substantial and generous.",
+     "The investment yielded a handsome return of over thirty percent."),
+
+    ("choice", "Contextual Cloze: Evaluative Precision", 4,
+     "He was considered a ________ candidate for the vacant directorship given his twenty years of tenure.",
+     ["prime", "foremost", "head", "chief"],
+     "'A prime candidate' describes the most suitable or likely person for a post.",
+     "Her extensive overseas experience made her a prime candidate for the diplomatic mission.")
+]
+
+NEW_GRAMMAR = [
+    ("Negative Inversion: Seldom", 3, "Seldom ________ a performance that combined such technical mastery with profound emotional depth.",
+     ["has one witnessed", "one has witnessed", "one witnessed", "did one witnessed"],
+     "Restrictive adverbial 'Seldom' fronted for emphasis mandates subject-auxiliary inversion.",
+     "Seldom has a debut novel achieved such unanimous critical acclaim."),
+
+    ("Formulaic Subjunctive: Far be it", 4, "Far ________ it from me to interfere in departmental hiring decisions.",
+     ["be", "is", "were", "being"],
+     "'Far be it from me' is an invariant formulaic subjunctive idiom expressing polite reluctance to presume.",
+     "Far be it from me to tell you how to conduct your personal research."),
+
+    ("Fronted Inversion: So profound", 4, "So profound ________ the scholar's insights that his lectures drew academics from across Europe.",
+     ["were", "was", "did", "had"],
+     "When 'So + adjective' is fronted, the copula verb inverts and agrees with the plural subject ('insights' -> 'were').",
+     "So profound were her philosophical treatises that they transformed ethical philosophy."),
+
+    ("Mandative Subjunctive: It is vital that", 4, "It is vital that every laboratory worker ________ protective eyewear at all times.",
+     ["wear", "wears", "wore", "would wear"],
+     "Impersonal mandative constructions ('It is vital that...') govern the base subjunctive verb form.",
+     "It is vital that the patient receive the antibiotics within the hour."),
+
+    ("Correlative Conjunctions: No sooner", 3, "No sooner had the curtain fallen ________ the audience burst into thunderous applause.",
+     ["than", "when", "then", "that"],
+     "'No sooner had... than...' is the invariant formal correlative sequence. ('Hardly' pairs with 'when').",
+     "No sooner had the airliner taken off than a warning sensor flashed on the console."),
+
+    ("Absolute Participle Clause", 5, "The contentious treaty ________ ratified, the ambassadors departed for their respective capitals.",
+     ["having been", "being had", "had been", "were"],
+     "An absolute participle clause contains its own independent subject and uses a participial form without coordinating conjunctions.",
+     "The final exam having been concluded, students gathered on the lawn to celebrate."),
+
+    ("Formulaic Subjunctive: Suffice it to say", 4, "________ it to say, our initial economic projections proved excessively optimistic.",
+     ["Suffice", "Suffices", "Sufficing", "Sufficed"],
+     "'Suffice it to say' is a fixed formulaic subjunctive meaning 'it is sufficient to say'.",
+     "Suffice it to say that the expedition encountered more challenges than expected."),
+
+    ("Pseudo-cleft Sentences: What", 4, "________ surprised the archaeological team was the pristine condition of the bronze helmet.",
+     ["What", "Which", "That", "It"],
+     "Wh-cleft sentences use nominal relative 'What' to focus attention on the subject matter.",
+     "What intrigued the detectives was the absence of forced entry marks."),
+
+    ("Inverted Third Conditional: Had", 5, "________ the advisory board recognized the liquidity crunch, emergency hedging could have been instituted.",
+     ["Had", "Were", "Should", "If"],
+     "Formal conditional clauses omit 'if' by inverting auxiliary 'Had' with the subject.",
+     "Had we known the bridge was weakened, we would never have permitted heavy transport across."),
+
+    ("Subjunctive with 'Lest'", 5, "The archivist kept the rare scrolls in climate-controlled cases lest humidity ________ the parchment.",
+     ["degrade", "degrades", "degraded", "would degrade"],
+     "'Lest' governs the base subjunctive ('degrade') or 'should + bare infinitive'.",
+     "We spoke in hushed tones lest someone overhear our strategic deliberations."),
+
+    ("Negative Inversion: Under no circumstances", 3, "Under no circumstances ________ disclose the combination of the vault.",
+     ["may the cashier", "the cashier may", "the cashier can", "can cashier the"],
+     "Negative restrictive adverbials ('Under no circumstances') require subject-auxiliary inversion.",
+     "Under no circumstances should flammable chemicals be stored near electric heaters."),
+
+    ("Concessive Inversion: Be that as it may", 4, "________ that as it may, we must remain within our statutory budgetary limits.",
+     ["Be", "Is", "Were", "Being"],
+     "'Be that as it may' is an immutable formulaic subjunctive idiom meaning 'nevertheless'.",
+     "Your objections are valid. Be that as it may, the deadline cannot be extended."),
+
+    ("Directional Inversion", 4, "Down the steep cobblestone street ________ the speeding cavalry regiment.",
+     ["thundered", "did thunder", "was thundering", "thundering"],
+     "Fronted directional and locative adverbials trigger full subject-verb inversion with vivid intransitive verbs.",
+     "Into the conference room strode the managing director."),
+
+    ("Inverted Second Conditional: Were", 4, "________ you to encounter any discrepancies during the inventory audit, alert management immediately.",
+     ["Were", "Should", "Had", "Could"],
+     "'Were + subject + to-infinitive' is the formal inverted form of second conditional 'If you were to...'.",
+     "Were the volcanic vent to reopen, the coastal highway would be closed instantly."),
+
+    ("Participle Clauses with 'When'", 4, "When ________ with contradictory forensic evidence, the defendant broke down in tears.",
+     ["confronted", "confronting", "having confronted", "being confronted"],
+     "A reduced passive adverbial clause takes the past participle directly following the conjunction.",
+     "When questioned by investigators, the clerk admitted falsifying customs invoices."),
+
+    ("Fronted Adjectives with 'As/Though'", 4, "________ the winter winds were, the mountaineers pressed onward to the summit.",
+     ["Fierce though", "Although fierce", "Despite fierce", "However fierce"],
+     "'Adjective + though/as + subject + verb' is the advanced concessive fronting construction.",
+     "Talented though he was, he lacked the self-discipline required for professional sport."),
+
+    ("Cleft Sentence: It was... that", 4, "It was only after the DNA analysis was completed ________ the suspect was officially exonerated.",
+     ["that", "when", "which", "then"],
+     "In 'It is/was... that' cleft constructions, the relative connective must be 'that'.",
+     "It was not until dusk that the search party located the missing campers."),
+
+    ("Subject-Verb Agreement with 'Together with'", 4, "The head curator, together with four assistant archivists, ________ responsible for the illuminated manuscripts.",
+     ["is", "are", "were", "being"],
+     "Parenthetical phrases like 'together with' do not make the singular subject ('curator') plural.",
+     "The president, accompanied by his secret service detail, has arrived in Geneva."),
+
+    ("Double Genitive Construction", 5, "That brilliant legal analysis of ________ has been cited in three Supreme Court judgments.",
+     ["the barrister's", "the barrister", "a barrister", "barrister's"],
+     "The double genitive combines 'of' with a possessive form ('of the barrister's').",
+     "A fascinating monograph of Professor Davies's was published by Oxford University Press.")
+]
+
+print("Loaded NEW_CLOZE and NEW_GRAMMAR definitions.")

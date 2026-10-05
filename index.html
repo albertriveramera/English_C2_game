@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>C2 English Proficiency Arcade | Master C2 Level English</title>
-  <meta name="description" content="Adaptive browser game to advance from C1 to C2 English Mastery with spaced repetition, Cambridge Use of English, Key Word Transformations, and nuanced vocabulary.">
+  <meta name="description" content="Adaptive ELO browser game to advance from C1 to C2 English Mastery with spaced repetition, Cambridge Use of English, Key Word Transformations, and nuanced vocabulary.">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -26,12 +26,13 @@
           <span class="val" id="stat-streak-val">1d</span>
         </div>
 
-        <div class="stat-pill xp" title="Total Experience Points">
-          <span class="icon">⚡</span>
-          <span class="val" id="stat-xp-val">0 XP</span>
+        <div class="stat-pill elo" id="stat-elo-pill" title="Global ELO Rating across all 6 skills">
+          <span class="icon">📈</span>
+          <span class="val" id="stat-elo-val">1400 ELO</span>
+          <span class="delta-badge" id="stat-elo-delta" style="display: none;">+0</span>
         </div>
 
-        <div class="stat-pill rank-badge" id="btn-open-ranks-modal" title="Click to view Ranks & Statistics" role="button" tabindex="0">
+        <div class="stat-pill rank-badge" id="btn-open-ranks-modal" title="Click to view Ranks & ELO Analytics" role="button" tabindex="0">
           <span class="icon" id="stat-rank-badge">🥉</span>
           <span class="val" id="stat-rank-val">C1 Contender</span>
         </div>
@@ -55,7 +56,7 @@
             <div class="hero-tag">🎯 Daily Proficiency Challenge</div>
             <h2 class="hero-title">Elevate Your Command to True C2 Mastery</h2>
             <p class="hero-subtitle">
-              Tackle high-register vocabulary, subtle collocations, Cambridge Key Word Transformations, and complex syntactic inversions in a fast daily 10-minute session.
+              Battle calibrated questions across high-register vocabulary, subtle collocations, Cambridge Key Word Transformations, and complex syntactic inversions in a fast daily 10-minute session.
             </p>
             <div class="hero-actions">
               <button type="button" class="btn-primary" id="btn-start-daily">
@@ -64,7 +65,7 @@
               </button>
               <button type="button" class="btn-secondary mistakes-alert" id="btn-review-mistakes" style="display: none;">
                 <span>⚠️ Review Mistakes</span>
-                <span class="xp-gained-badge" id="mistakes-count-badge">0</span>
+                <span class="elo-gained-badge loss" id="mistakes-count-badge">0</span>
               </button>
             </div>
           </div>
@@ -98,7 +99,7 @@
             </div>
             <div class="legend-item">
               <div class="legend-dot unseen"></div>
-              <span id="legend-unseen-count">Unseen (1,060)</span>
+              <span id="legend-unseen-count">Unseen (1,005)</span>
             </div>
           </div>
         </div>
@@ -106,7 +107,7 @@
         <!-- Mode Grid Selection -->
         <div class="modes-section-title">
           <span>Targeted Skill Mini-Games</span>
-          <span style="font-size: 0.85rem; font-weight: 500; color: #94a3b8;">10 questions per focused round</span>
+          <span style="font-size: 0.85rem; font-weight: 500; color: #94a3b8;">10 questions per focused round &bull; Variety bonus applies to underplayed categories</span>
         </div>
 
         <div class="modes-grid" id="modes-grid-container">
@@ -162,7 +163,7 @@
         <div class="results-card">
           <div class="results-trophy" id="results-trophy">🏆</div>
           <h2 class="results-title" id="results-title">Session Complete!</h2>
-          <p class="results-subtitle">Here is how you performed against C2 benchmarks:</p>
+          <p class="results-subtitle">Here is how your ratings adjusted against C2 benchmarks:</p>
 
           <div class="results-stats-row">
             <div class="results-stat-box">
@@ -170,8 +171,8 @@
               <div class="label">Accuracy</div>
             </div>
             <div class="results-stat-box">
-              <div class="num" id="results-stat-xp">+180</div>
-              <div class="label">XP Earned</div>
+              <div class="num" id="results-stat-elo">+24</div>
+              <div class="label" id="results-stat-elo-label">ELO Delta</div>
             </div>
             <div class="results-stat-box">
               <div class="num" id="results-stat-streak">1 day</div>
@@ -198,13 +199,13 @@
     <div class="modal-overlay" id="stats-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
       <div class="modal-window">
         <button type="button" class="modal-close-btn" id="btn-modal-close" aria-label="Close Modal">&times;</button>
-        <h3 id="modal-title" style="font-size: 1.35rem; font-weight: 800; margin-bottom: 6px;">Your C2 Journey & Ranks</h3>
+        <h3 id="modal-title" style="font-size: 1.35rem; font-weight: 800; margin-bottom: 6px;">Your C2 Journey & ELO Analytics</h3>
         <p style="color: #94a3b8; font-size: 0.88rem; margin-bottom: 20px;">
-          Progress from C1 Contender to C2 Master as you gain XP and reinforce your Leitner memory boxes.
+          Advance through CEFR C2 proficiency tiers as your Global ELO rises and you accumulate verified correct answers across all categories.
         </p>
 
         <!-- Lifetime Stats Grid -->
-        <div class="results-stats-row" style="margin-bottom: 24px;">
+        <div class="results-stats-row" style="margin-bottom: 20px;">
           <div class="results-stat-box">
             <div class="num" id="modal-stat-sessions">0</div>
             <div class="label">Sessions</div>
@@ -219,14 +220,41 @@
           </div>
         </div>
 
-        <h4 style="font-size: 0.95rem; font-weight: 700; color: #e2e8f0; margin-bottom: 8px;">Proficiency Rank Ladder</h4>
-        <div class="ranks-list" id="modal-ranks-list">
-          <!-- Populated dynamically -->
+        <!-- Rank Progress Card -->
+        <div id="modal-rank-progress-mount"></div>
+
+        <!-- Skill Ratings Breakdown -->
+        <h4 style="font-size: 0.95rem; font-weight: 700; color: #e2e8f0; margin-bottom: 10px;">Skill ELO Breakdown (6 Disciplines)</h4>
+        <div class="category-elo-grid" id="modal-category-elo-mount">
+          <!-- Populated dynamically via ui.js -->
         </div>
 
-        <div style="margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
-          <span style="font-size: 0.8rem; color: #94a3b8;">Manage Local Data</span>
-          <button type="button" class="btn-danger" id="btn-reset-progress">Reset Progress</button>
+        <h4 style="font-size: 0.95rem; font-weight: 700; color: #e2e8f0; margin-bottom: 10px;">Proficiency Rank Ladder</h4>
+        <div class="ranks-list" id="modal-ranks-list">
+          <!-- Populated dynamically via ui.js -->
+        </div>
+
+        <div style="margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--border-subtle); display: flex; flex-direction: column; gap: 14px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+            <div>
+              <div style="font-size: 0.88rem; font-weight: 700; color: #e2e8f0;">Backup &amp; Transfer Data</div>
+              <div style="font-size: 0.76rem; color: #94a3b8;">Save or restore your ratings &amp; progress as a JSON file</div>
+            </div>
+            <div style="display: flex; gap: 8px;">
+              <button type="button" class="btn-secondary" id="btn-export-progress" style="padding: 8px 14px; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 6px;">
+                📥 Export Save
+              </button>
+              <button type="button" class="btn-secondary" id="btn-import-progress" style="padding: 8px 14px; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 6px;">
+                📤 Import Save
+              </button>
+              <input type="file" id="import-file-input" accept=".json" style="display: none;" />
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px dashed rgba(255, 255, 255, 0.08);">
+            <span style="font-size: 0.78rem; color: #94a3b8;">Reset all ratings, history &amp; Leitner boxes</span>
+            <button type="button" class="btn-danger" id="btn-reset-progress">Reset Progress</button>
+          </div>
         </div>
       </div>
     </div>
@@ -242,6 +270,7 @@
   <script src="data/confusables.js"></script>
 
   <!-- Application Logic Scripts -->
+  <script src="js/elo.js"></script>
   <script src="js/storage.js"></script>
   <script src="js/srs.js"></script>
   <script src="js/engine.js"></script>

@@ -1,4 +1,5 @@
-// Master Application Controller for C2 English Arcade
+// js/app.js
+// Master Application Controller for C2 English Arcade (ELO Edition)
 (function () {
   'use strict';
 
@@ -58,7 +59,7 @@
     const btnExit = document.getElementById('btn-session-exit');
     if (btnExit) {
       btnExit.addEventListener('click', () => {
-        if (confirm('Leave current practice session? Current session progress will end.')) {
+        if (confirm('Leave current practice session? Current round will end.')) {
           activeSession = null;
           waitingForContinue = false;
           renderAllHub();
@@ -120,7 +121,7 @@
     }
     launchSession({
       type: 'daily',
-      title: 'Daily C2 Proficiency Session',
+      title: 'Daily C2 Proficiency Challenge',
       questions: questions
     });
   }
@@ -161,9 +162,11 @@
       currentIndex: 0,
       totalCount: sessionData.questions.length,
       correctCount: 0,
-      xpEarned: 0,
       streak: 0,
-      results: []
+      sessionStartGlobalElo: window.C2ELO.globalRating(state),
+      results: [],
+      lastCalculation: null,
+      lastHistoryEntry: null
     };
     waitingForContinue = false;
     showView('view-session');
@@ -194,8 +197,10 @@
     const levelTag = document.getElementById('question-level-tag');
     const topicTag = document.getElementById('question-topic-tag');
 
+    const qRating = window.C2ELO.questionRating(q);
+
     if (modeTag) modeTag.textContent = q.mode.toUpperCase();
-    if (levelTag) levelTag.textContent = `CEFR Level ${q.level}`;
+    if (levelTag) levelTag.textContent = `${qRating} ELO (L${q.level})`;
     if (topicTag) topicTag.textContent = q.topic || 'Use of English';
 
     // Clear previous question bodies
@@ -224,20 +229,32 @@
     const optionsGrid = document.createElement('div');
     optionsGrid.className = 'options-grid';
 
+    // Create randomized display permutation of option indices
+    const indices = q.options.map((_, i) => i);
+    for (let i = indices.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const temp = indices[i];
+      indices[i] = indices[j];
+      indices[j] = temp;
+    }
+    activeSession.currentDisplayMapping = indices;
+
     const keyLabels = ['1', '2', '3', '4'];
-    q.options.forEach((opt, idx) => {
+    indices.forEach((origIdx, dispIdx) => {
+      const opt = q.options[origIdx];
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'option-btn';
-      btn.dataset.idx = idx;
+      btn.dataset.dispIdx = dispIdx;
+      btn.dataset.origIdx = origIdx;
 
       btn.innerHTML = `
-        <span class="option-key">${keyLabels[idx] || (idx + 1)}</span>
+        <span class="option-key">${keyLabels[dispIdx]}</span>
         <span class="option-text">${opt}</span>
       `;
 
       btn.addEventListener('click', () => {
-        handleChoiceSelection(idx);
+        handleChoiceSelection(dispIdx);
       });
 
       optionsGrid.appendChild(btn);
@@ -247,40 +264,52 @@
   }
 
   function renderTransformationQuestion(q, container) {
-    // Lead-in sentence
+    // 1. Lead-in sentence
     const leadInEl = document.createElement('div');
     leadInEl.className = 'transformation-lead-in';
-    leadInEl.innerHTML = `<strong>Given:</strong> ${q.leadIn}`;
+    leadInEl.textContent = q.leadIn;
     container.appendChild(leadInEl);
 
-    // Key Word
-    const keyWordWrap = document.createElement('div');
-    keyWordWrap.className = 'transformation-keyword-box';
-    keyWordWrap.innerHTML = `
-      <span>Key Word (do not change):</span>
-      <span class="transformation-keyword">${q.keyWord}</span>
+    // 2. Key Word Card
+    const kwCard = document.createElement('div');
+    kwCard.className = 'transformation-keyword-card';
+    kwCard.innerHTML = `
+      <div class="keyword-label">KEY WORD (DO NOT CHANGE FORM)</div>
+      <div class="keyword-text">${q.keyWord}</div>
     `;
-    container.appendChild(keyWordWrap);
+    container.appendChild(kwCard);
 
-    // Sentence Frame
+    // 3. Transformation Sentence with Gap
+    const gapSentence = document.createElement('div');
+    gapSentence.className = 'transformation-gap-sentence';
+    gapSentence.innerHTML = `
+      <span>${q.gapPrefix || ''}</span>
+      <span class="prompt-gap" style="margin: 0 4px;">[ 3 to 8 words ]</span>
+      <span>${q.gapSuffix || ''}</span>
+    `;
+    container.appendChild(gapSentence);
+
+    // 4. User Input Box
     const inputWrap = document.createElement('div');
     inputWrap.className = 'transformation-input-wrap';
 
-    const frameEl = document.createElement('div');
-    frameEl.className = 'transformation-sentence-frame';
-    frameEl.innerHTML = `<em>Complete the second sentence:</em><br><strong>${q.gapPrefix}</strong> [ ... ] <strong>${q.gapSuffix}</strong>`;
-    inputWrap.appendChild(frameEl);
-
     const input = document.createElement('input');
     input.type = 'text';
-    input.className = 'transformation-input';
     input.id = 'transformation-user-input';
-    input.placeholder = `Fill the gap (e.g. including '${q.keyWord}')...`;
+    input.className = 'transformation-input';
+    input.placeholder = `Type the missing words (including '${q.keyWord}')...`;
     input.autocomplete = 'off';
+    input.autocorrect = 'off';
+    input.autocapitalize = 'off';
+    input.spellcheck = false;
+
     inputWrap.appendChild(input);
 
     const actions = document.createElement('div');
-    actions.className = 'transformation-actions';
+    actions.style.display = 'flex';
+    actions.style.gap = '10px';
+    actions.style.marginTop = '12px';
+    actions.style.justifyContent = 'flex-end';
 
     const submitBtn = document.createElement('button');
     submitBtn.type = 'button';
@@ -324,18 +353,21 @@
 
   // --- Processing Answers ---
 
-  function handleChoiceSelection(selectedIndex) {
+  function handleChoiceSelection(displayedIndex) {
     if (waitingForContinue) return;
     const q = activeSession.questions[activeSession.currentIndex];
-    const isCorrect = selectedIndex === q.answer;
+    const mapping = activeSession.currentDisplayMapping || [0, 1, 2, 3];
+    const origIndex = mapping[displayedIndex];
+    const isCorrect = origIndex === q.answer;
 
-    // Disable all option buttons
+    // Disable all option buttons and apply correct/wrong styling
     const buttons = document.querySelectorAll('.option-btn');
-    buttons.forEach((btn, idx) => {
+    buttons.forEach((btn, dIdx) => {
       btn.disabled = true;
-      if (idx === q.answer) {
+      const bOrig = mapping[dIdx];
+      if (bOrig === q.answer) {
         btn.classList.add(isCorrect ? 'selected-correct' : 'revealed-answer');
-      } else if (idx === selectedIndex && !isCorrect) {
+      } else if (dIdx === displayedIndex && !isCorrect) {
         btn.classList.add('selected-wrong');
       }
     });
@@ -354,10 +386,10 @@
       input.style.borderColor = isCorrect ? '#10b981' : '#f43f5e';
     }
 
-    processAnswerResult(q, isCorrect);
+    processAnswerResult(q, isCorrect, userText);
   }
 
-  function processAnswerResult(q, isCorrect) {
+  function processAnswerResult(q, isCorrect, userText = '') {
     waitingForContinue = true;
 
     // Update Session Metrics
@@ -370,35 +402,49 @@
       if (state.soundEnabled) window.C2UI.playWrongSound();
     }
 
-    const xpGained = isCorrect ? window.C2Engine.calculateQuestionXp(q, activeSession.streak) : 3;
-    activeSession.xpEarned += xpGained;
+    // Apply ELO calculation & rating update
+    const calc = window.C2ELO.applyAnswer(state, q, isCorrect);
+    activeSession.lastCalculation = calc;
+    activeSession.lastHistoryEntry = calc.historyEntry;
 
-    // Update Profile and Storage
-    state.profile.xp += xpGained;
+    // Profile counters
     state.profile.totalAnswered = (state.profile.totalAnswered || 0) + 1;
-    if (isCorrect) state.profile.totalCorrect = (state.profile.totalCorrect || 0) + 1;
-
-    // Update Mode Stats
-    if (!state.modeStats[q.mode]) state.modeStats[q.mode] = { correct: 0, total: 0 };
-    state.modeStats[q.mode].total++;
-    if (isCorrect) state.modeStats[q.mode].correct++;
-
-    // Update Leitner SRS & Adaptive Level
-    window.C2SRS.recordResult(state, q.id, isCorrect);
-    const adaptiveResult = window.C2Engine.updateAdaptiveLevel(state, q.mode, isCorrect);
-
-    if (adaptiveResult.leveledUp && state.soundEnabled) {
-      setTimeout(() => window.C2UI.playLevelUpSound(), 350);
+    if (isCorrect) {
+      state.profile.totalCorrect = (state.profile.totalCorrect || 0) + 1;
     }
 
+    // Manage Leitner SRS & Mistakes Queue
+    window.C2SRS.recordResult(state, q.id, isCorrect);
+    if (!isCorrect) {
+      if (!state.mistakesQueue.includes(q.id)) {
+        state.mistakesQueue.push(q.id);
+      }
+    } else {
+      const mIdx = state.mistakesQueue.indexOf(q.id);
+      if (mIdx !== -1) {
+        state.mistakesQueue.splice(mIdx, 1);
+      }
+    }
+
+    // Save state
     window.C2Storage.saveState(state);
+
+    // Update visual feedback
+    window.C2UI.showEloDeltaBadge(calc.delta);
     window.C2UI.updateHeaderStats(state);
 
+    if (calc.promoted) {
+      window.C2UI.launchConfetti();
+      if (state.soundEnabled) {
+        setTimeout(() => window.C2UI.playLevelUpSound(), 300);
+      }
+    }
+
     // Render Explanatory Feedback
-    renderFeedbackCard(q, isCorrect, xpGained, adaptiveResult);
+    renderFeedbackCard(q, isCorrect, calc);
   }
 
-  function renderFeedbackCard(q, isCorrect, xpGained, adaptiveResult) {
+  function renderFeedbackCard(q, isCorrect, calc) {
     const feedbackWrap = document.getElementById('session-feedback-wrap');
     if (!feedbackWrap) return;
 
@@ -406,14 +452,32 @@
     if (q.type === 'transformation') {
       targetAnswerHtml = `
         <div style="margin-bottom: 12px; font-size: 0.95rem; color: #a5b4fc;">
-          <strong>Accepted Solutions:</strong> ${q.accepted.map(a => `<code>${q.gapPrefix}<strong>${a}</strong>${q.gapSuffix}</code>`).join(' &bull; ')}
+          <strong>Accepted Solutions:</strong> ${q.accepted.map(a => `<code>${q.gapPrefix || ''}<strong>${a}</strong>${q.gapSuffix || ''}</code>`).join(' &bull; ')}
         </div>
       `;
     }
 
-    let adaptiveNote = '';
-    if (adaptiveResult.leveledUp) {
-      adaptiveNote = `<div style="color: #6ee7b7; font-weight: 700; font-size: 0.85rem; margin-bottom: 8px;">🌟 Adaptive Difficulty Increased! Mode '${q.mode}' is now Level ${adaptiveResult.newLevel}.</div>`;
+    let promotionNotice = '';
+    if (calc.promoted) {
+      promotionNotice = `
+        <div style="color: #6ee7b7; font-weight: 800; font-size: 0.95rem; margin-bottom: 10px; background: rgba(16, 185, 129, 0.15); padding: 8px 12px; border-radius: 8px; border: 1px solid rgba(16, 185, 129, 0.4);">
+          🎉 RANK UP: You are now <strong>${calc.rankInfo.rank.badge} ${calc.rankInfo.rank.title}</strong>!
+        </div>
+      `;
+    }
+
+    const deltaSign = calc.delta >= 0 ? '+' : '';
+    const badgeClass = calc.delta >= 0 ? 'gain' : 'loss';
+
+    let overrideButtonHtml = '';
+    if (q.type === 'transformation' && !isCorrect) {
+      overrideButtonHtml = `
+        <div>
+          <button type="button" class="btn-override-correct" id="btn-override-kwt">
+            ✓ My phrasing was also valid (Mark as Correct & Adjust ELO)
+          </button>
+        </div>
+      `;
     }
 
     feedbackWrap.innerHTML = `
@@ -422,11 +486,21 @@
           <div class="feedback-status ${isCorrect ? 'correct' : 'wrong'}">
             <span>${isCorrect ? '✓ Spot on!' : '✕ Not quite'}</span>
           </div>
-          <span class="xp-gained-badge">+${xpGained} XP</span>
+          <span class="elo-gained-badge ${badgeClass}">${deltaSign}${calc.delta} ELO</span>
         </div>
 
-        ${adaptiveNote}
+        ${promotionNotice}
+
+        <!-- ELO Probability & Rating Metadata -->
+        <div class="elo-meta-details">
+          <div class="elo-meta-item"><span>Win Probability:</span> <strong>${Math.round(calc.expected * 100)}%</strong></div>
+          <div class="elo-meta-item"><span>Question:</span> <strong>${calc.qRating} ELO</strong></div>
+          <div class="elo-meta-item"><span>Skill ELO:</span> <strong>${calc.newRating}</strong></div>
+          <div class="elo-meta-item"><span>Variety:</span> <strong>×${calc.variety.multiplier.toFixed(2)}</strong></div>
+        </div>
+
         ${targetAnswerHtml}
+        ${overrideButtonHtml}
 
         <p class="feedback-explanation">${q.explain}</p>
 
@@ -442,6 +516,43 @@
         </div>
       </div>
     `;
+
+    // Hook override button if present
+    const overrideBtn = document.getElementById('btn-override-kwt');
+    if (overrideBtn) {
+      overrideBtn.addEventListener('click', () => {
+        if (!activeSession || !activeSession.lastHistoryEntry) return;
+
+        const overrideCalc = window.C2ELO.undoLastAnswer(state, activeSession.lastHistoryEntry, true);
+        if (overrideCalc) {
+          activeSession.correctCount++;
+          // remove from mistakes queue if there
+          const mIdx = state.mistakesQueue.indexOf(q.id);
+          if (mIdx !== -1) {
+            state.mistakesQueue.splice(mIdx, 1);
+          }
+          window.C2SRS.recordResult(state, q.id, true);
+          window.C2Storage.saveState(state);
+
+          window.C2UI.showEloDeltaBadge(overrideCalc.delta);
+          window.C2UI.updateHeaderStats(state);
+
+          overrideBtn.disabled = true;
+          overrideBtn.textContent = `✓ Overridden as Correct (+${overrideCalc.delta} ELO applied)`;
+          overrideBtn.style.color = '#34d399';
+          overrideBtn.style.borderColor = '#10b981';
+
+          // Update badge in feedback card
+          const badge = feedbackWrap.querySelector('.elo-gained-badge');
+          if (badge) {
+            badge.className = 'elo-gained-badge gain';
+            badge.textContent = `+${overrideCalc.delta} ELO`;
+          }
+
+          if (state.soundEnabled) window.C2UI.playCorrectSound();
+        }
+      });
+    }
 
     const continueBtn = document.getElementById('btn-feedback-continue');
     if (continueBtn) {
@@ -468,10 +579,12 @@
     window.C2Storage.saveState(state);
 
     const accuracy = Math.round((activeSession.correctCount / activeSession.totalCount) * 100);
+    const endGlobalElo = window.C2ELO.globalRating(state);
+    const sessionEloDelta = endGlobalElo - activeSession.sessionStartGlobalElo;
 
     const titleEl = document.getElementById('results-title');
     const accuracyEl = document.getElementById('results-stat-accuracy');
-    const xpEl = document.getElementById('results-stat-xp');
+    const eloEl = document.getElementById('results-stat-elo');
     const streakEl = document.getElementById('results-stat-streak');
     const trophyEl = document.getElementById('results-trophy');
 
@@ -488,9 +601,12 @@
       }
     }
 
-    if (accuracyEl) accuracyEl.textContent = accuracy + '%';
-    if (xpEl) xpEl.textContent = '+' + activeSession.xpEarned;
-    if (streakEl) streakEl.textContent = state.profile.streakDays + ' days';
+    if (accuracyEl) accuracyEl.textContent = `${accuracy}%`;
+    if (eloEl) {
+      const sign = sessionEloDelta >= 0 ? '+' : '';
+      eloEl.textContent = `${sign}${sessionEloDelta} (${endGlobalElo})`;
+    }
+    if (streakEl) streakEl.textContent = `${state.profile.streakDays} days`;
 
     showView('view-results');
 
@@ -526,11 +642,11 @@
 
       // 1, 2, 3, 4 for options
       if (['1', '2', '3', '4'].includes(e.key)) {
-        const idx = parseInt(e.key, 10) - 1;
-        const btn = document.querySelector(`.option-btn[data-idx="${idx}"]`);
+        const dIdx = parseInt(e.key, 10) - 1;
+        const btn = document.querySelector(`.option-btn[data-disp-idx="${dIdx}"]`);
         if (btn && !btn.disabled) {
           e.preventDefault();
-          handleChoiceSelection(idx);
+          handleChoiceSelection(dIdx);
         }
       }
     });
@@ -559,12 +675,50 @@
     }
     if (resetBtn) {
       resetBtn.addEventListener('click', () => {
-        if (confirm('Are you sure you want to reset all XP, streaks, and Leitner box mastery? This cannot be undone.')) {
+        if (confirm('Are you sure you want to reset all ELO ratings, history, and Leitner box mastery? This cannot be undone.')) {
           state = window.C2Storage.resetProgress();
           closeModal();
           renderAllHub();
-          alert('Progress has been reset.');
+          alert('Progress and ratings have been reset to default.');
         }
+      });
+    }
+
+    // Export progress JSON
+    const exportBtn = document.getElementById('btn-export-progress');
+    if (exportBtn) {
+      exportBtn.addEventListener('click', () => {
+        window.C2Storage.exportState(state);
+      });
+    }
+
+    // Import progress JSON
+    const importBtn = document.getElementById('btn-import-progress');
+    const fileInput = document.getElementById('import-file-input');
+    if (importBtn && fileInput) {
+      importBtn.addEventListener('click', () => {
+        fileInput.value = '';
+        fileInput.click();
+      });
+
+      fileInput.addEventListener('change', (e) => {
+        const file = e.target.files && e.target.files[0];
+        if (!file) return;
+
+        const reader = new FileReader();
+        reader.onload = (event) => {
+          const result = window.C2Storage.validateAndImport(event.target.result);
+          if (result.success) {
+            state = result.state;
+            renderAllHub();
+            closeModal();
+            const globalElo = window.C2ELO.globalRating(state);
+            alert(`Progress restored successfully! Current Global ELO: ${globalElo}`);
+          } else {
+            alert('Failed to import progress file: ' + result.error);
+          }
+        };
+        reader.readAsText(file);
       });
     }
   }
@@ -573,44 +727,7 @@
     const modal = document.getElementById('stats-modal');
     if (!modal) return;
 
-    // Render Ranks list
-    const currentXp = state.profile.xp;
-    const currentRank = window.C2Engine.getRank(currentXp);
-    const ranksList = document.getElementById('modal-ranks-list');
-
-    if (ranksList) {
-      ranksList.innerHTML = '';
-      window.C2Engine.RANKS.forEach(r => {
-        const isCurrent = r.title === currentRank.title;
-        const row = document.createElement('div');
-        row.className = `rank-item-row ${isCurrent ? 'current' : ''}`;
-        row.innerHTML = `
-          <div class="rank-item-left">
-            <span class="rank-item-badge">${r.badge}</span>
-            <div>
-              <div class="rank-item-title">${r.title} ${isCurrent ? '<span style="color:#6366f1;font-size:0.75rem;">(Active)</span>' : ''}</div>
-              <div style="font-size:0.75rem; color:#94a3b8;">${r.desc}</div>
-            </div>
-          </div>
-          <div class="rank-item-xp">${r.minXp.toLocaleString()} XP</div>
-        `;
-        ranksList.appendChild(row);
-      });
-    }
-
-    // Modal Lifetime Stats
-    const totalAns = state.profile.totalAnswered || 0;
-    const totalCor = state.profile.totalCorrect || 0;
-    const overallAcc = totalAns > 0 ? Math.round((totalCor / totalAns) * 100) : 0;
-
-    const elSessions = document.getElementById('modal-stat-sessions');
-    const elAccuracy = document.getElementById('modal-stat-accuracy');
-    const elMistakes = document.getElementById('modal-stat-mistakes');
-
-    if (elSessions) elSessions.textContent = state.profile.sessionsCompleted || 0;
-    if (elAccuracy) elAccuracy.textContent = `${overallAcc}% (${totalCor}/${totalAns})`;
-    if (elMistakes) elMistakes.textContent = (state.mistakesQueue || []).length;
-
+    window.C2UI.renderRanksModal(state);
     modal.classList.add('active');
   }
 

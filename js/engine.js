@@ -1,26 +1,7 @@
-// Game Engine: scoring, adaptive difficulty, XP, ranks, and session generation
+// js/engine.js
+// Game Engine: ELO-weighted session generation, question retrieval, streak tracking, and answer validation
 (function () {
   'use strict';
-
-  const RANKS = [
-    { minXp: 0, title: 'C1 Contender', badge: '🥉', next: 250, desc: 'Solid C1 footing. Ramping up precision.' },
-    { minXp: 251, title: 'C1+ Advanced', badge: '🥈', next: 750, desc: 'Refined nuances and complex structures.' },
-    { minXp: 751, title: 'Pre-C2 Vanguard', badge: '🥇', next: 1600, desc: 'High idiomatic command and rhetorical mastery.' },
-    { minXp: 1601, title: 'C2 Candidate', badge: '💎', next: 3000, desc: 'Approaching native-like scholarly and stylistic fluency.' },
-    { minXp: 3001, title: 'C2 Master of English', badge: '👑', next: null, desc: 'Full Mastery (CEFR C2). Exceptional lexical breadth.' }
-  ];
-
-  function getRank(xp) {
-    let current = RANKS[0];
-    for (let i = 0; i < RANKS.length; i++) {
-      if (xp >= RANKS[i].minXp) {
-        current = RANKS[i];
-      } else {
-        break;
-      }
-    }
-    return current;
-  }
 
   function getAllQuestions() {
     const bank = window.C2_DATA || {};
@@ -67,45 +48,6 @@
     state.profile.lastPlayedDate = today;
   }
 
-  function calculateQuestionXp(question, sessionStreak) {
-    const base = (question.level || 2) * 12;
-    // Streak multiplier: 1x, 1.2x, 1.4x, up to 2x
-    const multiplier = Math.min(2.0, 1.0 + (sessionStreak * 0.1));
-    return Math.round(base * multiplier);
-  }
-
-  function updateAdaptiveLevel(state, mode, wasCorrect) {
-    if (!state.adaptiveLevels[mode]) state.adaptiveLevels[mode] = 2;
-    if (!state.modeStreaks[mode]) state.modeStreaks[mode] = 0;
-
-    let leveledUp = false;
-    let leveledDown = false;
-
-    if (wasCorrect) {
-      if (state.modeStreaks[mode] < 0) state.modeStreaks[mode] = 0;
-      state.modeStreaks[mode] += 1;
-
-      // 3 consecutive correct in this mode -> level up (max 5)
-      if (state.modeStreaks[mode] >= 3 && state.adaptiveLevels[mode] < 5) {
-        state.adaptiveLevels[mode] += 1;
-        state.modeStreaks[mode] = 0;
-        leveledUp = true;
-      }
-    } else {
-      if (state.modeStreaks[mode] > 0) state.modeStreaks[mode] = 0;
-      state.modeStreaks[mode] -= 1;
-
-      // 2 consecutive mistakes in this mode -> level down (min 1)
-      if (state.modeStreaks[mode] <= -2 && state.adaptiveLevels[mode] > 1) {
-        state.adaptiveLevels[mode] -= 1;
-        state.modeStreaks[mode] = 0;
-        leveledDown = true;
-      }
-    }
-
-    return { leveledUp, leveledDown, newLevel: state.adaptiveLevels[mode] };
-  }
-
   // Normalize text for Cambridge Key Word Transformations:
   // Lowercase, trim, remove punctuation, collapse whitespace
   function normalizeText(str) {
@@ -122,8 +64,9 @@
     const normalizedInput = normalizeText(userInput);
     if (!normalizedInput) return false;
 
-    for (let i = 0; i < question.accepted.length; i++) {
-      const normalizedTarget = normalizeText(question.accepted[i]);
+    const accepted = question.accepted || [];
+    for (let i = 0; i < accepted.length; i++) {
+      const normalizedTarget = normalizeText(accepted[i]);
       if (normalizedInput === normalizedTarget) {
         return true;
       }
@@ -143,14 +86,13 @@
   }
 
   function buildDailySession(state, count = 12) {
-    const all = getAllQuestions();
     const selected = [];
     const usedIds = new Set();
 
-    // 1. Due mistakes or SRS items (up to 4)
+    // 1. Due mistakes or SRS items (up to 3 items)
     const mistakeIds = state.mistakesQueue || [];
     for (let id of mistakeIds) {
-      if (selected.length >= 4) break;
+      if (selected.length >= 2) break;
       const q = getQuestionById(id);
       if (q && !usedIds.has(q.id)) {
         selected.push(q);
@@ -158,23 +100,23 @@
       }
     }
 
-    const dueIds = window.C2SRS.getDueQuestionIds(state);
-    for (let id of dueIds) {
-      if (selected.length >= 5) break;
-      if (!usedIds.has(id)) {
-        const q = getQuestionById(id);
-        if (q) {
-          selected.push(q);
-          usedIds.add(q.id);
+    if (window.C2SRS && window.C2SRS.getDueQuestionIds) {
+      const dueIds = window.C2SRS.getDueQuestionIds(state);
+      for (let id of dueIds) {
+        if (selected.length >= 3) break;
+        if (!usedIds.has(id)) {
+          const q = getQuestionById(id);
+          if (q) {
+            selected.push(q);
+            usedIds.add(q.id);
+          }
         }
       }
     }
 
-    // 2. Sample across categories respecting adaptive difficulty
+    // 2. Balanced ELO-weighted sampling across all 6 categories
     const categories = ['vocabulary', 'collocations', 'phrasal', 'cloze', 'grammar', 'confusables'];
     const bank = window.C2_DATA || {};
-
-    // Shuffle categories so we cycle through evenly
     const cycledCats = shuffle(categories);
 
     let catIndex = 0;
@@ -183,20 +125,15 @@
       attempts++;
       const cat = cycledCats[catIndex % cycledCats.length];
       catIndex++;
-      const catQuestions = bank[cat] || [];
-      const targetLevel = state.adaptiveLevels[cat] || 2;
+      const catQuestions = (bank[cat] || []).filter(q => !usedIds.has(q.id));
+      if (catQuestions.length === 0) continue;
 
-      // Prefer questions close to targetLevel (targetLevel, targetLevel+1, targetLevel-1)
-      const available = catQuestions.filter(q => !usedIds.has(q.id));
-      if (available.length === 0) continue;
-
-      // Sort by distance to targetLevel
-      available.sort((a, b) => Math.abs(a.level - targetLevel) - Math.abs(b.level - targetLevel));
-
-      // Pick one from top candidates
-      const pick = available[0];
-      selected.push(pick);
-      usedIds.add(pick.id);
+      const playerCatRating = (state.ratings && state.ratings[cat]) ? state.ratings[cat] : 1400;
+      const picked = window.C2ELO.pickWeighted(catQuestions, playerCatRating, 1);
+      if (picked.length > 0) {
+        selected.push(picked[0]);
+        usedIds.add(picked[0].id);
+      }
     }
 
     return shuffle(selected);
@@ -207,13 +144,8 @@
     const catQuestions = bank[mode] || [];
     if (catQuestions.length === 0) return [];
 
-    const targetLevel = state.adaptiveLevels[mode] || 2;
-    const shuffled = shuffle(catQuestions);
-
-    // Sort partially by distance to target level
-    shuffled.sort((a, b) => Math.abs(a.level - targetLevel) - Math.abs(b.level - targetLevel));
-
-    return shuffled.slice(0, count);
+    const playerRating = (state.ratings && state.ratings[mode]) ? state.ratings[mode] : 1400;
+    return window.C2ELO.pickWeighted(catQuestions, playerRating, count);
   }
 
   function buildMistakesSession(state) {
@@ -227,13 +159,9 @@
   }
 
   window.C2Engine = {
-    RANKS: RANKS,
-    getRank: getRank,
     getAllQuestions: getAllQuestions,
     getQuestionById: getQuestionById,
     updateDailyStreak: updateDailyStreak,
-    calculateQuestionXp: calculateQuestionXp,
-    updateAdaptiveLevel: updateAdaptiveLevel,
     checkTransformationAnswer: checkTransformationAnswer,
     buildDailySession: buildDailySession,
     buildModeSession: buildModeSession,
