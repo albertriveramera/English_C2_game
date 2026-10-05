@@ -683,6 +683,44 @@
         }
       });
     }
+
+    // Export progress JSON
+    const exportBtn = document.getElementById('btn-export-progress');
+    if (exportBtn) {
+      exportBtn.addEventListener('click', () => {
+        window.C2Storage.exportState(state);
+      });
+    }
+
+    // Import progress JSON
+    const importBtn = document.getElementById('btn-import-progress');
+    const fileInput = document.getElementById('import-file-input');
+    if (importBtn && fileInput) {
+      importBtn.addEventListener('click', () => {
+        fileInput.value = '';
+        fileInput.click();
+      });
+
+      fileInput.addEventListener('change', (e) => {
+        const file = e.target.files && e.target.files[0];
+        if (!file) return;
+
+        const reader = new FileReader();
+        reader.onload = (event) => {
+          const result = window.C2Storage.validateAndImport(event.target.result);
+          if (result.success) {
+            state = result.state;
+            renderAllHub();
+            closeModal();
+            const globalElo = window.C2ELO.globalRating(state);
+            alert(`Progress restored successfully! Current Global ELO: ${globalElo}`);
+          } else {
+            alert('Failed to import progress file: ' + result.error);
+          }
+        };
+        reader.readAsText(file);
+      });
+    }
   }
 
   function openModal() {

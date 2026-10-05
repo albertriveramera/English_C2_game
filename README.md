@@ -70,6 +70,10 @@ When generating sessions, questions are sampled using a Gaussian weighting kerne
 - Boxes 1 through 5 schedule reviews across expanding intervals (1 day, 3 days, 7 days, 14 days, 30 days).
 - Missed questions are added to the **Mistakes Redemption Queue** for targeted remediation.
 
+### 6. Data Backup & Transfer (JSON Export/Import)
+- Players can back up or migrate their entire rating history, streaks, and Leitner memory boxes across devices anytime via the **"📥 Export Save"** and **"📤 Import Save"** buttons in the Ranks & Analytics modal.
+- Protects against accidental browser cache clearance and enables easy transfer from mobile to desktop without requiring an account.
+
 ---
 
 ## 🚀 How to Run

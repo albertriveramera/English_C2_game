@@ -234,9 +234,27 @@
           <!-- Populated dynamically via ui.js -->
         </div>
 
-        <div style="margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
-          <span style="font-size: 0.8rem; color: #94a3b8;">Manage Local Data</span>
-          <button type="button" class="btn-danger" id="btn-reset-progress">Reset Progress</button>
+        <div style="margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--border-subtle); display: flex; flex-direction: column; gap: 14px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+            <div>
+              <div style="font-size: 0.88rem; font-weight: 700; color: #e2e8f0;">Backup &amp; Transfer Data</div>
+              <div style="font-size: 0.76rem; color: #94a3b8;">Save or restore your ratings &amp; progress as a JSON file</div>
+            </div>
+            <div style="display: flex; gap: 8px;">
+              <button type="button" class="btn-secondary" id="btn-export-progress" style="padding: 8px 14px; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 6px;">
+                📥 Export Save
+              </button>
+              <button type="button" class="btn-secondary" id="btn-import-progress" style="padding: 8px 14px; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 6px;">
+                📤 Import Save
+              </button>
+              <input type="file" id="import-file-input" accept=".json" style="display: none;" />
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px dashed rgba(255, 255, 255, 0.08);">
+            <span style="font-size: 0.78rem; color: #94a3b8;">Reset all ratings, history &amp; Leitner boxes</span>
+            <button type="button" class="btn-danger" id="btn-reset-progress">Reset Progress</button>
+          </div>
         </div>
       </div>
     </div>

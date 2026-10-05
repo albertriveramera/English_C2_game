@@ -30,6 +30,8 @@ try:
         ('Phrasal card rendered', 'data-mode="phrasal"' in dom),
         ('Variety chip rendered', 'variety-chip' in dom),
         ('CEFR Master badge', 'C1 Contender' in dom),
+        ('Export Save button rendered', 'id="btn-export-progress"' in dom),
+        ('Import Save button rendered', 'id="btn-import-progress"' in dom),
     ]
 
     all_passed = True

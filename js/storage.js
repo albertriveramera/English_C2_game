@@ -182,10 +182,53 @@
     return loadState();
   }
 
+  function exportState(state) {
+    const jsonStr = JSON.stringify(state, null, 2);
+    const blob = new Blob([jsonStr], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    const dateStr = new Date().toISOString().split('T')[0];
+    a.href = url;
+    a.download = `c2_english_arcade_save_${dateStr}.json`;
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(() => {
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }, 100);
+  }
+
+  function validateAndImport(jsonString) {
+    try {
+      const parsed = JSON.parse(jsonString);
+      if (!parsed || typeof parsed !== 'object') {
+        throw new Error('Invalid JSON format');
+      }
+
+      let validState;
+      if (parsed.version === 2 && parsed.ratings && parsed.profile) {
+        validState = Object.assign({}, DEFAULT_STATE, parsed);
+      } else if (parsed.version === 1 || parsed.adaptiveLevels) {
+        validState = migrateV1ToV2(parsed);
+      } else if (parsed.ratings) {
+        validState = Object.assign({}, DEFAULT_STATE, parsed, { version: 2 });
+      } else {
+        throw new Error('Unrecognized save file schema');
+      }
+
+      saveState(validState);
+      return { success: true, state: validState };
+    } catch (err) {
+      return { success: false, error: err.message };
+    }
+  }
+
   window.C2Storage = {
     loadState: loadState,
     saveState: saveState,
     resetProgress: resetProgress,
+    exportState: exportState,
+    validateAndImport: validateAndImport,
     DEFAULT_STATE: DEFAULT_STATE
   };
 })();
