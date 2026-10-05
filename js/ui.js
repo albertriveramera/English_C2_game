@@ -1,8 +1,9 @@
-// UI Rendering, Sound Synthesizer, Confetti and Animations
+// js/ui.js
+// UI Rendering, Sound Synthesizer, Confetti, Modal Analytics, and Visual Feedback
 (function () {
   'use strict';
 
-  // --- Web Audio Sound Synthesizer (No external audio files required!) ---
+  // --- Web Audio Sound Synthesizer (Zero external audio files required!) ---
   let audioCtx = null;
 
   function getAudioContext() {
@@ -39,7 +40,7 @@
   }
 
   function playCorrectSound() {
-    // Elegant ascending arpeggio (C5 -> E5 -> G5 -> C6)
+    // Ascending arpeggio (C5 -> E5 -> G5 -> C6)
     playTone(523.25, 'sine', 0.18, 0, 0.12);
     playTone(659.25, 'sine', 0.18, 0.08, 0.12);
     playTone(783.99, 'sine', 0.22, 0.16, 0.12);
@@ -134,17 +135,31 @@
   // --- Rendering UI Helpers ---
 
   function updateHeaderStats(state) {
-    const xpEl = document.getElementById('stat-xp-val');
+    const eloEl = document.getElementById('stat-elo-val');
     const streakEl = document.getElementById('stat-streak-val');
     const rankEl = document.getElementById('stat-rank-val');
     const rankBadgeEl = document.getElementById('stat-rank-badge');
 
-    const rank = window.C2Engine.getRank(state.profile.xp);
+    const globalElo = window.C2ELO.globalRating(state);
+    const rankInfo = window.C2ELO.getRank(globalElo, state.profile.totalCorrect, state.profile.rankIndex);
 
-    if (xpEl) xpEl.textContent = state.profile.xp.toLocaleString() + ' XP';
-    if (streakEl) streakEl.textContent = state.profile.streakDays + 'd';
-    if (rankEl) rankEl.textContent = rank.title;
-    if (rankBadgeEl) rankBadgeEl.textContent = rank.badge;
+    if (eloEl) eloEl.textContent = `${globalElo} ELO`;
+    if (streakEl) streakEl.textContent = `${state.profile.streakDays}d`;
+    if (rankEl) rankEl.textContent = rankInfo.rank.title;
+    if (rankBadgeEl) rankBadgeEl.textContent = rankInfo.rank.badge;
+  }
+
+  function showEloDeltaBadge(delta) {
+    const deltaEl = document.getElementById('stat-elo-delta');
+    if (!deltaEl) return;
+
+    deltaEl.style.display = 'inline-block';
+    deltaEl.className = 'delta-badge ' + (delta >= 0 ? 'gain' : 'loss');
+    deltaEl.textContent = (delta >= 0 ? '+' : '') + delta;
+
+    setTimeout(() => {
+      deltaEl.style.display = 'none';
+    }, 2800);
   }
 
   function renderMasteryOverview(state) {
@@ -192,12 +207,12 @@
 
   function renderModeCards(state) {
     const MODES = [
-      { id: 'vocabulary', title: 'Erudite Vocabulary', icon: '📖', desc: 'Rare, nuanced, and evocative high-register lexical precision.' },
+      { id: 'vocabulary', title: 'Erudite Vocabulary', icon: '📖', desc: 'Rare, evocative, and high-register lexical precision.' },
       { id: 'collocations', title: 'Collocations & Idioms', icon: '🔗', desc: 'Fixed prepositional idioms, binomials, and authentic pairings.' },
       { id: 'phrasal', title: 'Nuanced Phrasal Verbs', icon: '⚡', desc: 'Subtle particles, multi-word verbs, and formal idioms.' },
       { id: 'cloze', title: 'Use of English & Cloze', icon: '🧩', desc: 'Cambridge-style Key Word Transformations & semantic cloze.' },
       { id: 'grammar', title: 'Grammar & Inversion', icon: '⚖️', desc: 'Negative inversion, mandative subjunctive, and cleft sentences.' },
-      { id: 'confusables', title: 'Confusables & Nuance', icon: '🔍', desc: 'Subtle distinctions in homophones, pairs, and fine semantic shifts.' }
+      { id: 'confusables', title: 'Confusables & Nuance', icon: '🔍', desc: 'Subtle distinctions in pairs, false friends, and register shifts.' }
     ];
 
     const container = document.getElementById('modes-grid-container');
@@ -206,9 +221,19 @@
     container.innerHTML = '';
 
     MODES.forEach(mode => {
-      const lvl = state.adaptiveLevels[mode.id] || 2;
-      const stats = state.modeStats[mode.id] || { correct: 0, total: 0 };
+      const rating = (state.ratings && typeof state.ratings[mode.id] === 'number') ? state.ratings[mode.id] : 1400;
+      const stats = (state.answersByMode && state.answersByMode[mode.id]) ? state.answersByMode[mode.id] : { total: 0, correct: 0 };
       const accuracy = stats.total > 0 ? Math.round((stats.correct / stats.total) * 100) : 0;
+      const variety = window.C2ELO.varietyMultiplier(state.recentModes, mode.id);
+
+      let varietyHtml = '';
+      if (variety.isBonus) {
+        varietyHtml = `<span class="variety-chip bonus" title="${variety.label}">✨ ×${variety.multiplier.toFixed(2)} bonus</span>`;
+      } else if (variety.isPenalty) {
+        varietyHtml = `<span class="variety-chip penalty" title="${variety.label}">⚠️ ×${variety.multiplier.toFixed(2)} penalty</span>`;
+      } else {
+        varietyHtml = `<span class="variety-chip balanced" title="${variety.label}">⚖️ ×1.00 balanced</span>`;
+      }
 
       const card = document.createElement('div');
       card.className = 'mode-card';
@@ -217,12 +242,15 @@
       card.innerHTML = `
         <div class="mode-card-header">
           <div class="mode-icon">${mode.icon}</div>
-          <span class="mode-level-badge">Adaptive Lvl ${lvl}</span>
+          <div class="mode-header-badges">
+            <span class="mode-elo-tag">${rating} ELO</span>
+            ${varietyHtml}
+          </div>
         </div>
         <h4 class="mode-title">${mode.title}</h4>
         <p class="mode-desc">${mode.desc}</p>
         <div class="mode-card-footer">
-          <span>${stats.total > 0 ? accuracy + '% accuracy' : 'Not practiced'}</span>
+          <span>${stats.total > 0 ? `${accuracy}% acc (${stats.total} ans)` : 'Unranked'}</span>
           <span class="mode-play-prompt">Practice &rarr;</span>
         </div>
       `;
@@ -237,6 +265,118 @@
     });
   }
 
+  function renderRanksModal(state) {
+    // 1. Update Lifetime Stats
+    const elSessions = document.getElementById('modal-stat-sessions');
+    const elAccuracy = document.getElementById('modal-stat-accuracy');
+    const elMistakes = document.getElementById('modal-stat-mistakes');
+
+    const totalAnswered = state.profile.totalAnswered || 0;
+    const totalCorrect = state.profile.totalCorrect || 0;
+    const accuracy = totalAnswered > 0 ? Math.round((totalCorrect / totalAnswered) * 100) : 0;
+
+    if (elSessions) elSessions.textContent = (state.profile.sessionsCompleted || 0).toLocaleString();
+    if (elAccuracy) elAccuracy.textContent = `${accuracy}%`;
+    if (elMistakes) elMistakes.textContent = (state.mistakesQueue || []).length;
+
+    const globalElo = window.C2ELO.globalRating(state);
+    const rankInfo = window.C2ELO.getRank(globalElo, totalCorrect, state.profile.rankIndex);
+
+    // 2. Render Rank Progress Card
+    const progressMount = document.getElementById('modal-rank-progress-mount');
+    if (progressMount) {
+      if (rankInfo.nextRank) {
+        progressMount.innerHTML = `
+          <div class="rank-progress-card">
+            <div class="rank-progress-header">
+              <span>Next Rank: <strong>${rankInfo.nextRank.badge} ${rankInfo.nextRank.title}</strong></span>
+              <span>Req: <strong>${rankInfo.nextRank.minElo} ELO</strong> &bull; <strong>${rankInfo.nextRank.minCorrect} Correct</strong></span>
+            </div>
+            <div style="font-size: 0.76rem; color: #94a3b8; margin-bottom: 4px;">ELO Rating Progress (${globalElo} / ${rankInfo.nextRank.minElo})</div>
+            <div class="rank-progress-track">
+              <div class="rank-progress-fill" style="width: ${Math.round(rankInfo.progressElo * 100)}%;"></div>
+            </div>
+            <div style="font-size: 0.76rem; color: #94a3b8; margin-bottom: 4px;">Lifetime Correct Answers (${totalCorrect} / ${rankInfo.nextRank.minCorrect})</div>
+            <div class="rank-progress-track">
+              <div class="rank-progress-fill" style="width: ${Math.round(rankInfo.progressCorrect * 100)}%; background: linear-gradient(135deg, #10b981, #06b6d4);"></div>
+            </div>
+          </div>
+        `;
+      } else {
+        progressMount.innerHTML = `
+          <div class="rank-progress-card" style="border-color: rgba(236, 72, 153, 0.4); text-align: center;">
+            <div style="font-size: 1.1rem; font-weight: 800; color: #f472b6;">👑 Supreme CEFR C2 Master of English</div>
+            <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 4px;">You have attained the pinnacle tier of English lexical and syntactic fluency.</p>
+          </div>
+        `;
+      }
+    }
+
+    // 3. Render Skill ELO Grid (6 categories)
+    const categoryMount = document.getElementById('modal-category-elo-mount');
+    if (categoryMount) {
+      const MODES = [
+        { id: 'vocabulary', name: 'Vocabulary', icon: '📖' },
+        { id: 'collocations', name: 'Collocations', icon: '🔗' },
+        { id: 'phrasal', name: 'Phrasal Verbs', icon: '⚡' },
+        { id: 'cloze', name: 'Cloze & KWT', icon: '🧩' },
+        { id: 'grammar', name: 'Grammar', icon: '⚖️' },
+        { id: 'confusables', name: 'Confusables', icon: '🔍' }
+      ];
+
+      categoryMount.innerHTML = MODES.map(m => {
+        const rating = (state.ratings && state.ratings[m.id]) ? state.ratings[m.id] : 1400;
+        const stats = (state.answersByMode && state.answersByMode[m.id]) ? state.answersByMode[m.id] : { total: 0, correct: 0 };
+        const acc = stats.total > 0 ? Math.round((stats.correct / stats.total) * 100) : 0;
+        const variety = window.C2ELO.varietyMultiplier(state.recentModes, m.id);
+
+        let chip = '⚖️ 1.0x';
+        if (variety.isBonus) chip = `✨ ×${variety.multiplier.toFixed(2)}`;
+        if (variety.isPenalty) chip = `⚠️ ×${variety.multiplier.toFixed(2)}`;
+
+        return `
+          <div class="category-elo-card">
+            <div class="category-elo-card-top">
+              <span class="category-elo-title">${m.icon} ${m.name}</span>
+              <span class="category-elo-val">${rating}</span>
+            </div>
+            <div class="category-elo-card-sub">
+              <span>${stats.total} ans &bull; ${acc}%</span>
+              <span>${chip}</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // 4. Render Ranks Ladder
+    const ranksList = document.getElementById('modal-ranks-list');
+    if (ranksList) {
+      const allRanks = window.C2ELO.CFG.RANKS;
+      ranksList.innerHTML = allRanks.map(r => {
+        const isCurrent = r.index === rankInfo.index;
+        const isUnlocked = r.index <= rankInfo.index;
+        const cls = isCurrent ? 'rank-item-row current' : (isUnlocked ? 'rank-item-row unlocked' : 'rank-item-row locked');
+
+        return `
+          <div class="${cls}">
+            <div class="rank-item-left">
+              <div class="rank-item-badge">${r.badge}</div>
+              <div>
+                <div class="rank-item-title">${r.title} ${isCurrent ? '<span style="font-size: 0.72rem; color: #818cf8; margin-left: 6px;">(CURRENT TIER)</span>' : ''}</div>
+                <div style="font-size: 0.78rem; color: #94a3b8;">${r.desc}</div>
+              </div>
+            </div>
+            <div class="rank-item-elo" style="text-align: right;">
+              <div>${r.minElo}+ ELO</div>
+              <div style="font-size: 0.72rem; color: #64748b;">${r.minCorrect}+ correct</div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+  }
+
   window.C2UI = {
     playCorrectSound: playCorrectSound,
     playWrongSound: playWrongSound,
@@ -244,7 +384,9 @@
     playClickSound: playClickSound,
     launchConfetti: launchConfetti,
     updateHeaderStats: updateHeaderStats,
+    showEloDeltaBadge: showEloDeltaBadge,
     renderMasteryOverview: renderMasteryOverview,
-    renderModeCards: renderModeCards
+    renderModeCards: renderModeCards,
+    renderRanksModal: renderRanksModal
   };
 })();
