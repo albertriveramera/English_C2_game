@@ -122,6 +122,7 @@ body::after {
   border-radius: var(--radius-lg);
   margin-bottom: 28px;
   box-shadow: var(--shadow-sm);
+  gap: 14px;
 }
 
 .logo-group {
@@ -129,6 +130,7 @@ body::after {
   align-items: center;
   gap: 12px;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .logo-badge {
@@ -165,7 +167,8 @@ body::after {
 .player-stats-bar {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
+  margin-left: auto;
 }
 
 .stat-pill {
@@ -1389,29 +1392,358 @@ body::after {
 }
 
 /* ==========================================================================
-   RESPONSIVENESS
+   RESPONSIVENESS (Tablets & Mobile Phones)
    ========================================================================== */
+
+/* Tablets & Mobile Screens (<= 768px) */
 @media (max-width: 768px) {
+  .app-container {
+    padding: 12px 10px 48px;
+    width: 100%;
+  }
+
+  /* Two-Row Mobile Header: Row 1 = Logo + Sound, Row 2 = Full Width Stats Bar */
+  .top-nav {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    gap: 12px 8px;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border-radius: var(--radius-md);
+  }
+
+  .logo-group {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    gap: 10px;
+  }
+
+  .logo-badge {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+
+  .logo-text h1 {
+    font-size: 1.05rem;
+  }
+
+  .logo-text span {
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+  }
+
+  .top-nav .btn-icon#btn-toggle-sound {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: end;
+    width: 36px;
+    height: 36px;
+    font-size: 0.95rem;
+  }
+
+  /* Row 2: Perfectly balanced pills across full device width */
+  .player-stats-bar {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+  }
+
+  .stat-pill {
+    flex: 1 1 0;
+    min-width: 0;
+    justify-content: center;
+    padding: 8px 8px;
+    font-size: 0.8rem;
+    gap: 6px;
+    border-radius: var(--radius-full);
+  }
+
+  .stat-pill .icon {
+    font-size: 0.95rem;
+    flex-shrink: 0;
+  }
+
+  .stat-pill .val {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.82rem;
+  }
+
+  .stat-pill.streak {
+    flex: 0.75 1 0;
+  }
+
+  .stat-pill.elo {
+    flex: 1.15 1 0;
+  }
+
+  .stat-pill.rank-badge {
+    flex: 1.35 1 0;
+  }
+
+  .stat-pill:active {
+    transform: scale(0.97);
+  }
+
+  /* Hero Banner */
   .hero-banner {
-    padding: 26px 20px;
+    padding: 24px 18px;
+    border-radius: var(--radius-md);
   }
+
   .hero-title {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    line-height: 1.3;
   }
+
+  .hero-subtitle {
+    font-size: 0.88rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .hero-actions .btn-primary,
+  .hero-actions .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Mode Selection Grid */
   .modes-grid {
     grid-template-columns: 1fr;
+    gap: 12px;
   }
+
+  /* Session Question View */
+  .session-top-meta {
+    margin-bottom: 12px;
+  }
+
+  .session-progress-wrap {
+    margin: 0 10px;
+  }
+
   .question-card {
-    padding: 24px 20px;
+    padding: 22px 18px;
+    border-radius: var(--radius-md);
+    margin-bottom: 16px;
   }
+
   .question-prompt {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 22px;
   }
+
+  .option-btn {
+    padding: 14px 16px;
+    font-size: 1rem;
+  }
+
+  /* Modal on Tablets */
+  .modal-window {
+    padding: 24px 18px;
+    border-radius: var(--radius-md);
+  }
+}
+
+/* Compact Smartphones (<= 480px, e.g. iPhone, Galaxy, Pixel) */
+@media (max-width: 480px) {
+  .app-container {
+    padding: 8px 6px 36px;
+  }
+
+  .top-nav {
+    padding: 10px 10px;
+    gap: 10px 6px;
+    margin-bottom: 14px;
+  }
+
+  /* Hide secondary subtitle on narrow phones to avoid any visual crowding */
+  .logo-text span {
+    display: none;
+  }
+
+  .logo-badge {
+    width: 34px;
+    height: 34px;
+    font-size: 0.95rem;
+    border-radius: 8px;
+  }
+
+  .logo-text h1 {
+    font-size: 0.98rem;
+  }
+
+  .top-nav .btn-icon#btn-toggle-sound {
+    width: 34px;
+    height: 34px;
+    font-size: 0.9rem;
+  }
+
   .player-stats-bar {
+    gap: 5px;
+  }
+
+  .stat-pill {
+    padding: 6px 6px;
+    font-size: 0.75rem;
+    gap: 4px;
+  }
+
+  .stat-pill .icon {
+    font-size: 0.85rem;
+  }
+
+  .stat-pill .val {
+    font-size: 0.76rem;
+  }
+
+  .stat-pill.elo .delta-badge {
+    display: none !important; /* Hide tiny delta on very narrow screens to prevent text crunch */
+  }
+
+  /* Question Card & Inputs */
+  .question-card {
+    padding: 16px 12px;
+  }
+
+  .question-meta-tags {
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+
+  .tag-badge {
+    font-size: 0.68rem;
+    padding: 3px 8px;
+  }
+
+  .question-prompt {
+    font-size: 1.1rem;
+    line-height: 1.45;
+    margin-bottom: 18px;
+  }
+
+  .options-grid {
     gap: 8px;
   }
-  .stat-pill {
+
+  .option-btn {
+    padding: 12px 10px;
+    font-size: 0.92rem;
+  }
+
+  .option-key {
+    width: 24px;
+    height: 24px;
+    font-size: 0.72rem;
+    margin-right: 10px;
+  }
+
+  .transformation-lead-in {
+    font-size: 0.92rem;
+    padding: 10px 12px;
+  }
+
+  .transformation-keyword-card {
+    padding: 12px;
+  }
+
+  .transformation-keyword {
+    font-size: 1rem;
+    padding: 4px 10px;
+  }
+
+  .transformation-gap-sentence {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .transformation-input {
+    font-size: 16px; /* Essential: Prevents auto-zoom behavior on iOS Safari */
+    padding: 10px 12px;
+  }
+
+  .feedback-card {
+    padding: 16px 12px;
+    margin-top: 14px;
+  }
+
+  .elo-meta-details {
+    font-size: 0.72rem;
+    gap: 6px;
     padding: 6px 10px;
-    font-size: 0.78rem;
+  }
+
+  .feedback-explanation {
+    font-size: 0.9rem;
+  }
+
+  .feedback-example-box {
+    padding: 8px 12px;
+    margin-bottom: 14px;
+  }
+
+  /* Modal on Small Mobile */
+  .modal-overlay {
+    padding: 8px;
+  }
+
+  .modal-window {
+    padding: 18px 12px;
+    max-height: 94vh;
+    border-radius: var(--radius-md);
+  }
+
+  .category-elo-grid {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .results-stats-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+
+  .results-stat-box {
+    padding: 10px 4px;
+  }
+
+  .results-stat-box .num {
+    font-size: 1.25rem;
+  }
+
+  .results-stat-box .label {
+    font-size: 0.65rem;
+  }
+
+  .rank-item-row {
+    padding: 10px 12px;
+  }
+
+  .rank-item-badge {
+    font-size: 1.25rem;
+  }
+
+  .rank-item-title {
+    font-size: 0.88rem;
+  }
+
+  .rank-item-elo {
+    font-size: 0.74rem;
   }
 }
